@@ -514,7 +514,7 @@ WomensClothing.groupby('Rating')['Rating'].count()
 sns.countplot(x='Rating', data=WomensClothing)
 ```
 
-![png](/images/womenclothing/output_3_1.png)
+![png](/images/womenclothing/output_3_2.png)
     
 
 ```python
