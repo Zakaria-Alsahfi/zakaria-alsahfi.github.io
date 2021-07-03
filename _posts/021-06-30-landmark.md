@@ -1,6 +1,5 @@
 ---
 title: "Predicting Landmark Duration"
-duration: 1 month
 date: 2021-06-30
 tags: [Data Science, Machine Learning, Deep Learning, Python]
 header:
