@@ -1073,9 +1073,9 @@ Here we are also encoding our categorical values into binary format so that our 
 Below we are using matplotlib for Plotting of Histogram. This is used for checking the frequency distribution of different values inside a column or feature. Each column is a different unique feature for our model. As we can see from the output there are 3 labels Yes, No and Maryville.We are plotting for FeatureA and FeatureB.
 
 
-![plot 1](/images/TradeUnion/plot1.png)
+![png](/images/TradeUnion/plot1.png)
 
-![plot 2](/images/TradeUnion/plot2.png)
+![png](/images/TradeUnion/plot2.png)
 
 
 ##### Non binary unique values
@@ -1309,7 +1309,7 @@ Doing Box and whisker plot for Checking the availability of outliers in the code
 
 **detecting outlier**
 
-![plot 3](/images/TradeUnion/plot3.png)
+![png](/images/TradeUnion/plot3.png)
 
 **certainly there are outliers**
 **Unique MonthlyDues**
@@ -1540,7 +1540,7 @@ df3["TotalDues"].isna().sum(axis = 0)
 ## BOX PLOT:
 Plotting Box plot for checking Outliers for other columns, As here we can see there is no outlier in our data. We have removed the outlier previously. We can also plot scatter plot for detecting outlier.
 
-![plot 4](/images/TradeUnion/plot4.png)
+![png](/images/TradeUnion/plot4.png)
 
 **As we can see there is no outlier in this data**
 
@@ -1548,7 +1548,7 @@ Plotting Box plot for checking Outliers for other columns, As here we can see th
 ## Scatter Plot:
 Again checking for outliers, But now we are plotting scatter plot for this. Here we found 3 outliersin total dues. We again removed it by taking mean of the available values There are certainlyother ways too, but this works best for our problem.
 
-![plot 5](/images/TradeUnion/plot5.png)
+![png](/images/TradeUnion/plot5.png)
 
 
 #### Removing Outlier:
@@ -1712,20 +1712,20 @@ Here we are removing the outlier by simply providing the threshold value. The va
 ## Scatter and violin Plot:
 We are again plotting scatter plots to confirm that our outliers has been removed and as we cansee our values are good now. Below we are plotting a Scatter and violin plot. The violin plot simply tells the density about how much distributed values we have in our data.
 
-![plot 6](/images/TradeUnion/plot6.png)
-![plot 7](/images/TradeUnion/plot7.png)
+![png](/images/TradeUnion/plot6.png)
+![png](/images/TradeUnion/plot7.png)
 
 
 ## Scree plot:
 Below we are plotting the scree plot for **monthly dues** column to see how are distributed our values. It’s another way of visualization. We are using matplotlib library for scree plot.
 
-![plot 8](/images/TradeUnion/plot8.png)
+![png](/images/TradeUnion/plot8.png)
 
 
 ## Bivariate plot:
 Below we are plotting a Bivariate plot between monthly dues and Months in union to see the difference between both the column values.
 
-![plot 9](/images/TradeUnion/plot9.png)
+![png](/images/TradeUnion/plot9.png)
 
 
 ## Normalization
@@ -4034,7 +4034,7 @@ print(y_pred)
 
 #### Plot Confusion Matrix
 
-![plot 10](/images/TradeUnion/plot10.png)
+![png](/images/TradeUnion/plot10.png)
 
 
 #### Printing the Accuracy Score
@@ -4125,7 +4125,7 @@ print(pred)
 
 #### Plot Confusion Matrix
 
-![plot 11](/images/TradeUnion/plot11.png)
+![png](/images/TradeUnion/plot11.png)
 
 
 #### Printing the Accuracy Score
@@ -4203,7 +4203,7 @@ Now here we are running our support vector machine model and we got fairly good 
 
 #### Plot Confusion Matrix
 
-![plot 12](/images/TradeUnion/plot12.png)
+![png](/images/TradeUnion/plot12.png)
 
 
 #### Printing the Accuracy Score 
@@ -4282,7 +4282,7 @@ Time to play with a random forest model. It’s an ensemble technique which util
 
 #### Plot Confusion Matrix
 
-![plot 13](/images/TradeUnion/plot13.png)
+![png](/images/TradeUnion/plot13.png)
 
 
 #### Printing the Accuracy Score 
@@ -4702,7 +4702,7 @@ Now we trained a neural network to see how well our model is performing on a sim
 
 #### Plot Confusion Matrix
 
-![plot 14](/images/TradeUnion/plot14.png)
+![png](/images/TradeUnion/plot14.png)
 
 
 #### Printing the Accuracy Score
