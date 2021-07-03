@@ -149,7 +149,7 @@ This dataset has the number of riders for each hour of each day from January 1 2
 
 Below is a plot showing the number of bike riders over the first 10 days or so in the data set. (Some days don't have exactly 24 entries in the data set, so it's not exactly 10 days.) We can see the hourly rentals here. This data is pretty complicated! The weekends have lower over all ridership and there are spikes when people are biking to and from work during the week. Looking at the data above, we also have information about temperature, humidity, and windspeed, all of these likely affecting the number of riders. We will be trying to capture all this with our model.
 
-![png](/images/output_6_1.png)
+![png](/images/BikeSharing/output_6_1.png)
 
 ### Dummy variables
 Here we have some categorical variables like season, weather, month. To include these in our model, we'll need to make binary dummy variables. This is simple to do with Pandas thanks to `get_dummies()`.
@@ -355,7 +355,7 @@ Below we will build our network.
   - Number of hidden units
   - Number of training passes.
 
-![png](/images/neural_network.png)
+![png](/images/BikeSharing/neural_network.png)
 
 The network has two layers, a hidden layer and an output layer. The hidden layer will use the sigmoid function for activations. The output layer has only one node and is used for the regression, the output of the node is the same as the input of the node. That is, the activation function is $f(x)=x$. A function that takes the input signal and generates an output signal, but takes into account the threshold, is called an activation function. We work through each layer of our network calculating the outputs for each neuron. All of the outputs from one layer become inputs to the neurons on the next layer. This process is called *forward propagation*.
 
@@ -457,12 +457,12 @@ In a model where all the weights are optimized, the more hidden nodes you have, 
 
 Try a few different numbers and see how it affects the performance. We can look at the losses dictionary for a metric of the network performance. If the number of hidden units is too low, then the model won't have enough space to learn and if it is too high there are too many options for the direction that the learning can take. The trick here is to find the right balance in number of hidden units you choose.  We will generally find that the best number of hidden nodes to use ends up being between the number of input and output nodes.
 
-![png](/images/output_22_0.png)
+![png](/images/BikeSharing/output_22_0.png)
 
 ## Check out your predictions
 
 Here, use the test data to view how well your network is modeling the data. If something is completely wrong here, make sure each step in your network is implemented correctly.
 
-![png](/images/output_24_0.png)
+![png](/images/BikeSharing/output_24_0.png)
 
 As we can see on the majority of days, the model accurately predicts the data. The model, mostly trained on data from regular days, overestimated demand over the holiday season. As we can see starting from Dec 22 till Dec 31 the model fails because of the Christmas season people do not rent bikes as much as normal days.
