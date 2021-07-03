@@ -14,19 +14,19 @@ Dataset Links [Kaggle](https://www.kaggle.com/c/histopathologic-cancer-detection
 
 
 ## Model Plot
-![png](/images/deeplearning/model_plot.png)
+![png](/images/MetastaticCancer/model_plot.png)
 
 ## Training and validation Loss
-![png](/images/deeplearning/training1.png)
+![png](/images/MetastaticCancer/training1.png)
 
 ## Training and validation Accuracy
-![png](/images/deeplearning/validation1.png)
+![png](/images/MetastaticCancer/validation1.png)
 
 ## Receiver operating characteristic (roc) curve
-![png](/images/deeplearning/roc1.png)
+![png](/images/MetastaticCancer/roc1.png)
 
 ## Classification Report
-![png](/images/deeplearning/ClassificationReport.png)
+![png](/images/MetastaticCancer/ClassificationReport.png)
 
 ## Confusion Matrix
-![png](/images/deeplearning/cmatrix1.png)
+![png](/images/MetastaticCancer/cmatrix1.png)
