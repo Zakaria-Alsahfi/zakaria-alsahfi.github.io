@@ -22,7 +22,7 @@ We will use [CelebFaces Attributes Dataset (CelebA)](http://mmlab.ie.cuhk.edu.hk
 
 Since the project's main focus is on building the GANs, we've done *some* of the pre-processing for you. Each of the CelebA images has been cropped to remove parts of the image that don't include a face, then resized down to 64x64x3 NumPy images. Some sample data is show below.
 
-<img src='assets/processed_face_data.png' width=60% />
+![png](/images/facegenration/processed_face_data.png)
 
 
 ## Visualize the CelebA Data
@@ -78,7 +78,7 @@ for idx in np.arange(plot_size):
     imshow(images[idx])
 ```
 
-![png](output_9_1.png)
+![png](/images/facegenration/output_9_1.png)
     
 
 
@@ -592,7 +592,7 @@ plt.title("Training Losses")
 plt.legend()
 ```
 
-![png](output_36_1.png)
+![png](/images/facegenration/output_36_1.png)
     
 
 
@@ -604,7 +604,7 @@ View samples of images from the generator.
 _ = view_samples(-1, samples)
 ```
 
-![png](output_40_0.png)
+![png](/images/facegenration/output_40_0.png)
     
 
 The generated faces appear that one or two skin colors are mixed. So if we categorized dataset as per skin color, or sex. It seems that hair impact much on face, so we should consider it, also, when we categorize dataset of face.
