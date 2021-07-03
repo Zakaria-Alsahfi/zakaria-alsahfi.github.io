@@ -12,7 +12,6 @@ mathjax: "true"
 
 ## Project: Write an Algorithm for Landmark Classification
 
----
 ### Why We're Here
 
 Photo sharing and photo storage services like to have location data for each photo that is uploaded. With the location data, these services can build advanced features, such as automatic suggestion of relevant tags or automatic photo organization, which help provide a compelling user experience. Although a photo's location can often be obtained by looking at the photo's metadata, many photos uploaded to these services will not have location metadata available. This can happen when, for example, the camera capturing the picture does not have GPS or if a photo's metadata is scrubbed due to privacy concerns.
@@ -26,12 +25,11 @@ In this project, we will take the first steps towards addressing this problem by
 * [Step 1](#step1): Create a CNN to Classify Landmarks (from Scratch)
 * [Step 2](#step2): Create a CNN to Classify Landmarks (using Transfer Learning)
 * [Step 3](#step3): Write Your Landmark Prediction Algorithm
----
 
 <a id='step0'></a>
 ## Step 0: Download Datasets and Install Python Modules
 Download the [landmark dataset](https://udacity-dlnfd.s3-us-west-1.amazonaws.com/datasets/landmark_images.zip).
----
+
 
 <a id='step1'></a>
 ## Step 1: Create a CNN to Classify Landmarks (from Scratch)
