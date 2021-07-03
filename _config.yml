@@ -86,7 +86,7 @@ analytics:
 author:
   name             : "Zakaria Abdulrahim Alsahfi"
   avatar           : "/images/bio-pic.jpg" # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
-  bio              : "Portfolio"
+  bio              : #"Portfolio"
   location         : "Saudi Arabia"
   email            :
   uri              :
