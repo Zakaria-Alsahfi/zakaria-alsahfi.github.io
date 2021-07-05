@@ -1,7 +1,7 @@
 ---
 #layout: posts
 permalink: /skills/
-title: "Skills"
+title: "My Skills Set"
 author_profile: true
 header:
   image: "/images/perceptron/skills-resume.png"
