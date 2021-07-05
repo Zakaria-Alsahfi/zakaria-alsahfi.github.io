@@ -1,8 +1,8 @@
 ---
 layout: posts
-permalink: /data-wrangling/
+permalink: /data-science/
 title: "Projects"
-author_profile: true
+author_profile: false
 header:
   image: "/images/perceptron/Data Science.jpg"
 ---
