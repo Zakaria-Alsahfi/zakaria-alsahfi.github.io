@@ -1,7 +1,7 @@
 ---
 layout: posts
-permalink: /skill_set/
-#title: "Projects"
+permalink: /skill/
+title: "Skills"
 author_profile: true
 header:
   image: "/images/perceptron/skills-resume.png"
