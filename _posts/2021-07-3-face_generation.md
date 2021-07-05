@@ -3,7 +3,7 @@ title: "Face Generation"
 date: 2021-07-03
 tags: [Data Science, Machine Learning, Deep Learning, Python]
 header:
-  image: "/images/facegenration/processed_face_data.png"
+  image: "/images/perceptron/face_data.png"
 excerpt: "Data Science, Machine Learning, Deep Learning, Python"
 mathjax: "true"
 ---
