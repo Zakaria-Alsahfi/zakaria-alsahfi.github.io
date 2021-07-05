@@ -1,19 +1,20 @@
+---
+title: "Predicting Landmark Duration"
+date: 2021-06-30
+tags: [Data Science, Machine Learning, Deep Learning, Text Mining Python]
+header:
+  image: "/images/perceptron/tvscript.jpg"
+excerpt: "Data Science, Machine Learning, Deep Learning, Text Mining, Python"
+mathjax: "true"
+---
 
 # TV Script Generation
 
-In this project, you'll generate your own [Seinfeld](https://en.wikipedia.org/wiki/Seinfeld) TV scripts using RNNs.  You'll be using part of the [Seinfeld dataset](https://www.kaggle.com/thec03u5/seinfeld-chronicles#scripts.csv) of scripts from 9 seasons.  The Neural Network you'll build will generate a new ,"fake" TV script, based on patterns it recognizes in this training data.
+In this project, we will generate your own [Seinfeld](https://en.wikipedia.org/wiki/Seinfeld) TV scripts using RNNs.  We will be using part of the [Seinfeld dataset](https://www.kaggle.com/thec03u5/seinfeld-chronicles#scripts.csv) of scripts from 9 seasons.  The Neural Network we will build will generate a new ,"fake" TV script, based on patterns it recognizes in this training data.
 
 ## Get the Data
 
-The data is already provided for you in `./data/Seinfeld_Scripts.txt` and you're encouraged to open that file and look at the text. 
->* As a first step, we'll load in this data and look at some samples. 
-* Then, you'll be tasked with defining and training an RNN to generate a new script!
-
-
 ```python
-"""
-DON'T MODIFY ANYTHING IN THIS CELL
-"""
 # load in data
 import helper
 data_dir = './data/Seinfeld_Scripts.txt'
@@ -26,11 +27,6 @@ Play around with `view_line_range` to view different parts of the data. This wil
 
 ```python
 view_line_range = (0, 10)
-
-"""
-DON'T MODIFY ANYTHING IN THIS CELL THAT IS BELOW THIS LINE
-"""
-import numpy as np
 
 print('Dataset Stats')
 print('Roughly the number of unique words: {}'.format(len({word: None for word in text.split()})))
@@ -78,9 +74,6 @@ Return these dictionaries in the following **tuple** `(vocab_to_int, int_to_voca
 
 
 ```python
-import problem_unittests as tests
-from collections import Counter
-
 def create_lookup_tables(text):
     """
     Create lookup tables for vocabulary
@@ -98,10 +91,6 @@ def create_lookup_tables(text):
     # return tuple
     return (vocab_to_int, int_to_vocab)
 
-
-"""
-DON'T MODIFY ANYTHING IN THIS CELL THAT IS BELOW THIS LINE
-"""
 tests.test_create_lookup_tables(create_lookup_tables)
 ```
 
@@ -109,19 +98,7 @@ tests.test_create_lookup_tables(create_lookup_tables)
 
 
 ### Tokenize Punctuation
-We'll be splitting the script into a word array using spaces as delimiters.  However, punctuations like periods and exclamation marks can create multiple ids for the same word. For example, "bye" and "bye!" would generate two different word ids.
-
-Implement the function `token_lookup` to return a dict that will be used to tokenize symbols like "!" into "||Exclamation_Mark||".  Create a dictionary for the following symbols where the symbol is the key and value is the token:
-- Period ( **.** )
-- Comma ( **,** )
-- Quotation Mark ( **"** )
-- Semicolon ( **;** )
-- Exclamation mark ( **!** )
-- Question mark ( **?** )
-- Left Parentheses ( **(** )
-- Right Parentheses ( **)** )
-- Dash ( **-** )
-- Return ( **\n** )
+We'll be splitting the script into a word array using spaces as delimiters. However, punctuations like periods and exclamation marks can create multiple ids for the same word. For example, "bye" and "bye!" would generate two different word ids.
 
 This dictionary will be used to tokenize the symbols and add the delimiter (space) around it.  This separates each symbols as its own word, making it easier for the neural network to predict the next word. Make sure you don't use a value that could be confused as a word; for example, instead of using the value "dash", try using something like "||dash||".
 
@@ -148,9 +125,6 @@ def token_lookup():
         
     return tokens
 
-"""
-DON'T MODIFY ANYTHING IN THIS CELL THAT IS BELOW THIS LINE
-"""
 tests.test_tokenize(token_lookup)
 ```
 
@@ -159,44 +133,24 @@ tests.test_tokenize(token_lookup)
 
 ## Pre-process all the data and save it
 
-Running the code cell below will pre-process all the data and save it to file. You're encouraged to lok at the code for `preprocess_and_save_data` in the `helpers.py` file to see what it's doing in detail, but you do not need to change this code.
-
-
 ```python
-"""
-DON'T MODIFY ANYTHING IN THIS CELL
-"""
 # pre-process training data
 helper.preprocess_and_save_data(data_dir, token_lookup, create_lookup_tables)
 ```
 
 # Check Point
-This is your first checkpoint. If you ever decide to come back to this notebook or have to restart the notebook, you can start from here. The preprocessed data has been saved to disk.
-
 
 ```python
-"""
-DON'T MODIFY ANYTHING IN THIS CELL
-"""
-import helper
-import problem_unittests as tests
-
 int_text, vocab_to_int, int_to_vocab, token_dict = helper.load_preprocess()
 ```
 
 ## Build the Neural Network
-In this section, you'll build the components necessary to build an RNN by implementing the RNN Module and forward and backpropagation functions.
+In this section, we will build the components necessary to build an RNN by implementing the RNN Module and forward and backpropagation functions.
 
 ### Check Access to GPU
 
 
 ```python
-"""
-DON'T MODIFY ANYTHING IN THIS CELL
-"""
-import torch
-
-# Check for a GPU
 train_on_gpu = torch.cuda.is_available()
 if not train_on_gpu:
     print('No GPU found. Please use a GPU to train your neural network.')
@@ -205,38 +159,14 @@ if not train_on_gpu:
 ## Input
 Let's start with the preprocessed input data. We'll use [TensorDataset](http://pytorch.org/docs/master/data.html#torch.utils.data.TensorDataset) to provide a known format to our dataset; in combination with [DataLoader](http://pytorch.org/docs/master/data.html#torch.utils.data.DataLoader), it will handle batching, shuffling, and other dataset iteration functions.
 
-You can create data with TensorDataset by passing in feature and target tensors. Then create a DataLoader as usual.
+We can create data with TensorDataset by passing in feature and target tensors. Then create a DataLoader as usual.
 ```
 data = TensorDataset(feature_tensors, target_tensors)
-data_loader = torch.utils.data.DataLoader(data, 
-                                          batch_size=batch_size)
+data_loader = torch.utils.data.DataLoader(data, batch_size=batch_size)
 ```
 
 ### Batching
 Implement the `batch_data` function to batch `words` data into chunks of size `batch_size` using the `TensorDataset` and `DataLoader` classes.
-
->You can batch words using the DataLoader, but it will be up to you to create `feature_tensors` and `target_tensors` of the correct size and content for a given `sequence_length`.
-
-For example, say we have these as input:
-```
-words = [1, 2, 3, 4, 5, 6, 7]
-sequence_length = 4
-```
-
-Your first `feature_tensor` should contain the values:
-```
-[1, 2, 3, 4]
-```
-And the corresponding `target_tensor` should just be the next "word"/tokenized word value:
-```
-5
-```
-This should continue with the second `feature_tensor`, `target_tensor` being:
-```
-[2, 3, 4, 5]  # features
-6             # target
-```
-
 
 ```python
 from torch.utils.data import TensorDataset, DataLoader
@@ -266,73 +196,9 @@ def batch_data(words, sequence_length, batch_size):
     data_loader = DataLoader(data, batch_size=batch_size)
     
     return data_loader
-
-
-# there is no test for this function, but you are encouraged to create
-# print statements and tests of your own
-test_words =range(11)
-loader = batch_data(test_words,3,4)
-
-i = 0
-for x_data, y_data in loader:
-    i += 1
-    print('\nBatch {}\n'.format(i),
-         x_data.size(),"\n", x_data.data,
-          "\n", y_data.size(),"\n", y_data.data)
 ```
 
-    
-    Batch 1
-     torch.Size([4, 3]) 
-     tensor([[ 0,  1,  2],
-            [ 1,  2,  3],
-            [ 2,  3,  4],
-            [ 3,  4,  5]]) 
-     torch.Size([4]) 
-     tensor([ 3,  4,  5,  6])
-    
-    Batch 2
-     torch.Size([4, 3]) 
-     tensor([[ 4,  5,  6],
-            [ 5,  6,  7],
-            [ 6,  7,  8],
-            [ 7,  8,  9]]) 
-     torch.Size([4]) 
-     tensor([  7,   8,   9,  10])
-
-
-### Test your dataloader 
-
-You'll have to modify this code to test a batching function, but it should look fairly similar.
-
-Below, we're generating some test text data and defining a dataloader using the function you defined, above. Then, we are getting some sample batch of inputs `sample_x` and targets `sample_y` from our dataloader.
-
-Your code should return something like the following (likely in a different order, if you shuffled your data):
-
-```
-torch.Size([10, 5])
-tensor([[ 28,  29,  30,  31,  32],
-        [ 21,  22,  23,  24,  25],
-        [ 17,  18,  19,  20,  21],
-        [ 34,  35,  36,  37,  38],
-        [ 11,  12,  13,  14,  15],
-        [ 23,  24,  25,  26,  27],
-        [  6,   7,   8,   9,  10],
-        [ 38,  39,  40,  41,  42],
-        [ 25,  26,  27,  28,  29],
-        [  7,   8,   9,  10,  11]])
-
-torch.Size([10])
-tensor([ 33,  26,  22,  39,  16,  28,  11,  43,  30,  12])
-```
-
-### Sizes
-Your sample_x should be of size `(batch_size, sequence_length)` or (10, 5) in this case and sample_y should just have one dimension: batch_size (10). 
-
-### Values
-
-You should also notice that the targets, sample_y, are the *next* value in the ordered test_text data. So, for an input sequence `[ 28,  29,  30,  31,  32]` that ends with the value `32`, the corresponding output should be `33`.
-
+### Test dataloader 
 
 ```python
 # test dataloader
@@ -365,34 +231,12 @@ print(sample_y)
     torch.Size([10])
     tensor([  5,   6,   7,   8,   9,  10,  11,  12,  13,  14])
 
-
----
 ## Build the Neural Network
-Implement an RNN using PyTorch's [Module class](http://pytorch.org/docs/master/nn.html#torch.nn.Module). You may choose to use a GRU or an LSTM. To complete the RNN, you'll have to implement the following functions for the class:
- - `__init__` - The initialize function. 
- - `init_hidden` - The initialization function for an LSTM/GRU hidden state
- - `forward` - Forward propagation function.
- 
+Implement an RNN using PyTorch's [Module class](http://pytorch.org/docs/master/nn.html#torch.nn.Module).
+
 The initialize function should create the layers of the neural network and save them to the class. The forward propagation function will use these layers to run forward propagation and generate an output and a hidden state.
 
-**The output of this model should be the *last* batch of word scores** after a complete sequence has been processed. That is, for each input sequence of words, we only want to output the word scores for a single, most likely, next word.
-
-### Hints
-
-1. Make sure to stack the outputs of the lstm to pass to your fully-connected layer, you can do this with `lstm_output = lstm_output.contiguous().view(-1, self.hidden_dim)`
-2. You can get the last batch of word scores by shaping the output of the final, fully-connected layer like so:
-
-```
-# reshape into (batch_size, seq_length, output_size)
-output = output.view(batch_size, -1, self.output_size)
-# get last batch
-out = output[:, -1]
-```
-
-
 ```python
-import torch.nn as nn
-
 class RNN(nn.Module):
     
     def __init__(self, vocab_size, output_size, embedding_dim, hidden_dim, n_layers, dropout=0.5):
@@ -420,7 +264,6 @@ class RNN(nn.Module):
                             batch_first=True)
         self.fc = nn.Linear(hidden_dim, output_size)
     
-    
     def forward(self, nn_input, hidden):
         """
         Forward propagation of the neural network
@@ -447,7 +290,6 @@ class RNN(nn.Module):
         # return one batch of output word scores and the hidden state
         return output, hidden
     
-    
     def init_hidden(self, batch_size):
         '''
         Initialize the hidden state of an LSTM/GRU
@@ -468,9 +310,6 @@ class RNN(nn.Module):
         
         return hidden
 
-"""
-DON'T MODIFY ANYTHING IN THIS CELL THAT IS BELOW THIS LINE
-"""
 tests.test_rnn(RNN, train_on_gpu)
 ```
 
@@ -479,15 +318,9 @@ tests.test_rnn(RNN, train_on_gpu)
 
 ### Define forward and backpropagation
 
-Use the RNN class you implemented to apply forward and back propagation. This function will be called, iteratively, in the training loop as follows:
-```
-loss = forward_back_prop(decoder, decoder_optimizer, criterion, inp, target)
-```
+Use the RNN class we implemented to apply forward and back propagation. 
 
-And it should return the average loss over a batch and the hidden state returned by a call to `RNN(inp, hidden)`. Recall that you can get this loss by computing it, as usual, and calling `loss.item()`.
-
-**If a GPU is available, you should move your data to that GPU device, here.**
-
+This function should return the average loss over a batch and the hidden state returned by a call to `RNN(inp, hidden)`. Recall that you can get this loss by computing it, as usual, and calling `loss.item()`.
 
 ```python
 def forward_back_prop(rnn, optimizer, criterion, inp, target, hidden):
@@ -525,11 +358,6 @@ def forward_back_prop(rnn, optimizer, criterion, inp, target, hidden):
     # return the loss over a batch and the hidden state produced by our model
     return loss.item(), hidden
 
-# Note that these tests aren't completely extensive.
-# they are here to act as general checks on the expected outputs of your functions
-"""
-DON'T MODIFY ANYTHING IN THIS CELL THAT IS BELOW THIS LINE
-"""
 tests.test_forward_back_prop(RNN, forward_back_prop, train_on_gpu)
 ```
 
@@ -546,10 +374,6 @@ The training loop is implemented for you in the `train_decoder` function. This f
 
 
 ```python
-"""
-DON'T MODIFY ANYTHING IN THIS CELL
-"""
-
 def train_rnn(rnn, batch_size, optimizer, criterion, n_epochs, show_every_n_batches=100):
     batch_losses = []
     
@@ -583,69 +407,34 @@ def train_rnn(rnn, batch_size, optimizer, criterion, n_epochs, show_every_n_batc
     return rnn
 ```
 
-### Hyperparameters
-
-Set and train the neural network with the following parameters:
-- Set `sequence_length` to the length of a sequence.
-- Set `batch_size` to the batch size.
-- Set `num_epochs` to the number of epochs to train for.
-- Set `learning_rate` to the learning rate for an Adam optimizer.
-- Set `vocab_size` to the number of uniqe tokens in our vocabulary.
-- Set `output_size` to the desired size of the output.
-- Set `embedding_dim` to the embedding dimension; smaller than the vocab_size.
-- Set `hidden_dim` to the hidden dimension of your RNN.
-- Set `n_layers` to the number of layers/cells in your RNN.
-- Set `show_every_n_batches` to the number of batches at which the neural network should print progress.
-
-If the network isn't getting the desired results, tweak these parameters and/or the layers in the `RNN` class.
-
 
 ```python
 # Data params
-# Sequence Length
 sequence_length = 10   # of words in a sequence
-# Batch Size
 batch_size = 256
 
-# data loader - do not change
 train_loader = batch_data(int_text, sequence_length, batch_size)
 ```
 
 
 ```python
 # Training parameters
-# Number of Epochs
 num_epochs = 20
-# Learning Rate
 learning_rate = 0.001
-
-# Model parameters
-# Vocab size
 vocab_size = len(vocab_to_int)
-# Output size
 output_size = vocab_size
-# Embedding Dimension
 embedding_dim = 300
-# Hidden Dimension
 hidden_dim = 256
-# Number of RNN Layers
 n_layers = 2
-
-# Show stats for every n number of batches
 show_every_n_batches = 500
 ```
 
 ### Train
-In the next cell, you'll train the neural network on the pre-processed data.  If you have a hard time getting a good loss, you may consider changing your hyperparameters. In general, you may get better results with larger hidden and n_layer dimensions, but larger models take a longer time to train. 
-> **You should aim for a loss less than 3.5.** 
+In the next cell, we will train the neural network on the pre-processed data.
 
-You should also experiment with different sequence lengths, which determine the size of the long range dependencies that a model can learn.
-
+> **We should aim for a loss less than 3.5.** 
 
 ```python
-"""
-DON'T MODIFY ANYTHING IN THIS CELL
-"""
 
 # create model and move to gpu if available
 rnn = RNN(vocab_size, output_size, embedding_dim, hidden_dim, n_layers, dropout=0.5)
@@ -724,174 +513,9 @@ print('Model Trained and Saved')
     Epoch:    5/20    Loss: 3.4760674366950988
     
     Epoch:    5/20    Loss: 3.5590632767677306
-    
-    Epoch:    6/20    Loss: 3.502887887441046
-    
-    Epoch:    6/20    Loss: 3.406582582473755
-    
-    Epoch:    6/20    Loss: 3.4525397019386292
-    
-    Epoch:    6/20    Loss: 3.4405764546394346
-    
-    Epoch:    6/20    Loss: 3.3839738221168516
-    
-    Epoch:    6/20    Loss: 3.4603254342079164
-    
-    Epoch:    7/20    Loss: 3.416865140684252
-    
-    Epoch:    7/20    Loss: 3.333317883491516
-    
-    Epoch:    7/20    Loss: 3.3707822966575622
-    
-    Epoch:    7/20    Loss: 3.3625063223838807
-    
-    Epoch:    7/20    Loss: 3.308379008293152
-    
-    Epoch:    7/20    Loss: 3.3891787185668947
-    
-    Epoch:    8/20    Loss: 3.349168572968584
-    
-    Epoch:    8/20    Loss: 3.2703742389678956
-    
-    Epoch:    8/20    Loss: 3.3070413808822634
-    
-    Epoch:    8/20    Loss: 3.3023883175849913
-    
-    Epoch:    8/20    Loss: 3.2477269225120544
-    
-    Epoch:    8/20    Loss: 3.3421833958625795
-    
-    Epoch:    9/20    Loss: 3.29872144310455
-    
-    Epoch:    9/20    Loss: 3.2250904288291933
-    
-    Epoch:    9/20    Loss: 3.2491537137031554
-    
-    Epoch:    9/20    Loss: 3.2525643033981324
-    
-    Epoch:    9/20    Loss: 3.1973296666145323
-    
-    Epoch:    9/20    Loss: 3.290111476421356
-    
-    Epoch:   10/20    Loss: 3.2469155909569283
-    
-    Epoch:   10/20    Loss: 3.180871729850769
-    
-    Epoch:   10/20    Loss: 3.2151292729377747
-    
-    Epoch:   10/20    Loss: 3.2111871829032896
-    
-    Epoch:   10/20    Loss: 3.1592155380249025
-    
-    Epoch:   10/20    Loss: 3.2420209770202635
-    
-    Epoch:   11/20    Loss: 3.2032485071236527
-    
-    Epoch:   11/20    Loss: 3.148857614517212
-    
-    Epoch:   11/20    Loss: 3.1710734610557556
-    
-    Epoch:   11/20    Loss: 3.173104699134827
-    
-    Epoch:   11/20    Loss: 3.115771363735199
-    
-    Epoch:   11/20    Loss: 3.2027680325508117
-    
-    Epoch:   12/20    Loss: 3.1686555275587533
-    
-    Epoch:   12/20    Loss: 3.11610538816452
-    
-    Epoch:   12/20    Loss: 3.1395926823616027
-    
-    Epoch:   12/20    Loss: 3.1423442282676697
-    
-    Epoch:   12/20    Loss: 3.086194585800171
-    
-    Epoch:   12/20    Loss: 3.166614369392395
-    
-    Epoch:   13/20    Loss: 3.137052391845036
-    
-    Epoch:   13/20    Loss: 3.0893487515449523
-    
-    Epoch:   13/20    Loss: 3.1033360257148743
-    
-    Epoch:   13/20    Loss: 3.111838792324066
-    
-    Epoch:   13/20    Loss: 3.0515497097969053
-    
-    Epoch:   13/20    Loss: 3.13171391582489
-    
-    Epoch:   14/20    Loss: 3.1084965118547765
-    
-    Epoch:   14/20    Loss: 3.060510631561279
-    
-    Epoch:   14/20    Loss: 3.071230453014374
-    
-    Epoch:   14/20    Loss: 3.0808569741249086
-    
-    Epoch:   14/20    Loss: 3.0267263350486755
-    
-    Epoch:   14/20    Loss: 3.102975251674652
-    
-    Epoch:   15/20    Loss: 3.0790364192268713
-    
-    Epoch:   15/20    Loss: 3.0340980443954466
-    
-    Epoch:   15/20    Loss: 3.043906683444977
-    
-    Epoch:   15/20    Loss: 3.057582098484039
-    
-    Epoch:   15/20    Loss: 3.0014997601509092
-    
-    Epoch:   15/20    Loss: 3.079416552066803
-    
-    Epoch:   16/20    Loss: 3.05240434141663
-    
-    Epoch:   16/20    Loss: 3.0102925987243654
-    
-    Epoch:   16/20    Loss: 3.0191456542015076
-    
-    Epoch:   16/20    Loss: 3.033558238506317
-    
-    Epoch:   16/20    Loss: 2.9833005442619323
-    
-    Epoch:   16/20    Loss: 3.055963590145111
-    
-    Epoch:   17/20    Loss: 3.0306861797968545
-    
-    Epoch:   17/20    Loss: 2.98963525056839
-    
-    Epoch:   17/20    Loss: 2.9910168018341063
-    
-    Epoch:   17/20    Loss: 3.0091139845848085
-    
-    Epoch:   17/20    Loss: 2.956120643615723
-    
-    Epoch:   17/20    Loss: 3.0463006443977356
-    
-    Epoch:   18/20    Loss: 3.008410219496828
-    
-    Epoch:   18/20    Loss: 2.9684981508255004
-    
-    Epoch:   18/20    Loss: 2.9702251844406127
-    
-    Epoch:   18/20    Loss: 2.988776586532593
-    
-    Epoch:   18/20    Loss: 2.937641432285309
-    
-    Epoch:   18/20    Loss: 3.014700674533844
-    
-    Epoch:   19/20    Loss: 2.9883923770450966
-    
-    Epoch:   19/20    Loss: 2.9496180849075317
-    
-    Epoch:   19/20    Loss: 2.956013227939606
-    
-    Epoch:   19/20    Loss: 2.9669286613464356
-    
-    Epoch:   19/20    Loss: 2.9138061118125917
-    
-    Epoch:   19/20    Loss: 2.9941136288642882
+    ..........................................
+    ..........................................
+    ..........................................
     
     Epoch:   20/20    Loss: 2.9684349485044557
     
@@ -904,67 +528,33 @@ print('Model Trained and Saved')
     Epoch:   20/20    Loss: 2.9034318995475767
     
     Epoch:   20/20    Loss: 2.972546745300293
-    
-
-
-    /opt/conda/lib/python3.6/site-packages/torch/serialization.py:193: UserWarning: Couldn't retrieve source code for container of type RNN. It won't be checked for correctness upon loading.
-      "type " + obj.__name__ + ". It won't be checked "
-
-
+  
     Model Trained and Saved
 
 
-### Question: How did you decide on your model hyperparameters? 
-For example, did you try different sequence_lengths and find that one size made the model converge faster? What about your hidden_dim and n_layers; how did you decide on those?
-
-**Answer:**
-
-I borrowed the values from the Sentiment RNN exercise. Initially, it started off with:
-
-    sequence_length = 200,
-    batch size = 50,
-    learning rate = 0.01
-    embedding_dim = 400,
-    hidden_dim = 256,
-    n_layers = 2,
-    num_epochs = 4
-
 Before I trained, I realized that 200 sequence length would be far too many for a TV script. I cut that down to about 10. With a smaller sequence length, a larger batch size was possible. I chose 256 as a batch size.
 
-Once I have trained it, I adjusted the values and keep any that have better results. I lowered the learning rate from 0.01 to 0.001, as well as decreased the embedding dimensions from 400 to 300. Also, I saw more improvements in the loss by epoch 4, so I increased the number of epochs to 20. Everything else, I kept the same.
+Once I have trained it, I adjusted the values and keep any that have better results. I lowered the learning rate from 0.01 to 0.001, as well as decreased the embedding dimensions from 400 to 300. Also, I saw more improvements in the loss by epoch 4, so I increased the number of epochs to 20.
 
 With these changes, the loss became less than 3.5, which I was happy with.
 
----
 # Checkpoint
 
-After running the above training cell, your model will be saved by name, `trained_rnn`, and if you save your notebook progress, **you can pause here and come back to this code at another time**. You can resume your progress by running the next cell, which will load in our word:id dictionaries _and_ load in your saved model by name!
-
+After running the above training cell, our model will be saved by name, `trained_rnn`, and now we will load in our word:id dictionaries _and_ load in our saved model by name!
 
 ```python
-"""
-DON'T MODIFY ANYTHING IN THIS CELL
-"""
-import torch
-import helper
-import problem_unittests as tests
-
 _, vocab_to_int, int_to_vocab, token_dict = helper.load_preprocess()
 trained_rnn = helper.load_model('./save/trained_rnn')
 ```
 
 ## Generate TV Script
-With the network trained and saved, you'll use it to generate a new, "fake" Seinfeld TV script in this section.
+With the network trained and saved, we will use it to generate a new, "fake" Seinfeld TV script in this section.
 
 ### Generate Text
-To generate the text, the network needs to start with a single word and repeat its predictions until it reaches a set length. You'll be using the `generate` function to do this. It takes a word id to start with, `prime_id`, and generates a set length of text, `predict_len`. Also note that it uses topk sampling to introduce some randomness in choosing the most likely next word, given an output set of word scores!
+To generate the text, the network needs to start with a single word and repeat its predictions until it reaches a set length. We will be using the `generate` function to do this. It takes a word id to start with, `prime_id`, and generates a set length of text, `predict_len`. Also note that it uses topk sampling to introduce some randomness in choosing the most likely next word, given an output set of word scores!
 
 
 ```python
-"""
-DON'T MODIFY ANYTHING IN THIS CELL THAT IS BELOW THIS LINE
-"""
-import torch.nn.functional as F
 
 def generate(rnn, prime_id, int_to_vocab, token_dict, pad_value, predict_len=100):
     """
@@ -1032,30 +622,16 @@ def generate(rnn, prime_id, int_to_vocab, token_dict, pad_value, predict_len=100
 ```
 
 ### Generate a New Script
-It's time to generate the text. Set `gen_length` to the length of TV script you want to generate and set `prime_word` to one of the following to start the prediction:
-- "jerry"
-- "elaine"
-- "george"
-- "kramer"
-
-You can set the prime word to _any word_ in our dictionary, but it's best to start with a name for generating a TV script. (You can also start with any other names you find in the original text file!)
-
+It's time to generate the text. 
 
 ```python
-# run the cell multiple times to get different results!
-gen_length = 400 # modify the length to your preference
-prime_word = 'elaine' # name for starting the script
+gen_length = 400
+prime_word = 'elaine'
 
-"""
-DON'T MODIFY ANYTHING IN THIS CELL THAT IS BELOW THIS LINE
-"""
 pad_word = helper.SPECIAL_WORDS['PADDING']
 generated_script = generate(trained_rnn, vocab_to_int[prime_word + ':'], int_to_vocab, token_dict, vocab_to_int[pad_word], gen_length)
 print(generated_script)
 ```
-
-    /opt/conda/lib/python3.6/site-packages/ipykernel_launcher.py:42: UserWarning: RNN module weights are not part of single contiguous chunk of memory. This means they need to be compacted at every call, possibly greatly increasing memory usage. To compact weights again call flatten_parameters().
-
 
     elaine: i think we could go on the street.
     
@@ -1126,49 +702,7 @@ print(generated_script)
     elaine: i don't
 
 
-#### Save your favorite scripts
-
-Once you have a script that you like (or find interesting), save it to a text file!
-
-
-```python
-# save script to a text file
-f =  open("generated_script_1.txt","w")
-f.write(generated_script)
-f.close()
-```
-
 # The TV Script is Not Perfect
-It's ok if the TV script doesn't make perfect sense. It should look like alternating lines of dialogue, here is one such example of a few generated lines.
+It's ok if the TV script doesn't make perfect sense.
+You can see that there are multiple characters that say (somewhat) complete sentences, but it doesn't have to be perfect! It takes quite a while to get good results, and often, we will have to use a smaller vocabulary (and discard uncommon words), or get more data.  The Seinfeld dataset is about 3.4 MB, which is big enough for our purposes; for script generation we will want more than 1 MB of text, generally.
 
-### Example generated script
-
->jerry: what about me?
->
->jerry: i don't have to wait.
->
->kramer:(to the sales table)
->
->elaine:(to jerry) hey, look at this, i'm a good doctor.
->
->newman:(to elaine) you think i have no idea of this...
->
->elaine: oh, you better take the phone, and he was a little nervous.
->
->kramer:(to the phone) hey, hey, jerry, i don't want to be a little bit.(to kramer and jerry) you can't.
->
->jerry: oh, yeah. i don't even know, i know.
->
->jerry:(to the phone) oh, i know.
->
->kramer:(laughing) you know...(to jerry) you don't know.
-
-You can see that there are multiple characters that say (somewhat) complete sentences, but it doesn't have to be perfect! It takes quite a while to get good results, and often, you'll have to use a smaller vocabulary (and discard uncommon words), or get more data.  The Seinfeld dataset is about 3.4 MB, which is big enough for our purposes; for script generation you'll want more than 1 MB of text, generally. 
-
-# Submitting This Project
-When submitting this project, make sure to run all the cells before saving the notebook. Save the notebook file as "dlnd_tv_script_generation.ipynb" and save another copy as an HTML file by clicking "File" -> "Download as.."->"html". Include the "helper.py" and "problem_unittests.py" files in your submission. Once you download these files, compress them into one zip file for submission.
-
-
-```python
-
-```
