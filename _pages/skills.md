@@ -1,6 +1,6 @@
 ---
 layout: posts
-permalink: /skill/
+permalink: /skills/
 title: "Skills"
 author_profile: true
 header:
