@@ -1,6 +1,6 @@
 ---
 title: "Predicting Landmark Duration"
-date: 2021-06-30
+date: 2021-05-15
 tags: [Data Science, Machine Learning, Deep Learning, Text Mining Python]
 header:
   image: "/images/perceptron/tvscript.jpg"
