@@ -2,7 +2,7 @@
 layout: posts
 permalink: /data-science/
 title: "Projects"
-author_profile: false
+author_profile: true
 header:
   image: "/images/perceptron/Data Science.jpg"
 ---
