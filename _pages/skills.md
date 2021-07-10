@@ -1,10 +1,10 @@
 ---
 #layout: posts
-permalink: /skills/
-title: "My Skills Set"
-author_profile: true
-header:
-  overlay_image: /images/perceptron/skills-resume.png
-  overlay_filter: rgba(255, 0, 0, 0.5)
+#permalink: /skills/
+#title: "My Skills Set"
+#author_profile: true
+#header:
+  #overlay_image: /images/perceptron/skills-resume.png
+  #overlay_filter: rgba(255, 0, 0, 0.5)
   #image: "/images/perceptron/skills-resume.png"
 ---
