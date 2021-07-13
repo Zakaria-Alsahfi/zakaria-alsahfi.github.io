@@ -8,3 +8,5 @@ header:
 ---
 
 I'm a senior data scientist who excels at machine learning, exploratory analysis, and data visualizations.
+
+Python <b> ![Progress](https://progress-bar.dev/)
