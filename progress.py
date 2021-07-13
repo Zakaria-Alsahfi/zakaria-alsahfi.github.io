@@ -35,7 +35,7 @@ def get_template_fields(progress):
         pass
 
     return {
-        "title": title,
+        #"title": title,
         "title_width": 10 + 6 * len(title) if title else 0,
         "title_color": request.args.get("color", "428bca"),
         "scale": scale,
