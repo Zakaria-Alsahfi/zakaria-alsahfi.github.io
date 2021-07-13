@@ -3,7 +3,7 @@ title: "Sentiment Analysis Web App"
 date: 2021-07-10
 tags: [Data Science, Machine Learning, Deep Learning, Python, PyTorch, SageMaker]
 header:
-  image: "/images/perceptron/landmark-pic.png"
+  image: "/images/perceptron/SentimentAnalysis.jpeg"
 excerpt: "Data Science, Machine Learning, Deep Learning, Python, PyTorch, SageMaker"
 mathjax: "true"
 ---
@@ -957,14 +957,17 @@ predictor.endpoint
     'sagemaker-pytorch-2021-07-08-00-33-55-659'
 
 
-
-### Setting up API Gateway
-
 ## Step 4: Deploying our web app
 
-![image1.png](attachment:image1.png)
+![png](/images/SentimentAnalysis/image1.png)
 
 
 
-![image2.png](attachment:image2.png)
+![png](/images/SentimentAnalysis/image2.png)
+
+
+
+
+
+
 
