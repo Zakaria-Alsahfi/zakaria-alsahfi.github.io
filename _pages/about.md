@@ -9,4 +9,6 @@ header:
 
 I'm a senior data scientist who excels at machine learning, exploratory analysis, and data visualizations.
 
-Python <b> ![Progress](https://progress-bar.dev/90/)
+<div class="progress">
+    <div class="progress-bar bg-success" role="progressbar" style="width: 25%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+</div>
