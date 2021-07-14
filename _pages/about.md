@@ -9,22 +9,7 @@ header:
 
 I'm a senior data scientist who excels at machine learning, exploratory analysis, and data visualizations.
 
-<p>HTML</p>
-<div class="container">
-  <div class="skills html">90%</div>
-</div>
-
-<p>CSS</p>
-<div class="container">
-  <div class="skills css">80%</div>
-</div>
-
-<p>JavaScript</p>
-<div class="container">
-  <div class="skills js">65%</div>
-</div>
-
-<p>PHP</p>
-<div class="container">
-  <div class="skills php">60%</div>
-</div>
+<li><span class="bar graphic-design"></span><h3>Graphic Design</h3></li>
+<li><span class="bar html-css"></span><h3>Html // Css</h3></li>
+<li><span class="bar jquery"></span><h3>jQuery // MoTools</h3></li>
+<li><span class="bar wordpress"></span><h3>Wordpress</h3></li>
