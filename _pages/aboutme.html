@@ -7,45 +7,55 @@ header:
   #image: "/images/perceptron/data-science.jpg"
 ---
 
-/* Make sure that padding behaves as expected */
-* {box-sizing:border-box}
 
-/* Container for skill bars */
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {box-sizing: border-box}
+​
 .container {
-  width: 100%; /* Full width */
-  background-color: #ddd; /* Grey background */
+  width: 100%;
+  background-color: #ddd;
 }
-
+​
 .skills {
-  text-align: right; /* Right-align text */
-  padding-top: 10px; /* Add top padding */
-  padding-bottom: 10px; /* Add bottom padding */
-  color: white; /* White text color */
+  text-align: right;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  color: white;
 }
-
-.python {width: 90%; background-color: #04AA6D;} /* Green */
-.r {width: 80%; background-color: #2196F3;} /* Blue */
-.java {width: 65%; background-color: #f44336;} /* Red */
-.swift {width: 60%; background-color: #808080;} /* Dark Grey */
-
+​
+.html {width: 90%; background-color: #04AA6D;}
+.css {width: 80%; background-color: #2196F3;}
+.js {width: 65%; background-color: #f44336;}
+.php {width: 60%; background-color: #808080;}
+</style>
+</head>
+<body>
+​
 <h1>My Skills</h1>
-
-<p>Python</p>
+​
+<p>HTML</p>
 <div class="container">
-  <div class="skills python">90%</div>
+  <div class="skills html">90%</div>
 </div>
-
-<p>R</p>
+​
+<p>CSS</p>
 <div class="container">
-  <div class="skills r">80%</div>
+  <div class="skills css">80%</div>
 </div>
-
-<p>Java</p>
+​
+<p>JavaScript</p>
 <div class="container">
-  <div class="skills java">65%</div>
+  <div class="skills js">65%</div>
 </div>
-
-<p>Swift</p>
+​
+<p>PHP</p>
 <div class="container">
-  <div class="skills swift">60%</div>
+  <div class="skills php">60%</div>
 </div>
+​
+</body>
+</html>
