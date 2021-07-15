@@ -1,10 +1,10 @@
 ---
 title: "Determining Trade Union Status"
 date: 2020-09-02
-tags: [data science, Machine Learning, Python, Commerce]
+tags: [data science, Machine Learning, Python, Commerce, Transport]
 header:
   image: "/images/perceptron/United Data Scientists Union.jpg"
-excerpt: "Data Science, Machine Learning, Python, Commerce"
+excerpt: "Data Science, Machine Learning, Python, Commerce, Transport"
 mathjax: "true"
 ---
 
