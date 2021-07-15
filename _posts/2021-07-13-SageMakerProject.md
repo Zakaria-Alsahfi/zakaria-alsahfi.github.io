@@ -1,6 +1,6 @@
 ---
 title: "Sentiment Analysis Web App"
-date: 2021-07-10
+date: 2021-07-13
 tags: [Data Science, Machine Learning, Deep Learning, Python, PyTorch, SageMaker]
 header:
   image: "/images/perceptron/SentimentAnalysis.jpeg"
