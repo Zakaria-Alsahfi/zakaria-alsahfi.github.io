@@ -4,8 +4,8 @@ main:
     url: /about/
   - title: "Projects"
     url: /data-science/
-  #- title: "Skills"
-  #  url: /skills/
+  - title: "About Me"
+    url: /aboutme/
   # - title: "Sample Posts"
   #   url: /year-archive/
   # - title: "Sample Collections"
