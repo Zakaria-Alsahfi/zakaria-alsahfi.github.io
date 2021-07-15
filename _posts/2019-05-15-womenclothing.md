@@ -1,10 +1,10 @@
 ---
 title: "Women’s Clothing E-Commerce Reviews"
 date: 2021-06-30
-tags: [Data Science, Machine Learning, Text Mining, Python]
+tags: [Data Science, Machine Learning, Text Mining, Python, E-commerce]
 header:
   image: "/images/perceptron/WomenClothing.jpg"
-excerpt: "Data Science, Machine Learning, Text Mining, Python"
+excerpt: "Data Science, Machine Learning, Text Mining, Python, E-commerce"
 mathjax: "true"
 ---
 
