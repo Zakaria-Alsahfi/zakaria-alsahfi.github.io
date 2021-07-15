@@ -1,10 +1,10 @@
 ---
 title: "Identify Metastatic Cancer"
 date: 2019-12-02
-tags: [Data Science, Machine Learning, Deep Learning, Python]
+tags: [Data Science, Machine Learning, Deep Learning, Python, Healthcare]
 header:
   image: "/images/perceptron/Metastatic-Cancer.png"
-excerpt: "Data Science, Machine Learning, Deep Learning, Python"
+excerpt: "Data Science, Machine Learning, Deep Learning, Python, Healthcare"
 mathjax: "true"
 ---
 
