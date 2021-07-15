@@ -8,53 +8,49 @@ header:
 ---
 
 
-
 <html>
-  <head>
+<head>
 <style>
-* {box-sizing: border-box}
-
-.container {
-  width: 100%;
-  background-color: #ddd;
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
 }
-
-.skills {
-  text-align: right;
-  padding-top: 10px;
-  padding-bottom: 10px;
-  color: white;
+html,body{
+  display: grid;
+  height: 100%;
+  place-items: center;
+  background: #6665ee;
 }
-
-.python {width: 90%; background-color: #808080;}
-.r {width: 80%; background-color: #808080;}
-.java {width: 65%; background-color: #808080;}
-.swift {width: 60%; background-color: #808080;}
-</style>
-</head>
-<body>
-
-<h1>My Skills</h1>
-
-<p>PYTHON</p>
-<div class="container">
-  <div class="skills PYTHON">90%</div>
-</div>
-
-<p>R</p>
-<div class="container">
-  <div class="skills r">80%</div>
-</div>
-
-<p>JAVA</p>
-<div class="container">
-  <div class="skills java">65%</div>
-</div>
-
-<p>SWIIFT</p>
-<div class="container">
-  <div class="skills swift">60%</div>
-</div>
-
-</body>
-</html>
+::selection{
+  color: #fff;
+  background: #6665ee;
+}
+.skill-bars{
+  padding: 25px 30px;
+  width: 600px;
+  background: #fff;
+  box-shadow: 5px 5px 20px rgba(0,0,0,0.2);
+  border-radius: 10px;
+}
+.skill-bars .bar{
+  margin: 20px 0;
+}
+.skill-bars .bar:first-child{
+  margin-top: 0px;
+}
+.skill-bars .bar .info{
+  margin-bottom: 15px;
+}
+.skill-bars .bar .info span{
+  font-weight: 500;
+  font-size: 17px;
+  opacity: 0;
+  animation: showText 0.5s 1s linear forwards;
+}
+@keyframes showText {
+  100%{
+    opacity: 1;
+  }
