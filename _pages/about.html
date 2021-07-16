@@ -6,24 +6,31 @@ header:
   overlay_filter: rgba(255, 0, 0, 0.5)
   #image: "/images/perceptron/data-science.jpg"
 ---
-
 <html>
 <head>
 <style>
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?
+family=Poppins:wght@200;300;400;500;600;700&display=swap');
 ::selection{
   color: #000;
   background: #6665ee;
 }
+.patagragh{
+  float:left;
+  padding: 25px 30px;
+  width: 200px;
+  bakcround:#fff;
+  box-shadow: 5px 5px 20px rgba(0,0,0,0.2);
+  border-radius: 10px;
+}
 .skill-bars{
+  float:right;
   padding: 25px 30px;
   width: 400px;
   background: #fff;
   box-shadow: 5px 5px 20px rgba(0,0,0,0.2);
   border-radius: 10px;
 }
-
 .skill-bars .bar{
   margin: 20px 0;
   color:#f0f0f0;
@@ -34,7 +41,6 @@ header:
 .skill-bars .bar .info{
   margin-bottom: 5px;
   color:#f0f0f0;
-  
 }
 .skill-bars .bar .info span{
   font-weight: 500;
@@ -53,6 +59,7 @@ header:
   width: 100%;
   background: #f0f0f0;
   position: relative;
+
   transform: scaleX(0);
   transform-origin: left;
   border-radius: 10px;
@@ -60,7 +67,6 @@ header:
               0 1px rgba(255,255,255,0.8);
   animation: animate 1s cubic-bezier(1,0,0.5,1) forwards;
 }
-
 @keyframes animate {
   100%{
     transform: scaleX(1);
@@ -76,20 +82,15 @@ header:
   animation: animate 1s 1s cubic-bezier(1,0,0.5,1) forwards;
 }
 .bar .progress-line.html span{
-  width: 90%;
-}
+width: 90%; }
 .bar .progress-line.css span{
-  width: 60%;
-}
+width: 60%; }
 .bar .progress-line.r span{
-  width: 85%;
-}
+width: 85%; }
 .bar .progress-line.python span{
-  width: 95%;
-}
+width: 95%; }
 .bar .progress-line.mysql span{
-  width: 85%;
-}
+width: 85%; }
 .progress-line span::before{
   position: absolute;
   content: "";
@@ -110,12 +111,12 @@ header:
   font-weight: 500;
   background: #000;
   color: #fff;
+ 
   padding: 1px 8px;
   font-size: 12px;
   border-radius: 3px;
   opacity: 0;
 }
-
 .progress-line.html span::after{
   content: "90%";
 }
@@ -131,14 +132,15 @@ header:
 .progress-line.mysql span::after{
   content: "85%";
 }
-
 </style>
 </head>
 <body>
-  <h>I’m a senior data scientist who excels at machine learning, exploratory analysis, and data visualizations.</h>
-  <h2>My Skills</h2> 
-  <br>
+<div class="patagragh">
+  <h4>I’m a senior data scientist who excels at machine learning,
+    exploratory analysis, and data visualizations.</h4>
+</div>
 <div class="skill-bars">
+<h1>My Skills</h1>
     <div class="bar">
       <div class="info">
         <span>HTML</span>
@@ -162,7 +164,8 @@ header:
       <div class="progress-line r">
         <span></span>
       </div>
-    </div>
+ </div>
+
     <div class="bar">
       <div class="info">
         <span>Python</span>
