@@ -7,41 +7,221 @@ header:
   #image: "/images/perceptron/data-science.jpg"
 ---
 
-<html>
+<!DOCTYPE html>
+<html lang="en-US">
 <head>
 <style>
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
-  
-  ::selection{
-    color: #000;
-    background: #6665ee;
-  }
-.patagragh{
-  padding: 25px 30px;
-  width: 400px;
-  bakcround:#fff;
-  box-shadow: 5px 5px 20px rgba(0,0,0,0.2);
-  border-radius: 10px;
+
+section {
+    display: block
 }
-.skill-bars{
-  padding: 25px 30px;
-  width: 400px;
-  background: #fff;
-  box-shadow: 5px 5px 20px rgba(0,0,0,0.2);
-  border-radius: 10px;
+
+.container {
+    margin-right: auto;
+    margin-left: auto;
+    padding: 25px 30px;
+    padding-right: 15px;
+    padding-left: 15px;
+    width: 95%;
+    box-shadow: 5px 5px 20px rgba(0,0,0,0.2);
+    border-radius: 10px;
 }
-.skill-bars .bar{
+
+.card {
+    position: relative;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    min-width: 0;
+    word-wrap: break-word;
+    background-color: #fff;
+    background-clip: border-box;
+    #border: 1px solid rgba(0, 0, 0, .125);
+    border-radius: .25rem
+}
+
+.row {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    margin-right: -15px;
+    margin-left: -15px
+}
+
+.card-body {
+    -ms-flex: 1 1 auto;
+    flex: 1 1 auto;
+    padding: 1.25rem
+}
+
+.text-center {
+    text-align: center!important
+}
+ 
+.h1,
+.h2,
+.h3,
+.h4,
+.h5,
+.h6,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin-bottom: .5rem;
+    font-family: inherit;
+    font-weight: 500;
+    line-height: 1.1;
+    color: inherit
+}
+
+.h1,
+h1 {
+    font-size: 2.5rem
+}
+
+.h2,
+h2 {
+    font-size: 2rem
+}
+
+.h3,
+h3 {
+    font-size: 1.75rem
+}
+
+.h4,
+h4 {
+    font-size: 1.5rem
+}
+
+.h5,
+h5 {
+    font-size: 1.25rem
+}
+
+.h6,
+h6 {
+    font-size: 1rem
+}
+
+p {
+  line-height: 1.61em;
+}
+
+.description p, p.description {
+  font-size: 1.14em;
+}
+
+.title {
+  font-weight: 700;
+}
+
+.title.title-up {
+  text-transform: uppercase;
+}
+
+.title.title-up a {
+  color: #2c2c2c;
+  text-decoration: none;
+}
+
+.title + .category {
+  margin-top: -25px;
+}
+
+.description,
+.card-description,
+.footer-big p {
+  color: #9A9A9A;
+  font-weight: 300;
+}
+
+.category {
+  text-transform: uppercase;
+  font-weight: 700;
+  color: #9A9A9A;
+}
+
+.col-md-3 {
+        -ms-flex: 0 0 25%;
+        flex: 0 0 25%;
+        max-width: 25%
+    }
+    
+.col-md-6 {
+        -ms-flex: 0 0 50%;
+        flex: 0 0 50%;
+        max-width: 50%
+    }
+    
+.col-md-9 {
+        -ms-flex: 0 0 75%;
+        flex: 0 0 75%;
+        max-width: 75%
+    }
+
+.col-lg-2 {
+        -ms-flex: 0 0 16.666667%;
+        flex: 0 0 16.666667%;
+        max-width: 16.666667%
+    }
+    
+.mb-4 {
+    margin-bottom: 1.5rem!important
+}
+
+.bg-primary {
+    background-color: #007bff!important
+}
+
+a.bg-primary:focus,
+a.bg-primary:hover {
+    background-color: #0062cc!important
+}
+
+.carousel {
+    position: relative
+}
+
+.carousel-inner {
+    position: relative;
+    width: 100%;
+    overflow: hidden
+}
+
+.carousel-item {
+    position: relative;
+    display: none;
+    -ms-flex-align: center;
+    align-items: center;
+    width: 100%;
+    transition: -webkit-transform .6s ease;
+    transition: transform .6s ease;
+    transition: transform .6s ease, -webkit-transform .6s ease;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    -webkit-perspective: 1000px;
+    perspective: 1000px
+}
+
+/* skills Style */
+.container .bar{
   margin: 20px 0;
   color:#f0f0f0;
 }
-.skill-bars .bar:first-child{
+.container .bar:first-child{
   margin-top: 0px;
 }
-.skill-bars .bar .info{
+.container .bar .info{
   margin-bottom: 5px;
   color:#f0f0f0;
 }
-.skill-bars .bar .info span{
+.container .bar .info span{
   font-weight: 500;
   font-size: 17px;
   opacity: 0;
@@ -53,7 +233,7 @@ header:
     color: #000;
   }
 }
-.skill-bars .bar .progress-line{
+.container .bar .progress-line{
   height: 10px;
   width: 100%;
   background: #f0f0f0;
@@ -81,15 +261,16 @@ header:
   animation: animate 1s 1s cubic-bezier(1,0,0.5,1) forwards;
 }
 .bar .progress-line.html span{
-width: 90%; }
+width: 75%; }
 .bar .progress-line.css span{
-width: 60%; }
+width: 70%; }
 .bar .progress-line.r span{
-width: 85%; }
+width: 90%; }
 .bar .progress-line.python span{
-width: 95%; }
+width: 90%; }
 .bar .progress-line.mysql span{
-width: 85%; }
+width: 95%; }
+
 .progress-line span::before{
   position: absolute;
   content: "";
@@ -117,31 +298,72 @@ width: 85%; }
   opacity: 0;
 }
 .progress-line.html span::after{
-  content: "90%";
+  content: "75%";
 }
 .progress-line.css span::after{
-  content: "60%";
+  content: "70%";
 }
 .progress-line.r span::after{
-  content: "85%";
+  content: "90%";
 }
 .progress-line.python span::after{
-  content: "95%";
+  content: "90%";
 }
 .progress-line.mysql span::after{
-  content: "85%";
+  content: "95%";
 }
-</style>
+
+/* Experience Style */
+.cc-experience .cc-experience-header {
+  padding-top: 0px;
+  padding-right: 0;
+  text-align: center;
+  color: #fff;
+  text-transform: uppercase;
+}
+
+/* Education Style */
+.cc-education .h5 {
+  margin-bottom: 0;
+}
+
+.cc-education .cc-education-header {
+  padding-top: 60px;
+  padding-right: 0;
+  text-align: center;
+  color: #fff;
+}
+
 </head>
-<body>
-<div class="patagragh">
-  <h4>I’m a senior data scientist who excels at machine learning,
-    exploratory analysis, and data visualizations.</h4>
-</div>
-<br>
-<div class="skill-bars">
-<h1>My Skills</h1>
-    <div class="bar">
+</style>
+
+<!-- about -->
+                <div class="section" id="about">
+                    <div class="container">
+                        <div class="card" data-aos="fade-up" data-aos-offset="10">
+                            <div class="row">
+                                    <div class="card-body">
+                                        <p>I am from a small village called
+                                            <b>Aguerd N'ouzrou</b>
+                                            (67 Km from the Ouarzazate, Morocco). I am a Data Engineer and an AI enthusiast. I am interested in #algorithms, #data_structures, #computer_security, #new_technologies, and #artificial_intelligence.
+                                                      I love sharing code,love,Designs,Photos and
+                                            <b>knowledge</b>
+                                            on</p>
+                                    </div>
+                                </div>
+                </div>
+                </div> 
+                </div>
+                
+<!-- skills -->
+
+<div class="section" id="skills">
+    <h5 class="h4 text-center mb-4 title">Skills</h5>
+    <div class="container">
+        <div class="card" data-aos="fade-up" data-aos-offset="10">
+            <div class="row">
+                <div class="card-body">
+                    <div class="bar">
       <div class="info">
         <span>HTML</span>
       </div>
@@ -183,5 +405,95 @@ width: 85%; }
       </div>
     </div>
   </div>
-</body>
-</html>
+ </div>
+  </div>
+  </div>
+        </div>
+  
+<!-- experience -->
+            <div class="section" id="experience">
+            <h5 class="h4 text-center mb-4 title">Work Experience</h5>
+                <div class="container cc-experience">
+                    <div class="card">
+                        <div class="row">
+                            <div class="col-md-3 bg-primary" data-aos="fade-up"  data-aos="fade-right" data-aos-offset="50" data-aos-duration="500">
+                                <div class="card-body cc-experience-header">
+                                    <p>July 2021 - Present</p>
+                                    <div class="h6">University of Business and Technology - Jeddah, Saudi Arabia </div>
+                                </div>
+                            </div>
+                            <div class="col-md-9" data-aos="fade-left" data-aos-offset="50" data-aos-duration="500">
+                                <div class="card-body">
+                                    <div class="h5">Deputy Director General of Information Affairs</div>
+                                    <p>
+                                        - Helping customers build secure big data architectures on the top with open sources technologies (Elastic stack, SearchGuard, Opendisto for Elasticsearch, Postgres, Apache airflow,Docker, Kubernetes,etc) and cloud services (aws).<br>
+                                        - Providing the first and second level support for SearchGuard (Security,alerting and compliance plugin for the elastic stack).<br>
+                                        - Consultant and trainer in previously mentioned technologies.<br> </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    </div>
+            
+<!-- education -->
+
+            <div class="section">
+             <h5 class="h4 text-center mb-4 title">Education</h5>
+                <div class="container cc-education">
+                    <div class="card">
+                        <div class="row">
+                            <div class="col-md-3 bg-primary" data-aos="fade-right" data-aos-offset="50" data-aos-duration="500">
+                                <div class="card-body cc-education-header">
+                                    <p>Jun 2021 - July 2021</p>
+                                    <div class="h5">NANODEGREE</div>
+                                </div>
+                            </div>
+                            <div class="col-md-9" data-aos="fade-left" data-aos-offset="50" data-aos-duration="500">
+                                <div class="card-body">
+                                    <div class="h5">Deep-Learning</div>
+                                    <p class="category">Udacity</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                    <div class="container cc-education">
+                    <div class="card">
+                        <div class="row">
+                            <div class="col-md-3 bg-primary" data-aos="fade-right" data-aos-offset="50" data-aos-duration="500">
+                                <div class="card-body cc-education-header">
+                                    <p>Jan 2019 - Des 2020</p>
+                                    <div class="h5">Master of Science</div>
+                                </div>
+                            </div>
+                            <div class="col-md-9" data-aos="fade-left" data-aos-offset="50" data-aos-duration="500">
+                                <div class="card-body">
+                                    <div class="h5">Data Science</div>
+                                    <p class="category">Maryville University of Saint Louis</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    </div>
+
+                    <div class="container cc-education">
+                    <div class="card">
+                        <div class="row">
+                            <div class="col-md-3 bg-primary" data-aos="fade-right" data-aos-offset="50" data-aos-duration="500">
+                                <div class="card-body cc-education-header">
+                                    <p>Jan 2018 - Des 2018</p>
+                                    <div class="h5">Bachelor of Science</div>
+                                </div>
+                            </div>
+                            <div class="col-md-9" data-aos="fade-left" data-aos-offset="50" data-aos-duration="500">
+                                <div class="card-body">
+                                    <div class="h5">Computer Science</div>
+                                    <p class="category">Fontbonne University</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+</body></html>
