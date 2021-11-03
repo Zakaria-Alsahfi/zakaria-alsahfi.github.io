@@ -86,7 +86,7 @@ analytics:
 author:
   name             : "Zakaria Alsahfi"
   avatar           : "/images/bio-pic.jpg" # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
-  bio              : Data analyst | Data Scientist #"Portfolio"
+  bio              : "Data analyst | Data Scientist" #"Portfolio"
   location         : "Saudi Arabia"
   email            : zakaria.sahfi@gmail.com
   uri              :
