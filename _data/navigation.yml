@@ -4,7 +4,7 @@ main:
     url: /about/
   - title: "Python"
     url: /data-science/
- -  title: "Tableau"
+  - title: "Tableau"
     url: /tableauviz/
   # - title: "Sample Posts"
   #   url: /year-archive/
