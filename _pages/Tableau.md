@@ -1,6 +1,6 @@
 ---
 layout: posts
-permalink: /Tableauviz/
+permalink: /tableauviz/
 title: "Tableau"
 author_profile: true
 header:
