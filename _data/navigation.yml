@@ -2,10 +2,10 @@
 main:
   - title: "About"
     url: /about/
-  - title: "Projects"
+  - title: "Python"
     url: /data-science/
- # - title: "About Me"
- #   url: /aboutme/
+ -  title: "Tableau"
+    url: /tableau/
   # - title: "Sample Posts"
   #   url: /year-archive/
   # - title: "Sample Collections"
