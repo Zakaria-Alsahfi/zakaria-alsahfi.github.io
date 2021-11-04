@@ -142,15 +142,6 @@ header:
                       scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';                    
                       vizElement.parentNode.insertBefore(scriptElement, vizElement); 
 
-                    function init() {
-                        var element = vizElement.getElementById('toolbar-container');
-                        element.style.visibility = 'hidden !important';
-                        var declaration = vizElement.getElementById('toolbar-container');
-                        declaration.setProperty('hidden !important');
-                        };
-            
-                    vizElement.onload = init;
-
                     </script>
                 </div>
             </div>
