@@ -1,0 +1,494 @@
+---
+layout: defualt
+title: "About"
+author_profile: true
+header:
+  overlay_image: /images/perceptron/data-science.jpg
+  overlay_filter: rgba(255, 0, 0, 0.5)
+  #image: "/images/perceptron/data-science.jpg"
+---
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+<style>
+
+section {
+    display: block
+}
+
+.container {
+    margin-right: auto;
+    margin-left: auto;
+    padding: 25px 30px;
+    padding-right: 15px;
+    padding-left: 15px;
+    width: 100%;
+    box-shadow: 5px 5px 20px rgba(0,0,0,0.2);
+    border-radius: 10px;
+}
+
+.card {
+    position: relative;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    min-width: 0;
+    word-wrap: break-word;
+    background-color: #fff;
+    background-clip: border-box;
+    border-radius: .25rem
+}
+
+.row {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    margin-right: -15px;
+    margin-left: -15px
+}
+
+.card-body {
+  -ms-flex: 1 1 auto;
+  flex: 1 1 auto;
+  padding: 1.25rem      
+}
+
+.text-center {
+    text-align: center!important
+}
+ 
+.h1,
+.h2,
+.h3,
+.h4,
+.h5,
+.h6,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin-bottom: .5rem;
+    font-family: inherit;
+    font-weight: 500;
+    line-height: 1.1;
+    color: inherit
+}
+
+.h1,
+h1 {
+    font-size: 2.5rem
+}
+
+.h2,
+h2 {
+    font-size: 2rem
+}
+
+.h3,
+h3 {
+    font-size: 1.75rem
+}
+
+.h4,
+h4 {
+    font-size: 1.5rem
+}
+
+.h5,
+h5 {
+    font-size: 1.25rem
+}
+
+.h6,
+h6 {
+    font-size: 1rem
+}
+
+p {
+  line-height: 1.61em;
+  color: #211c1c;
+}
+
+.description p, p.description {
+  font-size: 1.14em;
+}
+
+.title {
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.title + .category {
+  margin-top: -25px;
+}
+
+.description,
+.card-description,
+.footer-big p {
+  color: #4a4848;
+  font-weight: 300;
+}
+
+.category {
+  font-weight: 600;
+  color: #525050;
+}
+
+.subcategory {
+  font-weight: 700;
+  color: #4a4848;
+}
+
+.col-md-3 {
+        -ms-flex: 0 0 25%;
+        flex: 0 0 25%;
+        max-width: 25%
+    }
+    
+.col-md-6 {
+        -ms-flex: 0 0 50%;
+        flex: 0 0 50%;
+        max-width: 50%
+    }
+    
+.col-md-9 {
+        -ms-flex: 0 0 75%;
+        flex: 0 0 75%;
+        max-width: 75%
+    }
+
+.col-lg-2 {
+        -ms-flex: 0 0 16.666667%;
+        flex: 0 0 16.666667%;
+        max-width: 16.666667%
+    }
+    
+.mb-4 {
+    margin-bottom: 1.5rem!important
+}
+
+.bg-primary {
+  background-color: #de946f!important
+}
+
+a.bg-primary:focus,
+a.bg-primary:hover {
+    background-color: #0062cc!important
+}
+
+.carousel {
+    position: relative
+}
+
+.carousel-inner {
+    position: relative;
+    width: 100%;
+    overflow: hidden
+}
+
+.carousel-item {
+    position: relative;
+    display: none;
+    -ms-flex-align: center;
+    align-items: center;
+    width: 100%;
+    transition: -webkit-transform .6s ease;
+    transition: transform .6s ease;
+    transition: transform .6s ease, -webkit-transform .6s ease;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    -webkit-perspective: 1000px;
+    perspective: 1000px
+}
+
+/* skills Style */
+.container .bar{
+  margin: 20px 0;
+  color:#f0f0f0;
+}
+.container .bar:first-child{
+  margin-top: 0px;
+}
+.container .bar .info{
+  margin-bottom: 5px;
+  color:#f0f0f0;
+}
+.container .bar .info span{
+  font-weight: 500;
+  font-size: 17px;
+  opacity: 0;
+  animation: showText 0.5s 1s linear forwards;
+}
+@keyframes showText {
+  100%{
+    opacity: 1;
+    color: #000;
+  }
+}
+.container .bar .progress-line{
+  height: 10px;
+  width: 100%;
+  background: #f0f0f0;
+  position: relative;
+
+  transform: scaleX(0);
+  transform-origin: left;
+  border-radius: 10px;
+  box-shadow: inset 0 1px 1px rgba(0,0,0,0.05),
+              0 1px rgba(255,255,255,0.8);
+  animation: animate 1s cubic-bezier(1,0,0.5,1) forwards;
+}
+@keyframes animate {
+  100%{
+    transform: scaleX(1);
+  }
+}
+.bar .progress-line span{
+  height: 100%;
+  position: absolute;
+  border-radius: 10px;
+  transform: scaleX(0);
+  transform-origin: left;
+  background: #de946f;
+  animation: animate 1s 1s cubic-bezier(1,0,0.5,1) forwards;
+}
+.bar .progress-line.html span{
+width: 75%; }
+.bar .progress-line.css span{
+width: 70%; }
+.bar .progress-line.r span{
+width: 90%; }
+.bar .progress-line.python span{
+width: 96%; }
+.bar .progress-line.mysql span{
+width: 98%; }
+
+.progress-line span::before{
+  position: absolute;
+  content: "";
+  top: -10px;
+  right: 0;
+  height: 0;
+  width: 0;
+  border: 7px solid transparent;
+  border-bottom-width: 0px;
+  border-right-width: 0px;
+  border-top-color: #000;
+  opacity: 0;
+}
+.progress-line span::after{
+  position: absolute;
+  top: -28px;
+  right: 0;
+  font-weight: 500;
+  background: #0062cc;
+  color: #de946f;
+ 
+  padding: 1px 8px;
+  font-size: 12px;
+  border-radius: 3px;
+  opacity: 0;
+}
+.progress-line.html span::after{
+  content: "75%";
+}
+.progress-line.css span::after{
+  content: "70%";
+}
+.progress-line.r span::after{
+  content: "90%";
+}
+.progress-line.python span::after{
+  content: "96%";
+}
+.progress-line.mysql span::after{
+  content: "98%";
+}
+
+/* Experience Style */
+  
+.cc-experience .cc-experience-header {
+  padding-top: 60px;
+  padding-right: 0;
+  text-align: center;
+  color: #fff;
+}
+
+/* Education Style */
+.cc-education .h5 {
+  margin-bottom: 0;
+}
+
+.cc-education .cc-education-header {
+  padding-top: 60px;
+  padding-right: 0;
+  text-align: center;
+  color: #fff;
+}
+
+</head>
+</style>
+
+<!-- about -->
+                <div class="section" id="about">
+                    <div class="container">
+                        <div class="card">
+                            <div class="row">
+                                    <div class="card-body">
+                                        <p>
+                                          Motivated, teamwork-oriented and responsible Data Analyst with significant experience in increasing 
+                                          comperhension of reports and presentations by average professional. Highly educated and bilingual in Arabic and english.
+                                      </p>
+                                    </div>
+                                </div>
+                </div>
+                </div> 
+                </div>
+                
+<!-- skills -->
+
+<div class="section" id="skills">
+    <h5 class="h4 text-center mb-4 title">Skills</h5>
+    <div class="container">
+        <div class="card">
+            <div class="row">
+                <div class="card-body">
+                    <div class="bar">
+      <div class="info">
+        <span>HTML</span>
+      </div>
+      <div class="progress-line html">
+        <span></span>
+      </div>
+    </div>
+    <div class="bar">
+      <div class="info">
+        <span>CSS</span>
+      </div>
+      <div class="progress-line css">
+        <span></span>
+      </div>
+    </div>
+    <div class="bar">
+      <div class="info">
+        <span>R</span>
+      </div>
+      <div class="progress-line r">
+        <span></span>
+      </div>
+ </div>
+
+    <div class="bar">
+      <div class="info">
+        <span>Python</span>
+      </div>
+      <div class="progress-line python">
+        <span></span>
+      </div>
+    </div>
+    <div class="bar">
+      <div class="info">
+        <span>MySQL</span>
+      </div>
+      <div class="progress-line mysql">
+        <span></span>
+      </div>
+    </div>
+  </div>
+ </div>
+  </div>
+  </div>
+        </div>
+  
+<!-- experience -->
+            <div class="section" id="experience">
+            <h5 class="h4 text-center mb-4 title">Work Experience</h5>
+                <div class="container cc-experience">
+                    <div class="card">
+                        <div class="row">
+                            <div class="col-md-3 bg-primary">
+                                <div class="card-body cc-experience-header">
+                                  <div class="h6">Jul 2021 - Present </div>
+                                  <div class="h6">University of Business and Technology - Jeddah, Saudi Arabia </div>
+                                </div>
+                            </div>
+                            <div class="col-md-9">
+                                <div class="card-body">
+                                    <div class="subcategory">Deputy Director General of Information Affairs</div>
+                                    <p>
+                                      Provide information to authorized external and internal stakeholders. 
+                                      This information fulfills the requirements of ministry of education (MoE), 
+                                      local authorities, accreditation bodies, university ranking authorities 
+                                      and internal stakeholders (Rector, Vice Rectors, Deans etc.).<br> </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    </div>
+            
+<!-- education -->
+
+            <div class="section">
+             <h5 class="h4 text-center mb-4 title">Education</h5>
+                <div class="container cc-education">
+                    <div class="card">
+                        <div class="row">
+                            <div class="col-md-3 bg-primary">
+                                <div class="card-body cc-education-header">
+                                  <div class="h6">Jun 2021 - Jul 2021</div>
+                                  <div class="h6">Nano Degree</div>
+                                </div>
+                            </div>
+                            <div class="col-md-9">
+                                <div class="card-body">
+                                    <div class="subcategory">Deep-Learning</div>
+                                    <p class="category">Udacity</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                    <div class="container cc-education">
+                    <div class="card">
+                        <div class="row">
+                            <div class="col-md-3 bg-primary">
+                                <div class="card-body cc-education-header">
+                                  <div class="h6">Jan 2019 - Des 2020</div>
+                                  <div class="h6">Master of Science</div>
+                                </div>
+                            </div>
+                            <div class="col-md-9">
+                                <div class="card-body">
+                                    <div class="subcategory">Data Science</div>
+                                    <p class="category">Maryville University of Saint Louis</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    </div>
+
+                    <div class="container cc-education">
+                    <div class="card">
+                        <div class="row">
+                            <div class="col-md-3 bg-primary">
+                                <div class="card-body cc-education-header">
+                                  <div class="h6">Jan 2014 - Des 2018</div>
+                                  <div class="h6">Bachelor of Science</div>
+                                </div>
+                            </div>
+                            <div class="col-md-9">
+                                <div class="card-body">
+                                    <div class="subcategory">Computer Science</div>
+                                    <p class="category">Fontbonne University</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+</body></html>
