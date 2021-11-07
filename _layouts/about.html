@@ -1,23 +1,27 @@
 ---
-# Jekyll layout that compresses HTML
-# v3.0.2
-# http://jch.penibelst.de/
-# © 2014–2015 Anatol Broder
-# MIT License
-layout: archive
+layout: compress
 ---
 
-{{ content }}
-
-{% assign postsByYear = site.posts | group_by_exp: 'about', 'post.date | date: "%Y"' %}
-{% for year in postsByYear %}
-  <section id="{{ year.name }}" class="taxonomy__section">
-    <h2 class="archive__subtitle">{{ year.name }}</h2>
-    <div class="entries-{{ page.entries_layout | default: 'list' }}">
-      {% for post in year.items %}
-        {% include archive-single.html type=page.entries_layout %}
-      {% endfor %}
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>{{ page.title }}</title>
+  <link rel="stylesheet" href="/ui/app.css">
+  <link rel="icon" href="/ui/img/favicon-1.png">
+  {% if page.prefetch %}
+    <link rel="prefetch" href="{{ page.prefetch }}">
+    <link rel="prerender" href="{{ page.prefetch }}">
+  {% endif %}
+</head>
+<body>
+  <!-- dummy comment -->
+  <div class="row">
+    <div class="medium-10 medium-offset-2 large-8 large-offset-4 columns">
+      <h1>{{ page.title }}</h1>
+      {{ content }}
     </div>
-    <a href="#page-title" class="back-to-top">{{ site.data.ui-text[site.locale].back_to_top | default: 'Back to Top' }} &uarr;</a>
-  </section>
-{% endfor %}
+  </div>
+</body>
+</html>
