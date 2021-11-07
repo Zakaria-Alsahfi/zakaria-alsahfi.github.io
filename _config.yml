@@ -237,12 +237,12 @@ tag_archive:
 compress_html:
   clippings: all
   comments: []
-  endings: []
+  endings: [p, li, td]
   ignore:
     envs: development
   blanklines: false
   profile: false
-  startings: []
+  startings: [html, head, body]
 
 
 # Defaults
