@@ -99,4 +99,36 @@ layout: default
 {% assign _profile_collapse = _content | size | plus: 1 %}
 {% endif %}
 {% if site.compress_html.clippings == "all" %}
-{% assign _clippings = "html head title base link meta style body article section nav aside h1 h2 h3 h4 h5 h6 hgroup header footer address p hr blockquote ol ul li dl dt dd figure figcaption main div table caption colgroup col tbody thead tfoot tr td th" | split: " " %}{% else %}{% assign _clippings = site.compress_html.clippings %}{% endif %}{% for _element in _clippings %}{% assign _edges = " <e;<e; </e>;</e>;</e> ;</e>" | replace: "e", _element | split: ";" %}{% assign _content = _content | replace: _edges[0], _edges[1] | replace: _edges[2], _edges[3] | replace: _edges[4], _edges[5] %}{% endfor %}{% if _profile and _clippings %}{% assign _profile_clippings = _content | size | plus: 1 %}{% endif %}{{ _content }}{% if _profile %} <table id="compress_html_profile_{{ site.time | date: "%Y%m%d" }}" class="compress_html_profile"> <thead> <tr> <td>Step <td>Bytes <tbody> <tr> <td>raw <td>{{ content | size }}{% if _profile_endings %} <tr> <td>endings <td>{{ _profile_endings }}{% endif %}{% if _profile_startings %} <tr> <td>startings <td>{{ _profile_startings }}{% endif %}{% if _profile_comments %} <tr> <td>comments <td>{{ _profile_comments }}{% endif %}{% if _profile_collapse %} <tr> <td>collapse <td>{{ _profile_collapse }}{% endif %}{% if _profile_clippings %} <tr> <td>clippings <td>{{ _profile_clippings }}{% endif %} </table>{% endif %}{% endif %}
+{% assign _clippings = "html head title base link meta style body article section nav aside h1 h2 h3 h4 h5 h6 hgroup header footer address p hr blockquote ol ul li dl dt dd figure figcaption main div table caption colgroup col tbody thead tfoot tr td th" | split: " " %}
+{% else %}
+{% assign _clippings = site.compress_html.clippings %}
+{% endif %}
+{% for _element in _clippings %}
+{% assign _edges = " <e;<e; </e>;</e>;</e> ;</e>" | replace: "e", _element | split: ";" %}
+{% assign _content = _content | replace: _edges[0], _edges[1] | replace: _edges[2], _edges[3] | replace: _edges[4], _edges[5] %}
+{% endfor %}
+{% if _profile and _clippings %}
+{% assign _profile_clippings = _content | size | plus: 1 %}
+{% endif %}
+{{ _content }}
+{% if _profile %} 
+<table id="compress_html_profile_{{ site.time | date: "%Y%m%d" }}" class="compress_html_profile"> <thead> <tr> <td>Step <td>Bytes <tbody> <tr> <td>raw <td>
+  {{ content | size }}
+  {% if _profile_endings %} 
+  <tr> <td>endings <td>{{ _profile_endings }}
+    {% endif %}
+    {% if _profile_startings %} 
+    <tr> <td>startings <td>{{ _profile_startings }}
+      {% endif %}
+      {% if _profile_comments %} 
+      <tr> <td>comments <td>{{ _profile_comments }}
+        {% endif %}
+        {% if _profile_collapse %} 
+        <tr> <td>collapse <td>{{ _profile_collapse }}
+          {% endif %}
+          {% if _profile_clippings %} 
+          <tr> <td>clippings <td>{{ _profile_clippings }}
+            {% endif %} 
+  </table>
+          {% endif %}
+          {% endif %}
