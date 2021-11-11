@@ -16,6 +16,8 @@
   </head>
   
   <body class="layout--{{ page.layout | default: layout.layout }}{% if page.classes or layout.classes %}{{ page.classes | default: layout.classes | join: ' ' | prepend: ' ' }}{% endif %}">
+    <div id="main" role="main">
+      {% include sidebar.html %}
     {% include sidebar.html %}
     {% include browser-upgrade.html %}
     {% include masthead.html %}
@@ -38,6 +40,6 @@
     </div>
 
     {% include scripts.html %}
-    
+  </div>  
   </body>
 </html>
