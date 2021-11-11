@@ -7,19 +7,12 @@
   Copyright 2013-2018 Michael Rose - mademistakes.com | @mmistakes
   Free for personal and commercial use under the MIT license
   https://github.com/mmistakes/minimal-mistakes/blob/master/LICENSE.txt
-    {% include head.html %}
-    {% include head/custom.html %}
 -->
 
 <html lang="{{ site.locale | slice: 0,2 | default: "en" }}" class="no-js">
   <head>
     {% include head.html %}
-    {% include head/custom.html %}
-    {% include page__hero.html %}
-    {% include page__hero_video.html %}
-    {% include breadcrumbs.html %}
-    {% include sidebar.html %}
-  
+    {% include head/custom.html %}  
   </head>
 
   <body class="layout--{{ page.layout | default: layout.layout }}{% if page.classes or layout.classes %}{{ page.classes | default: layout.classes | join: ' ' | prepend: ' ' }}{% endif %}">
@@ -45,6 +38,7 @@
     </div>
 
     {% include scripts.html %}
+    {% include sidebar.html %}
 
   </body>
 </html>
