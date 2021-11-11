@@ -1,6 +1,6 @@
 ---
 layout: labout
-permalink: about.html
+permalink: about
 title: "About"
 author_profile: true
 header:
