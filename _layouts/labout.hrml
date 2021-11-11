@@ -17,7 +17,7 @@ layout: default
 <div id="main" role="main">
   {% include sidebar.html %}
 
-  <article class="page" itemscope itemtype="http://schema.org/CreativeWork">
+  <article class="entries-{{ page.entries_layout }}">
   {% capture _LINE_FEED %}
   {% endcapture %}{% if site.compress_html.ignore.envs contains jekyll.environment %}
   {{ content }}
