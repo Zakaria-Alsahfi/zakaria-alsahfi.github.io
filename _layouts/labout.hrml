@@ -17,9 +17,10 @@ layout: default
 <div id="main" role="main">
   {% include sidebar.html %}
 
-  <article class="entries-{{ page.entries_layout }}">
+  <article>
   {% capture _LINE_FEED %}
-  {% endcapture %}{% if site.compress_html.ignore.envs contains jekyll.environment %}
+  {% endcapture %}
+  {% if site.compress_html.ignore.envs contains jekyll.environment %}
   {{ content }}
   {% else %}
   {% capture _content %}
