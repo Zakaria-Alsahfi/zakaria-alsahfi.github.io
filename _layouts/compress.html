@@ -4,22 +4,7 @@
 # http://jch.penibelst.de/
 # © 2014–2015 Anatol Broder
 # MIT License
-layout: default
 ---
-{% if page.header.overlay_color or page.header.overlay_image or page.header.image %}
-{% include page__hero.html %}
-{% elsif page.header.video.id and page.header.video.provider %}
-{% include page__hero_video.html %}
-{% endif %}
-
-{% if page.url != "/" and site.breadcrumbs %}
-{% unless paginator %}
-{% include breadcrumbs.html %}
-{% endunless %}
-{% endif %}
-
-<div id="main" role="main">
-  {% include sidebar.html %}
 
   {% capture _LINE_FEED %}
   {% endcapture %}{% if site.compress_html.ignore.envs contains jekyll.environment %}
