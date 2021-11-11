@@ -559,7 +559,19 @@ a.bg-primary:hover {
   margin-right: -15px;
   margin-left: -15px;
 }
-
+  
+.card-experience {
+    position: relative;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    min-width: 0;
+    word-wrap: break-word;
+    background-color: #fff;
+    background-clip: border-box;
+    border-radius: .25rem
+}
 .cc-experience {
   margin-bottom: 0;
 }
@@ -877,7 +889,7 @@ a.bg-primary:hover {
 <div class="section" id="experience">
   <h5 class="h4 text-center mb-4 title">Work Experience</h5>
   <div class="container cc-experience">
-    <div class="card">
+    <div class="card-experience">
       <div class="Experience-row">
         <div class="col-md-3 bg-primary">
           <div class="card-body cc-experience-header">
