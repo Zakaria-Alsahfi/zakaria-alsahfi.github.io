@@ -88,12 +88,14 @@ p.description {
 .h4,
 .h5,
 .h6,
+.h7,
 h1,
 h2,
 h3,
 h4,
 h5,
-h6 {
+h6,
+h7{
   margin-bottom: .5rem;
   font-family: inherit;
   font-weight: 500;
@@ -130,7 +132,11 @@ h5 {
 h6 {
   font-size: 1rem;
 }
-
+      
+.h7,
+h6 {
+  font-size: 0.5rem;
+}
 .col-md-6 {
   -ms-flex: 0 0 50%;
   flex: 0 0 50%;
@@ -715,10 +721,10 @@ a.bg-primary:hover {
 
 <!-- about -->
 <div class="section" id="about">
-  <h5 class="h4 text-center mb-4 title">About Me</h5>
   <div class="container">
+    <h5 class="h4 text-center mb-4 title">About Me</h5>
     <div class="row">
-      <p>1Motivated, teamwork-oriented and responsible Data Analyst with significant experience in increasing comperhension of reports and presentations by average professional. Highly educated and bilingual in Arabic and English.</p>
+      <p>Motivated, teamwork-oriented and responsible Data Analyst with significant experience in increasing comperhension of reports and presentations by average professional. Highly educated and bilingual in Arabic and English.</p>
     </div>
   </div>
 </div>
@@ -726,8 +732,8 @@ a.bg-primary:hover {
 
 <!-- Skills -->
 <div class="section" id="Skills">
-  <h5 class="h4 text-center mb-4 title">Skills</h5>
   <div class="container">
+    <h5 class="h4 text-center mb-4 title">Skills</h5>
     <div class="row">
       <button class="tablink" onclick="openPage('Technical', this, 'gray')" id="defaultOpen">Technical Skills</button>
       <button class="tablink" onclick="openPage('Soft', this, 'gray')">Key Skills</button>
@@ -886,16 +892,15 @@ a.bg-primary:hover {
 
 <!-- experience -->
 <div class="section" id="experience">
-  <h5 class="h4 text-center mb-4 title">Work Experience</h5>
- 
   <div class="container cc-experience">
+    <h5 class="h4 text-center mb-4 title">Work Experience</h5>
     <div class="card-experience">
       <div class="Experience-row">
         
         <div class="col-md-3 bg-primary">
           <div class="card-body cc-experience-header">
-            <div class="h6">Jul 2021 - Present </div>
-            <div class="h6">University of Business and Technology</div>
+            <div class="h7">Jul 2021 - Present </div>
+            <div class="h7">University of Business and Technology</div>
           </div>
         </div>
         
@@ -919,38 +924,38 @@ a.bg-primary:hover {
 <!-- education -->
 
 <div class="section">
-  <h5 class="h4 text-center mb-4 title">Education</h5>
-  <div class="container">  
+  <div class="container">
+    <h5 class="h4 text-center mb-4 title">Education</h5>
   <div class="timeline">
   <div class="educationcontainer left">
     <div class="content">
-      <h3>2021</h3>
-      <p>Business and Data Analyst</p>
-      <p>SDA Simplilearn</p>
+      <h5>2021</h5>
+      <h6>Business and Data Analyst</h6>
+      <h6>SDA Simplilearn</h5>
     </div>
   </div>
     
   <div class="educationcontainer left">
     <div class="content">
-    	<h3>2021</h3>
-      	<p>Deep-Learning</p>
-      	<p>Udacity Nano Degree</p>
+    	<h5>2021</h5>
+      	<h6>Deep-Learning</h6>
+      	<h6>Udacity Nano Degree</h6>
     </div>
   </div>
     
   <div class="educationcontainer right">
     <div class="content">
-      <h3>2020</h3>
-      <p>Master of Science in Data Science</p>
-      <p>Maryville University of Saint Louis</p>
+      <h5>2020</h5>
+      <h6>Master of Science in Data Science</h6>
+      <h6>Maryville University of Saint Louis</h6>
     </div>
   </div>
     
   <div class="educationcontainer left">
     <div class="content">
-    	<h3>2018</h3>
-      	<p>Bachelor of Science in Computer Science</p>
-      	<p>Fontbonne University</p>
+    	<h5>2018</h5>
+      	<h6>Bachelor of Science in Computer Science</h6>
+      	<h6>Fontbonne University</h6>
     </div>
   </div>
 </div>    
