@@ -18,7 +18,7 @@ section {
 }
 
 .container {
-  width: 1100px;
+  width: 1050px;
   margin: 0px;
 }
 
@@ -576,6 +576,14 @@ a.bg-primary:hover {
 }
 
 /* Education Style */
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: clear;
+  font-family: Helvetica, sans-serif;
+}
 
 /* The actual timeline (the vertical ruler) */
 .timeline {
@@ -589,7 +597,7 @@ a.bg-primary:hover {
   content: '';
   position: absolute;
   width: 6px;
-  background-color: #7a4747;
+  background-color: #FF9F55;
   top: 0;
   bottom: 0;
   left: 50%;
@@ -611,8 +619,8 @@ a.bg-primary:hover {
   width: 25px;
   height: 25px;
   right: -17px;
-  background-color: #ed6666;
-  border: 4px solid #7a4747;
+  background-color: white;
+  border: 4px solid #FF9F55;
   top: 15px;
   border-radius: 50%;
   z-index: 1;
@@ -637,9 +645,9 @@ a.bg-primary:hover {
   width: 0;
   z-index: 1;
   right: 30px;
-  border: medium solid #ed6666;
+  border: medium solid #FF9F55;
   border-width: 10px 0 10px 10px;
-  border-color: transparent transparent transparent #ed6666;
+  border-color: transparent transparent transparent #FF9F55;
 }
 
 /* Add arrows to the right container (pointing left) */
@@ -651,9 +659,9 @@ a.bg-primary:hover {
   width: 0;
   z-index: 1;
   left: 30px;
-  border: medium solid #ed6666;
+  border: medium solid #FF9F55;
   border-width: 10px 10px 10px 0;
-  border-color: transparent #ed6666 transparent transparent;
+  border-color: transparent #FF9F55 transparent transparent;
 }
 
 /* Fix the circle for containers on the right side */
@@ -664,10 +672,9 @@ a.bg-primary:hover {
 /* The actual content */
 .content {
   padding: 20px 30px;
-  background-color: #ed6666;
+  background-color: #FF9F55;
   position: relative;
   border-radius: 6px;
-  color:white;
 }
 
 /* Media queries - Responsive timeline on screens less than 600px wide */
@@ -687,9 +694,9 @@ a.bg-primary:hover {
   /* Make sure that all arrows are pointing leftwards */
   .educationcontainer::before {
   left: 60px;
-  border: medium solid #ed6666;
+  border: medium solid #FF9F55;
   border-width: 10px 10px 10px 0;
-  border-color: transparent #ed6666 transparent transparent;
+  border-color: transparent #FF9F55 transparent transparent;
   }
 
   /* Make sure all circles are at the same spot */
@@ -711,7 +718,7 @@ a.bg-primary:hover {
   <h5 class="h4 text-center mb-4 title">About Me</h5>
   <div class="container">
     <div class="row">
-      <p>1Motivated, teamwork-oriented and responsible Data Analyst with significant experience in increasing comperhension of reports and presentations by average professional. Highly educated and bilingual in Arabic and English.</p>
+      <p>Motivated, teamwork-oriented and responsible Data Analyst with significant experience in increasing comperhension of reports and presentations by average professional. Highly educated and bilingual in Arabic and English.</p>
     </div>
   </div>
 </div>
