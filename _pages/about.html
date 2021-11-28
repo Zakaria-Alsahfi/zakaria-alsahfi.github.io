@@ -1,7 +1,7 @@
 ---
 layout: new_default
 permalink: /about/
-title: "About"
+title: "1About"
 author_profile: true
 header:
   overlay_image: /images/perceptron/data-science.jpg
@@ -187,7 +187,12 @@ a.bg-primary:hover {
 }
 
 /* Style tab links */
-.tablink {
+.tab {
+  overflow: hidden;
+  border:none;
+  background-color: #f1f1f1;
+}
+.tab button {
   border: none;
   background-color: white;
   color: black;
@@ -197,6 +202,17 @@ a.bg-primary:hover {
   padding: 14px 16px;
   font-size: 17px;
   width: 50%;
+}
+      
+/* Change background color of buttons on hover */
+.tab button:hover {
+  background-color: #ddd;
+}
+
+/* Create an active/current tablink class */
+.tab button.active {
+  border-bottom: 1px solid black;
+  border-left: 1px solid black;
 }
 
 /* Style the tab content (and add height:100% for full page content) */
@@ -752,9 +768,9 @@ a.bg-primary:hover {
 <div class="section" id="Skills">
   <div class="container">
     <h5 class="h4 text-center mb-4 title">Skills</h5>
-    <div class="row">
-      <button class="tablink" onclick="openPage('Technical', this, 'gray')" id="defaultOpen">Technical Skills</button>
-      <button class="tablink" onclick="openPage('Soft', this, 'gray')">Key Skills</button>
+    <div class="tab">
+      <button class="tablinks" onclick="openPage('Technical', this)" id="defaultOpen">Technical Skills</button>
+      <button class="tablinks" onclick="openPage('Soft', this)">Key Skills</button>
     </div>
 
     <div class="row">
@@ -982,19 +998,20 @@ a.bg-primary:hover {
 </div>
 
 <script>
-function openPage(pageName,elmnt,color) {
+function openPage(pageName,elmnt) {
   var i, tabcontent, tablinks;
   tabcontent = document.getElementsByClassName("tabcontent");
   for (i = 0; i < tabcontent.length; i++) {
     tabcontent[i].style.display = "none";
   }
-  tablinks = document.getElementsByClassName("tablink");
+  tablinks = document.getElementsByClassName("tablinks");
   for (i = 0; i < tablinks.length; i++) {
-    tablinks[i].style.backgroundColor = "";
+    tablinks[i].className = tablinks[i].className.replace(" active", "");
   }
   document.getElementById(pageName).style.display = "block";
-  elmnt.style.backgroundColor = color;
+  elmnt.style.backgroundColor = "active";
 }
+  
 // Get the element with id="defaultOpen" and click on it
 document.getElementById("defaultOpen").click();
 </script>
