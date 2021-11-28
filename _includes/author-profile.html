@@ -55,7 +55,15 @@
           </a>
         </li>
       {% endif %}
-
+      
+      {% if author.resume %}
+        <li>
+          <a href="{{ author.resume }}" itemprop="url">
+            <i class="fab fa-fw fa-download" aria-hidden="true"></i> Resume
+          </a>
+        </li>
+      {% endif %}
+      
       {% if author.email %}
         <li>
           <a href="mailto:{{ author.email }}">
@@ -257,14 +265,6 @@
         </li>
       {% endif %}
       
-      {% if author.resume %}
-        <li>
-          <a href="https://vine.co/u/{{ author.resume }}" itemprop="sameAs">
-            <i class="fab fa-fw fa-download" aria-hidden="true"></i> Resume
-          </a>
-        </li>
-      {% endif %}
-
       {% include author-profile-custom-links.html %}
     </ul>
   </div>
