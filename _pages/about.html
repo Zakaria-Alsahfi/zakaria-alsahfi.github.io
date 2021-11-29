@@ -54,7 +54,32 @@ section {
   flex: 1 1 auto;
   padding: 1.25rem;
 }
+	    
+::-moz-selection {
+  color: white;
+  text-shadow: none;
+  background: #222222;
+}      
+::selection {
+  color: white;
+  text-shadow: none;
+  background: #222222;
+}
 
+img::selection {
+  color: white;
+  background: transparent;
+}
+
+img::-moz-selection {
+  color: white;
+  background: transparent;
+}
+
+img.img-responsive {
+  padding: 1%
+} 
+	    
 p {
   line-height: 1.61em;
   color: white;
