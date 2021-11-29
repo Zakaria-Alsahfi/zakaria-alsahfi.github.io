@@ -161,14 +161,16 @@ h7 {
 
 .col-md-3 {
 float: left;
-width: 25%;
-padding: 10px;
+  -ms-flex: 0 0 25%;
+  flex: 0 0 25%;
+  max-width: 25%;
 }
 
 .col-md-9 {
 float: left;
-width: 75%;
-padding: 10px;
+  -ms-flex: 0 0 75%;
+  flex: 0 0 75%;
+  max-width: 75%;
 }
       
 .mb-4 {
@@ -584,13 +586,12 @@ a.bg-primary:hover {
  .experience-row:after {
   content: "";
   display: block;
-  clear: both;
 }
 .cc-experience-header {
-	margin-bottom: 0;
-  	padding: 10px 10px 20px;
-  	text-align: center;
-  	color: #fff;
+margin-bottom: 0;
+padding: 10px 10px 20px;
+text-align: center;
+color: #fff;
 }
 
 /* Education Style */
@@ -917,7 +918,7 @@ a.bg-primary:hover {
 		<div class="col-md-9 bg-secondary">
 			<div class="subcategory"> Financial Data Analyst</div>
 			<div class="card-description">
-				Examine financial records and prepare comprehensive reports for their company. 
+				1Examine financial records and prepare comprehensive reports for their company. 
 				These reports are used to identify the current direction of production and help managers forecast future trends. 
 				As a financial data analyst, my job duties include compiling data from the market and various departments 
 				within the company, analyzing the information, and creating reports for upper management.</div>
