@@ -1,11 +1,11 @@
 # main links
 main:
-  - title: "About"
-    url: /about/
   - title: "Python"
     url: /data-science/
   - title: "Tableau"
     url: /tableauviz/
+  - title: "About"
+    url: /about/
   # - title: "Sample Posts"
   #   url: /year-archive/
   # - title: "Sample Collections"
