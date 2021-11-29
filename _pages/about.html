@@ -168,15 +168,15 @@ h7 {
 }
 
 .col-md-3 {
-  -ms-flex: 0 0 30%;
-  flex: 0 0 30%;
-  max-width: 30%;
+float: left;
+  width: 25%;
+  padding: 10px;
 }
 
 .col-md-9 {
-  -ms-flex: 0 0 70%;
-  flex: 0 0 70%;
-  max-width: 70%;
+float: left;
+  width: 75%;
+  padding: 10px;
 }
       
 .mb-4 {
@@ -585,34 +585,16 @@ a.bg-primary:hover {
 }
 
 /* Experience Style */
-      
-.experience-row{
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-wrap: wrap;
-  flex-wrap: wrap;
+ .experience-row:after {
+  content: "";
+  display: table;
+  clear: both;
 }
-  
-.card-experience {
-    position: relative;
-    display: -ms-flexbox;
-    display: flex;
-    -ms-flex-direction: column;
-    flex-direction: column;
-    min-width: 0;
-    word-wrap: break-word;
-    background-color: #fff;
-    background-clip: border-box;
-    border-radius: .25rem
-}
-.cc-experience {
-  margin-bottom: 0;
-}
-
-.cc-experience .cc-experience-header {
-  padding: 50px;
-  text-align: center;
-  color: #fff;
+.cc-experience-header {
+	margin-bottom: 0;
+  	padding: 10px 10px 20px;
+  	text-align: center;
+  	color: #fff;
 }
 
 /* Education Style */
@@ -924,35 +906,29 @@ a.bg-primary:hover {
 </div>
 
 <!-- experience -->
+<!-- experience -->
 <div class="section" id="experience">
-  <div class="container cc-experience">
+	<div class="container cc-experience">
     <h5 class="h4 text-center mb-4 title">Work Experience</h5>
-    <div class="card-experience">
-      
-      <div class="experience-row">
+    	<div class="experience-row">
         
-        <div class="col-md-3 bg-primary">
-          <div class="card-body cc-experience-header">
-            <div class="h6">Jul 2021 - Present </div>
-            <div class="h7">University of Business and Technology</div>
-          </div>
+        <div class="col-md-3 bg-primary mb-4">
+        	<div class="card-body cc-experience-header">
+        	<div class="category">Jul 2021 - Present <br><br> University of Business and Technology</div>
+        	</div>
         </div>
-        
-        <div class="col-md-9">
-          <div class="card-body">
-            <div class="subcategory">Deputy Director General of Information Affairs</div>
-            <div class="description">
-              Provide information to authorized external and internal stakeholders.
-              This information fulfills the requirements of ministry of education (MoE),
-              local authorities, accreditation bodies, university ranking authorities
-              and internal stakeholders (Rector, Vice Rectors, Deans etc.).</div>
+  
+  		<div class="col-md-9">
+			<div class="subcategory"> Deputy Director General of Information Affairs</div>
+            	<div class="card-description">
+                Provide information to authorized external and internal stakeholders. This information fulfills the requirements 
+                of ministry of education (MoE), local authorities, accreditation bodies, university ranking authorities and
+                internal stakeholders (Rector, Vice Rectors, Deans etc.).</div>
           </div>
-        </div>
-        
-      </div>
-      
-    </div>
-  </div>
+  		</div>
+  
+</div>
+</div>
 </div>
 
 <!-- education -->
