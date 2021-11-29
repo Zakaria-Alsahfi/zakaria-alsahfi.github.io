@@ -90,7 +90,7 @@ p.description {
 .footer-big p {
   color: #4a4848;
   font-weight: 300;
-  line-height: 1.61em;
+  line-height: 1.4em;
 }
 
 .text-center {
@@ -583,19 +583,27 @@ a.bg-primary:hover {
 }
 
 /* Experience Style */
-.experience-row{
-  content: "";
-  display: block;
-}	    
- .experience-row:after {
+.experience-row {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+}
+
+.experience-row:after {
   content: "";
   display: block;
 }
+
+.cc-experience {
+  margin-bottom: 0;
+}
+	    
 .cc-experience-header {
-margin-bottom: 0;
-padding: 10px 10px 20px;
-text-align: center;
-color: #fff;
+	margin-bottom: 0;
+  	padding: 10px 10px 20px;
+  	text-align: center;
+  	color: #fff;
 }
 
 /* Education Style */
@@ -913,15 +921,15 @@ color: #fff;
 		
 		<div class="experience-row">
 			
-			<div class="col-md-3 bg-primary">
+			<div class="col-md-3 bg-primary mb-4">
 				<div class="card-body cc-experience-header">
 					<div class="category">Nov 2021 - Present <br><br>Salla E-Commerce Platform</div>
 				</div>
 			</div>
-		<div class="col-md-9 bg-secondary">
+		<div class="col-md-9 bg-secondary mb-4">
 			<div class="subcategory"> Financial Data Analyst</div>
 			<div class="card-description">
-				1Examine financial records and prepare comprehensive reports for their company. 
+				Examine financial records and prepare comprehensive reports for their company. 
 				These reports are used to identify the current direction of production and help managers forecast future trends. 
 				As a financial data analyst, my job duties include compiling data from the market and various departments 
 				within the company, analyzing the information, and creating reports for upper management.</div>
@@ -929,12 +937,12 @@ color: #fff;
 		</div>
 	
 		<div class="experience-row">
-			<div class="col-md-3 bg-primary">
+			<div class="col-md-3 bg-primary mb-4">
 				<div class="card-body cc-experience-header">
 					<div class="category">Jul 2021 - Present <br><br> University of Business and Technology</div>
 				</div>
 			</div>
-		<div class="col-md-9 bg-secondary">
+		<div class="col-md-9 bg-secondary mb-4">
 			<div class="subcategory">Data Analyst</div>
 			<div class="card-description">
 				Provide information to authorized external and internal stakeholders. This information fulfills the requirements 
