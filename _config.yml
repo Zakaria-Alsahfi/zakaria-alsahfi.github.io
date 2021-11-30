@@ -122,6 +122,14 @@ author:
 include:
   - .htaccess
   - _pages
+  - ".nojekyll"
+  # Include 'source/css/_typing.css'.
+  - "css/_typing.css"
+  # Include any file in 'source/_css/'.
+  - "_css/*"
+  # Include any file and subfolder in 'source/_css/'.
+  - "_css/**/*"
+  
 exclude:
   - "*.sublime-project"
   - "*.sublime-workspace"
@@ -148,6 +156,19 @@ exclude:
   - tmp
   - /docs # ignore Minimal Mistakes /docs
   - /test # ignore Minimal Mistakes /test
+    # Exclude 'source/js/test.js'.
+  - "js/test.js"
+  # Exclude any file in 'source/js/'.
+  - "js/*"
+  # Exclude any file and subfolder in 'source/js/'.
+  - "js/**/*"
+  # Exclude any file with filename that starts with 'test' in 'source/js/'.
+  - "js/test*"
+  # Exclude any file with filename that starts with 'test' in 'source/js/' and its subfolders.
+  - "js/**/test*"
+  # Do not use this to exclude posts in the 'source/_posts/'.
+  # Use skip_render for that. Or prepend an underscore to the filename.
+  # - "_posts/hello-world.md" # Does not work.
 keep_files:
   - .git
   - .svn
