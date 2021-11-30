@@ -9,7 +9,7 @@ excerpt: "Data Science, Machine Learning, Deep Learning, Python, PyTorch, SageMa
 mathjax: "true"
 ---
 
-[Default Button Text](#link){: .btn}
+{% include gallery caption="This is a sample gallery with **Markdown support**." %}
 
 ## Project Overview
 
