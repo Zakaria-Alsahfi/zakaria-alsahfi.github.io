@@ -9,5 +9,5 @@ author_profile: true
 
 
 {% for post in site.viz %}
-  {% include archive-single.html %}
+  {% include archive-single-tableau.html %}
 {% endfor %}
