@@ -173,7 +173,12 @@ kramdown:
   toc_levels: 1..6
   smart_quotes: lsquo,rsquo,ldquo,rdquo
   enable_coderay: false
-
+  
+# Collections
+collections:
+  tableau:
+    output: true
+    permalink: /:collection/:path/
 
 # Sass/SCSS
 sass:
@@ -268,6 +273,16 @@ defaults:
     values:
       layout: single
       author_profile: true
+      
+  # _tableau
+  - scope:
+      path: ""
+      type: tableau
+    values:
+      layout: single
+      author_profile: true
+      share: true
+      comment: true
       
 # _gallery Tableau      
 gallery:
