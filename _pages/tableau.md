@@ -1,11 +1,13 @@
 ---
-layout: new_default
-permalink: /year-archive/
-#title: "About"
+layout: archive
+title: "Portfolio"
+permalink: /portfolio/
 author_profile: true
-header:
-  #overlay_image: /images/perceptron/data-science.jpg
-  #overlay_filter: rgb(236, 193, 172)
 ---
 
-{: .notice--primary} "hello"
+{% include base_path %}
+
+
+{% for post in site.portfolio %}
+  {% include archive-single.html %}
+{% endfor %}
