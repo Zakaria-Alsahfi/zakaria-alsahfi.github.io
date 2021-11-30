@@ -8,4 +8,4 @@ header:
   #overlay_filter: rgb(236, 193, 172)
 ---
 
-{: .notice--primary} hello
+{: .notice--primary} "hello"
