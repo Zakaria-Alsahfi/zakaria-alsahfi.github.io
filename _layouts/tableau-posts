@@ -4,12 +4,12 @@ layout: archive
 
 {{ content }}
 
-{% assign postsByYear = site.tableau | group_by_exp: 'tableau', 'tableau.date | date: "%Y"' %}
-{% for year in tableauByYear %}
+{% assign postsByYear = site.tableau | group_by_exp: 'tableaus', 'tableaus.date | date: "%Y"' %}
+{% for year in tableausByYear %}
   <section id="{{ year.name }}" class="taxonomy__section">
     <h2 class="archive__subtitle">{{ year.name }}</h2>
     <div class="entries-{{ page.entries_layout | default: 'list' }}">
-      {% for tableau in year.items %}
+      {% for tableaus in year.items %}
         {% include archive-single.html type=page.entries_layout %}
       {% endfor %}
     </div>
