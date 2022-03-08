@@ -6,6 +6,6 @@ author_profile: true
 ---
 
 
-## 2021-07: UBT
+## About Me
 
-Data Analyst
+Motivated, teamwork-oriented and responsible Data Analyst with significant experience in increasing comperhension of reports and presentations by average professional. Highly educated and bilingual in Arabic and English.
