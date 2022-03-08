@@ -27,25 +27,43 @@ Examine financial records and prepare comprehensive reports for their company.Th
 ## Education
 > ##### Business and Data Analyst         2021
 > SDA Simplilearn
-> 
+
 > ##### Deep-Learning         2021
 > Udacity Nano Degree
-> 
+
 > ##### M.S in Data Science         2020
 > Maryville University
-> 
+
 > ##### B.S in Computer Science         2018
 > Fontbonne University
 
 
 ## PROFESSIONAL DEVELOPMENT Professional Development
-- Digital transformation (80 hours) - Blockchain Development in Depth (40 hours) - Computer vision (20 Hours)
-- IT Project Management (20 hours) - IT Risk Management (20 Hours) - CompTIA A+ (20 Hours) - CCNA (20 Hours)
+- Digital transformation (80 hours)
+- Blockchain Development in Depth (40 hours)
+- Computer vision (20 Hours)
+- IT Project Management (20 hours)
+- IT Risk Management (20 Hours)
+- CompTIA A+ (20 Hours)
+- CCNA (20 Hours)
 - CCNP (20 Hours)
 
 
 ## Academic Interests
-- Data Visualization - Predictive Analysis - Statical Modeling - Data Analytics - Machine Learning - Deep learning
+- Data Visualization 
+- Predictive Analysis 
+- Statical Modeling 
+- Data Analytics 
+- Machine Learning 
+- Deep learning
 
 ## Technical Skills
-- Python - MySQL - Excel - Power Bi - Tableau - R Shiny - VBA - HTML - CSS
+- Python
+- MySQL
+- Excel 
+- Power Bi 
+- Tableau 
+- R Shiny
+- VBA
+- HTML
+- CSS
