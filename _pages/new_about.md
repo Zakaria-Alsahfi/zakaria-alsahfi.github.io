@@ -26,12 +26,14 @@ Examine financial records and prepare comprehensive reports for their company.Th
 
 ## Education
 > ##### Business and Data Analyst         2021
->
-> SDA Simplilearn<br>
+> SDA Simplilearn
+> 
 > ##### Deep-Learning         2021
 > Udacity Nano Degree
+> 
 > ##### M.S in Data Science         2020
 > Maryville University
+> 
 > ##### B.S in Computer Science         2018
 > Fontbonne University
 
