@@ -6,13 +6,17 @@ author_profile: true
 ---
 
 
-## About Me
+## About Me...
+
+---
 
 Motivated, teamwork-oriented and responsible Data Analyst with significant experience in increasing comperhension of reports and presentations by average professional. Highly educated and bilingual in Arabic and English.
 
 
 
-## Work Experience
+## Work Experience...
+
+---
 
 #### Data Analyst
 Jul 2021 - Present <br><br> University of Business and Technology
@@ -24,21 +28,27 @@ Nov 2021 - Present <br><br>Salla E-Commerce Platform
 Examine financial records and prepare comprehensive reports for their company.These reports are used to identify the current direction of production and help managers forecast future trends. As a financial data analyst, my job duties include compiling data from the market and various departments within the company, analyzing the information, and creating reports for upper management.
 
 
-## Education
-> ##### Business and Data Analyst         2021
+## Education...
+
+---
+
+> ##### Business and Data Analyst 2021
 > SDA Simplilearn
 
-> ##### Deep-Learning         2021
+> ##### Deep-Learning 2021
 > Udacity Nano Degree
 
-> ##### M.S in Data Science         2020
+> ##### M.S in Data Science 2020
 > Maryville University
 
-> ##### B.S in Computer Science         2018
+> ##### B.S in Computer Science 2018
 > Fontbonne University
 
 
-## PROFESSIONAL DEVELOPMENT Professional Development
+## Professional Development...
+
+---
+
 - Digital transformation (80 hours)
 - Blockchain Development in Depth (40 hours)
 - Computer vision (20 Hours)
@@ -49,7 +59,10 @@ Examine financial records and prepare comprehensive reports for their company.Th
 - CCNP (20 Hours)
 
 
-## Academic Interests
+## Academic Interests...
+
+---
+
 - Data Visualization 
 - Predictive Analysis 
 - Statical Modeling 
@@ -57,7 +70,10 @@ Examine financial records and prepare comprehensive reports for their company.Th
 - Machine Learning 
 - Deep learning
 
-## Technical Skills
+## Technical Skills...
+
+---
+
 - Python
 - MySQL
 - Excel 
