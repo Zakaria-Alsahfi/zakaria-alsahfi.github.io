@@ -63,9 +63,9 @@ Examine financial records and prepare comprehensive reports for their company.Th
 
 ---
 
-"- Data Visualization \t\t\t\t - Predictive Analysis" 
-- Statical Modeling - Data Analytics 
-- Machine Learning - Deep learning
+- Data Visualization \t\t\t\t - Predictive Analysis 
+- Statical Modeling \t\t\t\t- Data Analytics 
+- Machine Learning \t\t\t\t- Deep learning
 
 ## Technical Skills
 
