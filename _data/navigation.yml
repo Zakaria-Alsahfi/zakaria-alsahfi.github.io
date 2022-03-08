@@ -1,5 +1,7 @@
 # main links
 main:
+  - title: ""
+    url: /home/
   - title: "Python"
     url: /data-science/
   - title: "Tableau"
