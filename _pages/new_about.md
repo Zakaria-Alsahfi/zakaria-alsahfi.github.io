@@ -6,7 +6,7 @@ author_profile: true
 ---
 
 
-## About Me...
+## About Me
 
 ---
 
@@ -14,7 +14,7 @@ Motivated, teamwork-oriented and responsible Data Analyst with significant exper
 
 
 
-## Work Experience...
+## Work Experience
 
 ---
 
@@ -28,7 +28,7 @@ Nov 2021 - Present <br><br>Salla E-Commerce Platform
 Examine financial records and prepare comprehensive reports for their company.These reports are used to identify the current direction of production and help managers forecast future trends. As a financial data analyst, my job duties include compiling data from the market and various departments within the company, analyzing the information, and creating reports for upper management.
 
 
-## Education...
+## Education
 
 ---
 
@@ -45,7 +45,7 @@ Examine financial records and prepare comprehensive reports for their company.Th
 > Fontbonne University
 
 
-## Professional Development...
+## Professional Development
 
 ---
 
@@ -59,18 +59,15 @@ Examine financial records and prepare comprehensive reports for their company.Th
 - CCNP (20 Hours)
 
 
-## Academic Interests...
+## Academic Interests
 
 ---
 
-- Data Visualization 
-- Predictive Analysis 
-- Statical Modeling 
-- Data Analytics 
-- Machine Learning 
-- Deep learning
+- Data Visualization \t\t- Predictive Analysis 
+- Statical Modeling - Data Analytics 
+- Machine Learning - Deep learning
 
-## Technical Skills...
+## Technical Skills
 
 ---
 
