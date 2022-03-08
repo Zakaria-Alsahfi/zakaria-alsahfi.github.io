@@ -24,4 +24,21 @@ Nov 2021 - Present <br><br>Salla E-Commerce Platform
 Examine financial records and prepare comprehensive reports for their company.These reports are used to identify the current direction of production and help managers forecast future trends. As a financial data analyst, my job duties include compiling data from the market and various departments within the company, analyzing the information, and creating reports for upper management.
 
 
+## Education
+2021<br><br>Business and Data Analyst<br>SDA Simplilearn
+2021<br><br>Deep-Learning<br>Udacity Nano Degree
+2020<br><br>M.S in Data Science<br>Maryville University
+2018<br><br>B.S in Computer Science<br>Fontbonne University
 
+
+## PROFESSIONAL DEVELOPMENT Professional Development
+• Digital transformation (80 hours) • Blockchain Development in Depth (40 hours) • Computer vision (20 Hours)
+• IT Project Management (20 hours) • IT Risk Management (20 Hours) • CompTIA A+ (20 Hours) • CCNA (20 Hours)
+• CCNP (20 Hours)
+
+
+## Academic Interests
+* Data Visualization * Predictive Analysis * Statical Modeling * Data Analytics * Machine Learning * Deep learning
+
+## Technical Skills
+* Python * MySQL * Excel * Power Bi * Tableau * R Shiny * VBA * HTML * CSS
