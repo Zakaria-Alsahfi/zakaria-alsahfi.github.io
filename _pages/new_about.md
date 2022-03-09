@@ -49,10 +49,10 @@ Examine financial records and prepare comprehensive reports for their company.Th
 
 ---
 <pre>
-- Digital transformation (80 h)         - Computer vision (20h)
-- Blockchain Development in Depth (40h) - IT Project Management (20h)
-- IT Risk Management (20h)              - CompTIA A+ (20h)
-- CCNA (20h)                            - CCNP (20h)
+- Computer vision(20h)          - CompTIA A+(20h)            
+- Blockchain Development(40h)   - CCNA(20h)
+- IT Project Management(20h)    - IT Risk Management(20h)              
+- Digital transformation(80 h)  - CCNP(20h)
 </pre>
 
 
