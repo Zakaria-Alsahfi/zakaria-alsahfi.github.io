@@ -67,8 +67,7 @@ Examine financial records and prepare comprehensive reports for their company.Th
 ## Academic Interests
 
 ---
-|                       |                 |                       |
-| ------------          | -------------   | ------------------    |
+
 |- Data Visualization   |                 |- Predictive Analysis  |
 |- Statical Modeling    |                 |- Data Analytics       |
 |- Machine Learning     |                 |- Deep learning        |
@@ -77,12 +76,7 @@ Examine financial records and prepare comprehensive reports for their company.Th
 
 ---
 
-- Python
-- MySQL
-- Excel 
-- Power Bi 
-- Tableau 
-- R Shiny
-- VBA
-- HTML
-- CSS
+- Python <hr>- MySQL
+- <hr>Excel - <hr>Power Bi 
+- <hr>Tableau - <hr>R Shiny
+- <hr>VBA -<hr>HTML -<hr>- CSS
