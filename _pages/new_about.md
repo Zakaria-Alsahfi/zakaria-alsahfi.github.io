@@ -31,28 +31,29 @@ Examine financial records and prepare comprehensive reports for their company.Th
 ## Education
 
 ---
+<pre>
+##### Business and Data Analyst                       Nov 2021
+*SDA Simplilearn*
 
->> ##### Business and Data Analyst          2021
-> SDA Simplilearn
+##### Deep-Learning                                   Jul 2021
+*Udacity Nano Degree*
 
->> ##### Deep-Learning                      2021
-> Udacity Nano Degree
+##### M.S in Data Science                             Des 2020
+*Maryville University – St. Louis, Missouri, USA*
 
->> ##### M.S in Data Science                2020
-> Maryville University
-
->> ##### B.S in Computer Science            2018
-> Fontbonne University
+##### B.S in Computer Science                           Des 2018
+*Fontbonne University – St. Louis, Missouri, USA*
+</pre>
 
 
 ## Professional Development
 
 ---
 <font size="4"><pre>
-- Computer vision(20h)          - CompTIA A+(20h)            
-- Blockchain Development(40h)   - CCNA(20h)
-- IT Project Management(20h)    - IT Risk Management(20h)              
-- Digital transformation(80 h)  - CCNP(20h)
+• Computer vision(20h)          • CompTIA A+(20h)
+• Blockchain Development(40h)   • CCNA(20h)
+• IT Project Management(20h)    • IT Risk Management(20h)
+• Digital transformation(80 h)  • CCNP(20h)
 </pre></font> 
 
 
@@ -62,9 +63,10 @@ Examine financial records and prepare comprehensive reports for their company.Th
 ---
 
 <font size="4"><pre>
-- Data Visualization           - Predictive Analysis
-- Statical Modeling            - Data Analytics
-- Machine Learning             - Deep learning
+• Data Visualization           • Predictive Analysis
+• Statical Modeling            • Data Analytics
+• Machine Learning             • Deep learning
+• Data Mining                  • Big Data
 </pre></font> 
 
 ## Technical Skills
@@ -72,7 +74,8 @@ Examine financial records and prepare comprehensive reports for their company.Th
 ---
 
 <font size="4"><pre>
-- Python         - MySQL          - Power Bi
-- Tableau        - R Shiny        - Excel
-- VBA            - HTML           - CSS
+• Python         • MySQL          • R
+• Tableau        • R Shiny        • Power Bi
+• SAS            • VBA            • Excel
+• Swift          • HTML           • CSS
 </pre></font> 
