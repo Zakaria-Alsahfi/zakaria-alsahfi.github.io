@@ -21,7 +21,7 @@ Motivated, teamwork-oriented and responsible Data Analyst with significant exper
 
 ---
 
-### Data Analyst
+#### Data Analyst
 
 | :-----------------------------            | ----------:          |
 | **University of Business and Technology** |**Jul 2021 - Present**|
@@ -29,7 +29,7 @@ Motivated, teamwork-oriented and responsible Data Analyst with significant exper
 <p>Provide information to authorized external and internal stakeholders. This information fulfills the requirements of ministry of education (MoE), local authorities, accreditation bodies, university ranking authorities and internal stakeholders (Rector, Vice Rectors, Deans etc.).</p>
 
 
-### Financial Data Analyst
+#### Financial Data Analyst
 
 | :----------------------------- |----------:            |
 | **Salla E-Commerce Platform**  |**Nov 2021 - Des2021** |
