@@ -43,7 +43,7 @@ Examine financial records and prepare comprehensive reports for their company.Th
 ## Education
 
 ---
-<font size="4">
+
 | ------------                   | -------------   | ------------------ | ------------ |
 | **Business and Data Analyst**  |                 |                    | **Nov 2021** |
 | SDA Simplilearn                |                 |                    |              |
@@ -53,7 +53,7 @@ Examine financial records and prepare comprehensive reports for their company.Th
 | Maryville University – St. Louis, Missouri, USA||                     |              |
 | **B.S in Computer Science**    |                 |                    | **Des 2018** |
 | Fontbonne University – St. Louis, Missouri, USA||                     |              |
-</font>
+
 
 ## Professional Development
 
