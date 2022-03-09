@@ -1,12 +1,12 @@
 ---
-layout: single
+layout: new_default
 #title: "Portfolio"
 permalink: /about/
 author_profile: true
 ---
 
   
-## About Me1
+## About Me
 
 ---
 
@@ -48,12 +48,12 @@ Examine financial records and prepare comprehensive reports for their company.Th
 ## Professional Development
 
 ---
-<pre>
+<font size="1"><pre>
 - Computer vision(20h)          - CompTIA A+(20h)            
 - Blockchain Development(40h)   - CCNA(20h)
 - IT Project Management(20h)    - IT Risk Management(20h)              
 - Digital transformation(80 h)  - CCNP(20h)
-</pre>
+</pre></font> 
 
 
 
@@ -61,18 +61,18 @@ Examine financial records and prepare comprehensive reports for their company.Th
 
 ---
 
-<pre>
+<font size="2"><pre>
 - Data Visualization           - Predictive Analysis
 - Statical Modeling            - Data Analytics
 - Machine Learning             - Deep learning
-</pre>
+</pre></font> 
 
 ## Technical Skills
 
 ---
 
-<pre>
+<font size="3"><pre>
 - Python         - MySQL          - Power Bi
 - Tableau        - R Shiny        - Excel
 - VBA            - HTML           - CSS
-</pre>
+</pre></font> 
