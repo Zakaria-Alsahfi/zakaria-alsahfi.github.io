@@ -48,7 +48,7 @@ Examine financial records and prepare comprehensive reports for their company.Th
 ## Professional Development
 
 ---
-<font size="1"><pre>
+<font size="5"><pre>
 - Computer vision(20h)          - CompTIA A+(20h)            
 - Blockchain Development(40h)   - CCNA(20h)
 - IT Project Management(20h)    - IT Risk Management(20h)              
@@ -61,7 +61,7 @@ Examine financial records and prepare comprehensive reports for their company.Th
 
 ---
 
-<font size="2"><pre>
+<font size="4"><pre>
 - Data Visualization           - Predictive Analysis
 - Statical Modeling            - Data Analytics
 - Machine Learning             - Deep learning
