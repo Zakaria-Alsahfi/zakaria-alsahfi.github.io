@@ -17,15 +17,6 @@ td, th {
 Motivated, teamwork-oriented and responsible Data Analyst with significant experience in increasing comperhension of reports and presentations by average professional. Highly educated and bilingual in Arabic and English.
 
 
-
-
-|              |               |                    |              |
-| ------------ | ------------- | ------------------ | ------------ |
-| Millisecond  | Millimetre    | Kilometre per hour | Milligram    |
-| Second       | Centimetre    | Foot per second    | Gram         |
-| Minute       | Inch          | Miles per hour     | Ounce        |
-
-
 ## Work Experience
 
 ---
@@ -35,7 +26,7 @@ Motivated, teamwork-oriented and responsible Data Analyst with significant exper
 | :-----------------------------            | ----------:          |
 | **University of Business and Technology** |**Jul 2021 - Present**|
 
-Provide information to authorized external and internal stakeholders. This information fulfills the requirements of ministry of education (MoE), local authorities, accreditation bodies, university ranking authorities and internal stakeholders (Rector, Vice Rectors, Deans etc.).
+<p>Provide information to authorized external and internal stakeholders. This information fulfills the requirements of ministry of education (MoE), local authorities, accreditation bodies, university ranking authorities and internal stakeholders (Rector, Vice Rectors, Deans etc.).</p>
 
 
 ### Financial Data Analyst
@@ -43,7 +34,7 @@ Provide information to authorized external and internal stakeholders. This infor
 | :----------------------------- |----------:            |
 | **Salla E-Commerce Platform**  |**Nov 2021 - Des2021** |
 
-Examine financial records and prepare comprehensive reports for their company.These reports are used to identify the current direction of production and help managers forecast future trends. As a financial data analyst, my job duties include compiling data from the market and various departments within the company, analyzing the information, and creating reports for upper management.
+<p>Examine financial records and prepare comprehensive reports for their company.These reports are used to identify the current direction of production and help managers forecast future trends. As a financial data analyst, my job duties include compiling data from the market and various departments within the company, analyzing the information, and creating reports for upper management.</P>
 
 
 ## Education
