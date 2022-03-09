@@ -19,7 +19,7 @@ Motivated, teamwork-oriented and responsible Data Analyst with significant exper
 
 
 
-
+|              |               |                    |              |
 | ------------ | ------------- | ------------------ | ------------ |
 | Millisecond  | Millimetre    | Kilometre per hour | Milligram    |
 | Second       | Centimetre    | Foot per second    | Gram         |
@@ -47,13 +47,10 @@ Examine financial records and prepare comprehensive reports for their company.Th
 | :----------------------------- | --------------- | :----------: |
 | **Business and Data Analyst**  |                 | **Nov 2021** |
 | SDA Simplilearn                |                 |              |
-
 | **Deep-Learning**              |                 | **Jul 2021** |
 | Udacity Nano Degree            |                 |              |
-
 | **M.S in Data Science**        |                 | **Des 2020** |
 | Maryville University – St. Louis, Missouri, USA| |              |
-
 | **B.S in Computer Science**    |                 | **Des 2018** |
 | Fontbonne University – St. Louis, Missouri, USA| |              |
 
