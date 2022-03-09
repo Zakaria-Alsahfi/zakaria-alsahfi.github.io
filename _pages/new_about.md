@@ -74,7 +74,7 @@ Examine financial records and prepare comprehensive reports for their company.Th
 ---
 
 <pre>
-* Python         - MySQL          - Power Bi
+-- Python         -- MySQL          - Power Bi
 - Tableau        - R Shiny        - Excel
 - VBA            - HTML           - CSS
 </pre>
