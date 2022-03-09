@@ -19,12 +19,12 @@ Motivated, teamwork-oriented and responsible Data Analyst with significant exper
 ---
 
 #### Data Analyst
-Jul 2021 - Present <br><br> University of Business and Technology
+University of Business and Technology         > Jul 2021 - Present<br><br>
 Provide information to authorized external and internal stakeholders. This information fulfills the requirements of ministry of education (MoE), local authorities, accreditation bodies, university ranking authorities and internal stakeholders (Rector, Vice Rectors, Deans etc.).
 
 
 #### Financial Data Analyst
-Nov 2021 - Present <br><br>Salla E-Commerce Platform
+Salla E-Commerce Platform                     > Nov 2021 - Des2021 <br><br>
 Examine financial records and prepare comprehensive reports for their company.These reports are used to identify the current direction of production and help managers forecast future trends. As a financial data analyst, my job duties include compiling data from the market and various departments within the company, analyzing the information, and creating reports for upper management.
 
 
@@ -32,23 +32,23 @@ Examine financial records and prepare comprehensive reports for their company.Th
 
 ---
 
-> ##### Business and Data Analyst 2021
+>> ##### Business and Data Analyst          2021
 > SDA Simplilearn
 
-> ##### Deep-Learning 2021
+>> ##### Deep-Learning                      2021
 > Udacity Nano Degree
 
-> ##### M.S in Data Science 2020
+>> ##### M.S in Data Science                2020
 > Maryville University
 
-> ##### B.S in Computer Science 2018
+>> ##### B.S in Computer Science            2018
 > Fontbonne University
 
 
 ## Professional Development
 
 ---
-<font size="5"><pre>
+<font size="4"><pre>
 - Computer vision(20h)          - CompTIA A+(20h)            
 - Blockchain Development(40h)   - CCNA(20h)
 - IT Project Management(20h)    - IT Risk Management(20h)              
@@ -71,7 +71,7 @@ Examine financial records and prepare comprehensive reports for their company.Th
 
 ---
 
-<font size="3"><pre>
+<font size="4"><pre>
 - Python         - MySQL          - Power Bi
 - Tableau        - R Shiny        - Excel
 - VBA            - HTML           - CSS
