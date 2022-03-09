@@ -1,12 +1,12 @@
 ---
-layout: new_default
+layout: single
 #title: "Portfolio"
 permalink: /about/
 author_profile: true
 ---
 
   
-## About Me
+## About Me1
 
 ---
 
