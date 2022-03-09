@@ -68,17 +68,20 @@ Examine financial records and prepare comprehensive reports for their company.Th
 
 ---
 
-<pre>-Data Visualization                 -Predictive Analysis</pre>
-<pre>-Statical Modeling                  -Data Analytics</pre>
-<pre>-Machine Learning                   -Deep learning</pre>
+<pre>
+- Data Visualization                 - Predictive Analysis
+- Statical Modeling                  - Data Analytics
+- Machine Learning                   - Deep learning
+</pre>
 
 ## Technical Skills
 
 ---
 
 <pre>
-- Python                            - MySQL
-- Excel                             - Power Bi 
-- Tableau                           - R Shiny
-- VBA                               - HTML
-- CSS</pre>
+- Python                             - MySQL
+- Excel                              - Power Bi 
+- Tableau                            - R Shiny
+- VBA                                - HTML
+- CSS
+</pre>
