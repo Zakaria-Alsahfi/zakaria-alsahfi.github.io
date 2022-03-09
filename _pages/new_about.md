@@ -31,14 +31,16 @@ Motivated, teamwork-oriented and responsible Data Analyst with significant exper
 ---
 
 ### Data Analyst
-| :----------------------------- | --------------- | :----------: |
-| **University of Business and Technology**  |                 | **Jul 2021 - Present** |
+
+| :----------------------------- | ----------: |
+| **University of Business and Technology** |**Jul 2021 - Present**|
 Provide information to authorized external and internal stakeholders. This information fulfills the requirements of ministry of education (MoE), local authorities, accreditation bodies, university ranking authorities and internal stakeholders (Rector, Vice Rectors, Deans etc.).
 
 
 ### Financial Data Analyst
-| :----------------------------- | --------------- | :----------: |
-| **Salla E-Commerce Platform**  |                 | **Nov 2021 - Des2021** |
+
+| :----------------------------- |----------: |
+| **Salla E-Commerce Platform**|**Nov 2021 - Des2021** |
 Examine financial records and prepare comprehensive reports for their company.These reports are used to identify the current direction of production and help managers forecast future trends. As a financial data analyst, my job duties include compiling data from the market and various departments within the company, analyzing the information, and creating reports for upper management.
 
 
