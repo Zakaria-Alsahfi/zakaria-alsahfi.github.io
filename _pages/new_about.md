@@ -62,6 +62,7 @@ Examine financial records and prepare comprehensive reports for their company.Th
 ## Professional Development
 
 ---
+|                                |                 |                           |
 | :----------------------------- | --------------- | :----------:              |
 | • Computer vision(20h)         |                 | • CompTIA A+(20h)         |
 | • Blockchain Development(40h)  |                 | • CCNA(20h)               |
