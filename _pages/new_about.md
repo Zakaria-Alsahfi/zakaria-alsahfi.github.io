@@ -26,7 +26,7 @@ Motivated, teamwork-oriented and responsible Data Analyst with significant exper
 | :-----------------------------            | ----------:          |
 | **University of Business and Technology** |**Jul 2021 - Present**|
 
-<p style="text-align:center">Provide information to authorized external and internal stakeholders. This information fulfills the requirements of ministry of education (MoE), local authorities, accreditation bodies, university ranking authorities and internal stakeholders (Rector, Vice Rectors, Deans etc.).</p>
+<p style="text-align:left">Provide information to authorized external and internal stakeholders. This information fulfills the requirements of ministry of education (MoE), local authorities, accreditation bodies, university ranking authorities and internal stakeholders (Rector, Vice Rectors, Deans etc.).</p>
 
 
 #### Financial Data Analyst
