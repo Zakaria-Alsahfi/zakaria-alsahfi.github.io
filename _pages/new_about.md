@@ -64,7 +64,7 @@ Examine financial records and prepare comprehensive reports for their company.Th
 ---
 
 |                                |                 |                           |
-| :----------------------------- | --------------- | :----------:              |
+| :----------------------------- | --------------- | :----------              |
 | • Computer vision(20h)         |                 | • CompTIA A+(20h)         |
 | • Blockchain Development(40h)  |                 | • CCNA(20h)               |
 | • IT Project Management(20h)   |                 | • IT Risk Management(20h) |
@@ -76,20 +76,20 @@ Examine financial records and prepare comprehensive reports for their company.Th
 
 ---
 
-<font size="4"><pre>
-• Data Visualization              • Predictive Analysis
-• Statical Modeling               • Data Analytics
-• Machine Learning                • Deep learning
-• Data Mining                     • Big Data
-</pre></font> 
+| :------------------- | --------------- | :-------------------- |
+| • Data Visualization |                 | • Predictive Analysis |
+| • Statical Modeling  |                 | • Data Analytics      |
+| • Machine Learning   |                 | • Deep learning       |
+| • Data Mining        |                 | • Big Data            |
+
 
 ## Technical Skills
 
 ---
 
-<font size="4"><pre>
-• Python          • MySQL           • R
-• Tableau         • R Shiny         • Power Bi
-• SAS             • VBA             • Excel
-• Swift           • HTML            • CSS
-</pre></font> 
+| :----------| ---------- | :---------- |
+| • Python   | • MySQL    | • R         |
+| • Tableau  | • R Shiny  | • Power Bi  |
+| • SAS      | • VBA      | • Excel     |
+| • Swift    | • HTML     | • CSS       |
+
