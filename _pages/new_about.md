@@ -49,14 +49,11 @@ Examine financial records and prepare comprehensive reports for their company.Th
 
 ---
 
-- Digital transformation (80 hours)
-- Blockchain Development in Depth (40 hours)
-- Computer vision (20 Hours)
-- IT Project Management (20 hours)
-- IT Risk Management (20 Hours)
-- CompTIA A+ (20 Hours)
-- CCNA (20 Hours)
-- CCNP (20 Hours)
+- Digital transformation (80 h)         - Computer vision (20h)
+- Blockchain Development in Depth (40h) - IT Project Management (20h)
+- IT Risk Management (20h)              - CompTIA A+ (20h)
+- CCNA (20h)                            - CCNP (20h)
+
 
 
 ## Academic Interests
@@ -74,7 +71,7 @@ Examine financial records and prepare comprehensive reports for their company.Th
 ---
 
 <pre>
-+ Python         + MySQL          - Power Bi
+- Python         - MySQL          - Power Bi
 - Tableau        - R Shiny        - Excel
 - VBA            - HTML           - CSS
 </pre>
