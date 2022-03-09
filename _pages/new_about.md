@@ -19,7 +19,7 @@ Motivated, teamwork-oriented and responsible Data Analyst with significant exper
 ---
 
 #### Data Analyst
-University of Business and Technology         > Jul 2021 - Present<br><br>
+University of Business and Technology&nbsp;Jul 2021 - Present<br><br>
 Provide information to authorized external and internal stakeholders. This information fulfills the requirements of ministry of education (MoE), local authorities, accreditation bodies, university ranking authorities and internal stakeholders (Rector, Vice Rectors, Deans etc.).
 
 
@@ -32,7 +32,7 @@ Examine financial records and prepare comprehensive reports for their company.Th
 
 ---
 
-##### Business and Data Analyst &nbsp; Nov 2021 <p>&nbsp;</p> ***SDA Simplilearn***
+##### Business and Data Analyst&nbsp;Nov 2021 <p>&nbsp;</p> ***SDA Simplilearn***
 
 ##### Deep-Learning                                     Jul 2021
 ***Udacity Nano Degree***
