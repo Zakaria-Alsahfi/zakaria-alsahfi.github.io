@@ -19,7 +19,7 @@ Motivated, teamwork-oriented and responsible Data Analyst with significant exper
 
 
 
-|              |               |                    |              |
+
 | ------------ | ------------- | ------------------ | ------------ |
 | Millisecond  | Millimetre    | Kilometre per hour | Milligram    |
 | Second       | Centimetre    | Foot per second    | Gram         |
