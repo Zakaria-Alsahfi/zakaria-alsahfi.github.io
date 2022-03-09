@@ -5,7 +5,12 @@ permalink: /about/
 author_profile: true
 ---
 
-
+<style>
+td, th {
+   border: none!important;
+}
+</style>
+  
 ## About Me
 
 ---
@@ -63,9 +68,9 @@ Examine financial records and prepare comprehensive reports for their company.Th
 
 ---
 
-- Data Visualization | - Predictive Analysis|
-- Statical Modeling | - Data Analytics|
-- Machine Learning | - Deep learning|
+|- Data Visualization |- Predictive Analysis
+|- Statical Modeling |- Data Analytics
+|- Machine Learning |- Deep learning
 
 ## Technical Skills
 
