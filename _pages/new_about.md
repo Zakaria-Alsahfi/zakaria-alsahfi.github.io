@@ -12,6 +12,18 @@ author_profile: true
 
 Motivated, teamwork-oriented and responsible Data Analyst with significant experience in increasing comperhension of reports and presentations by average professional. Highly educated and bilingual in Arabic and English.
 
+<style>
+td, th {
+   border: none!important;
+}
+</style>
+
+
+| Time         | Length        | Speed              | Mass         |
+| ------------ | ------------- | ------------------ | ------------ |
+| -Millisecond | Millimetre    | Kilometre per hour | Milligram    |
+| Second       | Centimetre    | Foot per second    | Gram         |
+| Minute       | Inch          | Miles per hour     | Ounce        |
 
 
 ## Work Experience
