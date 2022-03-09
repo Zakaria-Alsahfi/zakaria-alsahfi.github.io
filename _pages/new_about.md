@@ -62,11 +62,10 @@ Examine financial records and prepare comprehensive reports for their company.Th
 ## Academic Interests
 
 ---
-| <!-- -->|<!-- -->|<!-- -->|
-|<!-- -->|<!-- -->|<!-- -->|
+
 - Data Visualization| - Predictive Analysis
 - Statical Modeling| - Data Analytics
-- Machine Learning|| - Deep learning
+- Machine Learning| - Deep learning
 
 ## Technical Skills
 
