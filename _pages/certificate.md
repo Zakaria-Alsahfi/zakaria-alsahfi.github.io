@@ -1,7 +1,7 @@
 ---
 layout: archive
 title: " "
-permalink: /tableauviz/
+permalink: /certificate/
 author_profile: true
 ---
 
