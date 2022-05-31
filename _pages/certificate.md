@@ -5,7 +5,7 @@ permalink: /certificate/
 author_profile: true
 
 feature_row:
-  - image_path: /images/training/Business and Data Analyst.pdf
+  - image_path: /images/training/Business and Data Analyst.jpg
     title: "Business and Data Analyst"
     excerpt: "This course includes:
     Introduction to Data Analytics, Business Analytics with Excel, Tableau Training, Power bi, Data Science with R Programing,
@@ -16,7 +16,7 @@ feature_row:
     #btn_label: "Read More"
     #btn_class: "btn--primary"
     
-  - image_path: /images/training/Udacity Deep Learning (NANODEFREE PROGRAM).pdf
+  - image_path: /images/training/Udacity Deep Learning (NANODEFREE PROGRAM).jpg
     title: "Deep Learning Nanodegree Program"
     excerpt: "This course includes:
     
