@@ -4,7 +4,7 @@ title: " "
 permalink: /certificate/
 author_profile: true
 
-feature_row_left:
+feature_row:
   - image_path: /images/training/Business and Data Analys.jpg
     title: "<h4>Business and Data Analyst</h4>"
     #excerpt: "<h6><p>This course includes:<br>
@@ -19,4 +19,5 @@ feature_row_left:
     #Adversarial Networks, Deploying a Model.</p></h6>"
 ---
 
-{% include feature_row id="feature_row_left" type="left" %}
+{% include feature_row %}
+#{% include feature_row id="feature_row_left" type="left" %}
