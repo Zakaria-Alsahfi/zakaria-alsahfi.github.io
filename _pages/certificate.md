@@ -8,6 +8,7 @@ feature_row:
   - image_path: /images/training/Business and Data Analyst.pdf
     title: "Business and Data Analyst"
     excerpt: "This course includes:
+    
     Introduction to Data Analytics, Business Analytics with Excel, Tableau Training, Power bi, Data Science with R Programing, Data 
     Analyst Capstone, Introduction to Business Analysis, Certified Business Analysis Professional (CBAP) Certification, Agile Scrum 
     Master(ASM), SQL Training, Business Analyst Capstone "
@@ -18,6 +19,7 @@ feature_row:
   - image_path: /images/training/Udacity Deep Learning (NANODEFREE PROGRAM).pdf
     title: "Deep Learning Nanodegree Program"
     excerpt: "This course includes:
+    
     Introduction to Deep Learning, Neural Networks, Convolutional Neural Networks, Recurrent Neural Networks, Generative 
     Adversarial Networks, Deploying a Model"
     #url: "#test-link"
