@@ -1,5 +1,5 @@
 ---
-layout: archive #splash archive
+layout: single #splash archive
 title: " "
 permalink: /certificate/
 author_profile: true
