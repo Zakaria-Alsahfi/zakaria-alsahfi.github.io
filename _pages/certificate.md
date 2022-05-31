@@ -13,7 +13,7 @@ feature_row:
     #Agile Scrum Master(ASM), SQL Training, Business Analyst Capstone. </p></h6>"--
     
   - image_path: /images/training/Udacity Deep Learning.jpg
-    title: "Deep Learning Nanodegree Program"
+    title: "<h7>Deep Learning Nanodegree Program</h7>"
     #excerpt: "<h6><p>This course includes:<br>
     #Introduction to Deep Learning, Neural Networks, Convolutional Neural Networks, Recurrent Neural Networks, Generative 
     #Adversarial Networks, Deploying a Model.</p></h6>"
