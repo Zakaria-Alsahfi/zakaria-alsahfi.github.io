@@ -5,7 +5,7 @@ permalink: /certificate/
 author_profile: true
 
 feature_row:
-  - image_path: /assets/splash/feat1-1.jpg
+  - image_path: /images/training/Business and Data Analyst.pdf
     title: "Business and Data Analyst"
     excerpt: "This course includes:
     Introduction to Data Analytics, Business Analytics with Excel, Tableau Training, Power bi, Data Science with R Programing, Data 
@@ -15,7 +15,7 @@ feature_row:
     #btn_label: "Read More"
     #btn_class: "btn--primary"
     
-  - image_path: /assets/splash/feat1-2.jpg
+  - image_path: /images/training/Udacity Deep Learning (NANODEFREE PROGRAM).pdf
     title: "Deep Learning Nanodegree Program"
     excerpt: "This course includes:
     Introduction to Deep Learning, Neural Networks, Convolutional Neural Networks, Recurrent Neural Networks, Generative 
