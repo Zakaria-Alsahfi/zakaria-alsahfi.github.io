@@ -5,7 +5,7 @@ permalink: /certificate/
 author_profile: true
 
 feature_row_left:
-  - image_path: /images/training/Business and Data Analyst.jpg
+  - image_path: /images/education-logo/simpilearn.png
     title: "Business and Data Analyst"
     excerpt: "This course includes:
     Introduction to Data Analytics, Business Analytics with Excel, Tableau Training, Power bi, Data Science with R Programing,
@@ -23,7 +23,7 @@ feature_row_left:
     Adversarial Networks, Deploying a Model."
     url: "#test-link"
     btn_label: "Read More"
-    btn_class: "btn--secondar"
+    btn_class: "btn--primary"
     
   #- image_path: /assets/splash/feat1-3.jpg
   #  title: "Placeholder 3"
