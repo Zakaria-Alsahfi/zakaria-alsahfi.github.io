@@ -11,7 +11,7 @@ feature_row:
     Introduction to Data Analytics, Business Analytics with Excel, Tableau Training, Power bi, Data Science with R Programing, Data 
     Analyst Capstone, Introduction to Business Analysis, Certified Business Analysis Professional (CBAP) Certification, Agile Scrum 
     Master(ASM), SQL Training, Business Analyst Capstone "
-    url: "#test-link"
+    #url: "#test-link"
     #btn_label: "Read More"
     #btn_class: "btn--primary"
     
@@ -20,7 +20,7 @@ feature_row:
     excerpt: "This course includes:
     Introduction to Deep Learning, Neural Networks, Convolutional Neural Networks, Recurrent Neural Networks, Generative 
     Adversarial Networks, Deploying a Model"
-    url: "#test-link"
+    #url: "#test-link"
     #btn_label: "Read More"
     #btn_class: "btn--secondar"
     
