@@ -6,21 +6,22 @@ author_profile: true
 
 feature_row_left:
   - image_path: /images/training/Business and Data Analys.jpg
-    title: "Business and Data Analyst"
-    excerpt: "This course includes:<br>
+    title: "<h4>Business and Data Analyst</h4>"
+    excerpt: "<h6>This course includes:<br>
     Introduction to Data Analytics, Business Analytics with Excel, Tableau Training, Power bi, Data Science with R Programing,
     Data Analyst Capstone, Introduction to Business Analysis, Certified Business Analysis Professional (CBAP) Certification,
-    Agile Scrum Master(ASM), SQL Training, Business Analyst Capstone. "
+    Agile Scrum Master(ASM), SQL Training, Business Analyst Capstone. </h6>"
     
     #url: "#test-link"
     #btn_label: "Read More"
     #btn_class: "btn--primary"
     
   - image_path: /images/training/Udacity Deep Learning.jpg
-    title: "Deep Learning Nanodegree Program"
-    excerpt: "<h6>This course includes:</h6><br>
+    title: "<h4>Deep Learning Nanodegree Program</h4>"
+    excerpt: "<h6>This course includes:<br>
     Introduction to Deep Learning, Neural Networks, Convolutional Neural Networks, Recurrent Neural Networks, Generative 
-    Adversarial Networks, Deploying a Model."
+    Adversarial Networks, Deploying a Model.</h6>"
+    
     #url: "#test-link"
     #btn_label: "Read More"
     #btn_class: "btn--primary"
