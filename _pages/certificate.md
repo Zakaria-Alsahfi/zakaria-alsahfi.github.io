@@ -14,9 +14,9 @@ feature_row_left:
     
   - image_path: /images/training/Udacity Deep Learning.jpg
     title: "<h4>Deep Learning Nanodegree Program</h4>"
-    excerpt: "<p>This course includes:<br>
+    excerpt: "<h6><p>This course includes:<br>
     Introduction to Deep Learning, Neural Networks, Convolutional Neural Networks, Recurrent Neural Networks, Generative 
-    Adversarial Networks, Deploying a Model.</p>"
+    Adversarial Networks, Deploying a Model.</p></h6>"
 ---
 
 {% include feature_row id="feature_row_left" type="left" %}
