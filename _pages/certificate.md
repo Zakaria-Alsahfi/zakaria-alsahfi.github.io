@@ -5,7 +5,7 @@ permalink: /certificate/
 author_profile: true
 
 feature_row_left:
-  - image_path: ![alt text]/images/training/Business and Data Analys.jpg
+  - image_path: /images/training/Business and Data Analys.jpg
     title: "<h4>Business and Data Analyst</h4>"
     excerpt: "<h6><p>This course includes:<br>
     Introduction to Data Analytics, Business Analytics with Excel, Tableau Training, Power bi, Data Science with R Programing,
