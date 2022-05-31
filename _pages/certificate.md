@@ -14,7 +14,7 @@ feature_row_center:
     
   - image_path: /images/training/Udacity Deep Learning.jpg
     title: "<h4>Deep Learning Nanodegree Program</h4>"
-    excerpt: "<p p align="left">This course includes:<br>
+    excerpt: "<p align="left">This course includes:<br>
     Introduction to Deep Learning, Neural Networks, Convolutional Neural Networks, Recurrent Neural Networks, Generative 
     Adversarial Networks, Deploying a Model.</p>"
 ---
