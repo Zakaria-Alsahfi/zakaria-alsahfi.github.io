@@ -9,5 +9,5 @@ author_profile: true
 
 
 {% for post in site.certificate %}
-  {% include archive-single-tableau.html %}
+  {% include category-list.html %}
 {% endfor %}
