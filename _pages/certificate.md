@@ -9,5 +9,5 @@ author_profile: true
 
 
 {% for post in site.certificate %}
-  {% include category-list.html %}
+  {% include feature_row %}
 {% endfor %}
