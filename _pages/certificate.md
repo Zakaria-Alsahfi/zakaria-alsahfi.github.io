@@ -4,7 +4,7 @@ title: " "
 permalink: /certificate/
 author_profile: true
 
-feature_row_center:
+feature_row_left:
   - image_path: /images/training/Business and Data Analys.jpg
     title: "<h4>Business and Data Analyst</h4>"
     excerpt: "<p>This course includes:<br>
