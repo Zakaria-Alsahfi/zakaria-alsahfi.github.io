@@ -7,7 +7,7 @@ author_profile: true
 feature_row_left:
   - image_path: /images/training/Business and Data Analys.jpg
     title: "Business and Data Analyst"
-    excerpt: "This course includes:
+    excerpt: "This course includes:<br></br>
     Introduction to Data Analytics, Business Analytics with Excel, Tableau Training, Power bi, Data Science with R Programing,
     Data Analyst Capstone, Introduction to Business Analysis, Certified Business Analysis Professional (CBAP) Certification,
     Agile Scrum Master(ASM), SQL Training, Business Analyst Capstone. "
