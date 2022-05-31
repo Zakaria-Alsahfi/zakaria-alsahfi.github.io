@@ -1,10 +1,10 @@
 ---
-layout: archive #splash archive
+layout: archive
 title: " "
 permalink: /certificate/
 author_profile: true
 
-feature_row_left:
+feature_row_center:
   - image_path: /images/training/Business and Data Analys.jpg
     title: "<h4>Business and Data Analyst</h4>"
     excerpt: "<h6>This course includes:<br>
@@ -12,27 +12,12 @@ feature_row_left:
     Data Analyst Capstone, Introduction to Business Analysis, Certified Business Analysis Professional (CBAP) Certification,
     Agile Scrum Master(ASM), SQL Training, Business Analyst Capstone. </h6>"
     
-    #url: "#test-link"
-    #btn_label: "Read More"
-    #btn_class: "btn--primary"
-    
   - image_path: /images/training/Udacity Deep Learning.jpg
     title: "<h4>Deep Learning Nanodegree Program</h4>"
     excerpt: "<h6>This course includes:<br>
     Introduction to Deep Learning, Neural Networks, Convolutional Neural Networks, Recurrent Neural Networks, Generative 
     Adversarial Networks, Deploying a Model.</h6>"
-    
-    #url: "#test-link"
-    #btn_label: "Read More"
-    #btn_class: "btn--primary"
-    
-  #- image_path: /assets/splash/feat1-3.jpg
-  #  title: "Placeholder 3"
-  #  excerpt: "This is some sample content that goes here with **Markdown** formatting."
-  #  url: "#test-link"
-  #  btn_label: "Read More"
-  #  btn_class: "btn--primary"
 ---
 
-#{% include feature_row %}
 {% include feature_row id="feature_row_left" type="left" %}
+{% include feature_row id="feature_row_left" type="center" %}
