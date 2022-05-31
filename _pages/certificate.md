@@ -1,10 +1,10 @@
 ---
-layout: splash #archive
+layout: archive #splash archive
 title: " "
 permalink: /certificate/
 author_profile: true
 
-feature_row_left:
+feature_row:
   - image_path: /images/training/Business and Data Analys.jpg
     title: "Business and Data Analyst"
     excerpt: "This course includes:
@@ -34,4 +34,4 @@ feature_row_left:
 ---
 
 {% include feature_row %}
-{% include feature_row id="feature_row_left" type="left" %}
+#{% include feature_row id="feature_row_left" type="left" %}
