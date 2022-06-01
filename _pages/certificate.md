@@ -51,7 +51,7 @@ feature_row:
     title: "CCNP"
   
   - image_path: /images/training/IT Management Risks.jpg
-    title: "<h6>IT Management Risks 04/29/2021</h6>"
+    title: "IT Management Risks"
   
   - image_path: /images/training/IT Project Management.jpg
     title: "IT Project Management"
