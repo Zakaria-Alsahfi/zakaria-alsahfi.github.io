@@ -15,7 +15,7 @@ feature_row:
     title: "Introduction to Data Analytics"
   
   - image_path: /images/training/Introduction to Business Analysis.jpg
-    title: "<h6>Introduction to Business Analysis 10/25/2021</h6>"
+    title: "Introduction to Business Analysis"
   
   - image_path: /images/training/Business Analytics with Excel.jpg
     title: "Business Analytics with Excel"
