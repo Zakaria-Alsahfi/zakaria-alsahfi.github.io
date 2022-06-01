@@ -183,7 +183,7 @@
 .feature__wrapper {
   @include clearfix();
   margin-bottom: 2em;
-  border-bottom: 2px solid $black;
+  border-bottom: 2px solid $border-color;
 }
 
 .feature__item {
