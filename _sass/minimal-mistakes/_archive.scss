@@ -191,7 +191,7 @@
   font-size: 1.25rem;
   
 
-  @include breakpoint($medium) {
+  @include breakpoint($large) {
     float: left;
     margin-bottom: 0;
     width: span(5 of 10);
