@@ -6,9 +6,11 @@ author_profile: true
 
 feature_row:
   - image_path: /images/training/Udacity Deep Learning.jpg
+    title: "Deep Learning Nanodegree Program"
     excerpt: "<h6>Deep Learning Nanodegree Program 07/08/2021</h6>"
     
   - image_path: /images/training/Business and Data Analys.jpg
+    title: "Business and Data Analyst"
     excerpt: "<h6>Business and Data Analyst 11/26/2021</h6>"
     
   - image_path: /images/training/Introduction to Data Analytics.jpg
