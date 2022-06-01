@@ -60,4 +60,4 @@ gallery2:
     title: "Power BI Essential Training"
 ---
 
-{% include gallery id="gallery2" layout="full" %}
+{% include gallery id="gallery2" layout="half" %}
