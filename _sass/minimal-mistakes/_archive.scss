@@ -190,7 +190,7 @@
   margin-bottom: 2em;
   font-size: 1.25rem;
 
-  @include breakpoint($small) {
+  @include breakpoint($medium) {
     float: left;
     margin-bottom: 0;
     width: span(4 of 12);
@@ -200,7 +200,7 @@
       margin-left: 0;
     }
 
-    &:nth-child(2n + 2) {
+    &:nth-child(2n + 1) {
       clear: none;
       margin-left: gutter(of 12);
     }
@@ -211,7 +211,7 @@
     }*/
 
     .feature__item-teaser {
-      max-height: 500px;
+      max-height: 200px;
       overflow: hidden;
     }
   }
