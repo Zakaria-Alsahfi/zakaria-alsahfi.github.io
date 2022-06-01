@@ -183,12 +183,13 @@
 .feature__wrapper {
   @include clearfix();
   margin-bottom: 2em;
-  border-bottom: 2px solid $border-color;
+  border-bottom: 1px solid $border-color;
 }
 
 .feature__item {
   margin-bottom: 2em;
   font-size: 1.25rem;
+  border: 5px solid $border-color
   
 
   @include breakpoint($small) {
