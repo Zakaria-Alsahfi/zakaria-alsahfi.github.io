@@ -189,6 +189,7 @@
 .feature__item {
   margin-bottom: 2em;
   font-size: 1.25rem;
+  
 
   @include breakpoint($small) {
     float: left;
@@ -202,7 +203,7 @@
 
     &:nth-child(2n + 1) {
       clear: none;
-      margin-left: gutter(of 12);
+      margin-left: gutter(of 10);
     }
 /*
     &:nth-child(3n + 3) {
