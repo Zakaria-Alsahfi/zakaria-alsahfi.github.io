@@ -6,7 +6,7 @@ author_profile: true
 
 feature_row:
   - image_path: /images/training/Udacity Deep Learning.jpg
-  - title: "Deep Learning Nanodegree Program"
+    title: "Deep Learning Nanodegree Program"
     
   - image_path: /images/training/Business and Data Analys.jpg
     title: "Business and Data Analyst"
@@ -54,7 +54,7 @@ feature_row:
     title: "IT Management Risks"
   
   - image_path: /images/training/IT Project Management.jpg
-  - title: "IT Project Management"
+    title: "IT Project Management"
   
   - image_path: /images/training/Power BI Essential Training.jpg
     title: "Power BI Essential Training"
