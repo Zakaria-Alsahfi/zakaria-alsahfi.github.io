@@ -194,7 +194,7 @@
   @include breakpoint($small) {
     float: left;
     margin-bottom: 0;
-    width: span(4 of 12);
+    width: span(5 of 10);
 
     &:nth-child(2n + 1) {
       clear: both;
@@ -203,7 +203,7 @@
 
     &:nth-child(2n + 2) {
       clear: none;
-      margin-left: gutter(of 12);
+      margin-left: gutter(of 10);
     }
 /*
     &:nth-child(3n + 3) {
