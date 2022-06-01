@@ -60,4 +60,4 @@ feature_row:
     excerpt: "<h6>Power BI Essential Training 06/23/2021</h6>"
 ---
 
-{% raw %}{% include feature_row %}{% endraw %}
+{% include feature_row %}
