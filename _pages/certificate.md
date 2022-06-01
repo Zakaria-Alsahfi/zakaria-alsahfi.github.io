@@ -4,7 +4,7 @@ title: " "
 permalink: /certificate/
 author_profile: true
 
-gallery:
+feature_row:
   - image_path: /images/training/Udacity Deep Learning.jpg
     title: "Deep Learning Nanodegree Program"
     
@@ -60,4 +60,4 @@ gallery:
     title: "Power BI Essential Training"
 ---
 
-{% include gallery id="gallery" layout="half" %}
+{% include feature_row %}
