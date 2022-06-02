@@ -37,7 +37,10 @@ feature_row:
   
   - image_path: /images/training/Business Analysis Professional (CBAP®).jpg
     title: "Business Analysis Professional (CBAP®)"
-  
+    
+  - image_path: /images/training/Power BI Essential Training.jpg
+    title: "Power BI Essential Training"
+    
   - image_path: /images/training/Computer vision.jpg
     title: "Computer vision"
   
@@ -55,9 +58,6 @@ feature_row:
   
   - image_path: /images/training/IT Project Management.jpg
     title: "IT Project Management"
-  
-  - image_path: /images/training/Power BI Essential Training.jpg
-    title: "Power BI Essential Training"
 ---
 
 {% include feature_row %}
