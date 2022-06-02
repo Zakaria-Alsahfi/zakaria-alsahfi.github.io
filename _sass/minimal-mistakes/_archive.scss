@@ -195,20 +195,18 @@
     float: left;
     margin-bottom: 1em;
     width: span(5 of 10);
+    border: solid black;
+    border-bottom: 2px solid;
     
 
     &:nth-child(2n + 1) {
       clear: both;
       margin-left: 0;
-      border: solid black;
-      border-bottom: 2px solid;
     }
 
     &:nth-child(2n + 2) {
       clear: none;
       margin-left: gutter(of 10);
-      border: solid black;
-      border-bottom: 2px solid;
     }
 /*
     &:nth-child(3n + 3) {
@@ -313,7 +311,7 @@
     .archive__item-title {
       margin-top: 0.20em;
       margin-left: 0.20em;
-      font-size: 0.6em;
+      font-size: 0.5em;
       color: solid blue;
     }
   }
