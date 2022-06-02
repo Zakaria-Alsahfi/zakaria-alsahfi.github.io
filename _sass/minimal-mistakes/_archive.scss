@@ -195,13 +195,11 @@
     float: left;
     margin-bottom: 1em;
     width: span(5 of 10);
-    border: none;
-    border-radius: 40px 10px;
-    
 
     &:nth-child(2n + 1) {
       clear: both;
       margin-left: 0;
+      border: 5xp solid green:
     }
 
     &:nth-child(2n + 2) {
