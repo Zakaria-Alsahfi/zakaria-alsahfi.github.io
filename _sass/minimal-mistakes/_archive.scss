@@ -193,9 +193,10 @@
 
   @include breakpoint($small) {
     float: left;
-    margin-bottom: 2em;
+    margin-bottom: 1em;
     width: span(5 of 10);
     border: solid green;
+    border-bottom: 2px;
 
     &:nth-child(2n + 1) {
       clear: both;
@@ -308,7 +309,7 @@
   .feature__wrapper {
     .archive__item-title {
       margin-top: 0.20em;
-      font-size: 0.5em;
+      font-size: 0.7em;
       color: solid blue;
     }
   }
