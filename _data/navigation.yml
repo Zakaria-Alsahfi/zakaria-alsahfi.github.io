@@ -3,7 +3,7 @@ main:
   - title: "About"
     url: /about/
   - title: "Portfolio"
-    url: /data-science/
+    url: /portfolio/
   - title: "Tableau"
     url: /tableauviz/
   - title: "Training Certifications"
