@@ -1,7 +1,7 @@
 ---
 layout: posts
 permalink: /data-science/
-#title: "Python"
+#title: "Portfolio"
 author_profile: true
 header:
   #overlay_image: /images/perceptron/Data Science.jpg
