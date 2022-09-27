@@ -2,13 +2,13 @@
 main:
   - title: "About"
     url: /about/
-  - title: "Python"
+  - title: "Portfolio"
     url: /data-science/
   - title: "Tableau"
     url: /tableauviz/
   - title: "Training Certifications"
     url: /certificate/
-  # - title: "Sample Collections"
-  #   url: /collection-archive/
+  - title: "Contact"
+    url: /Contact/
   # - title: "Sitemap"
   #   url: /sitemap/
