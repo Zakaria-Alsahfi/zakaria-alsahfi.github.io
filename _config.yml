@@ -117,6 +117,12 @@ author:
   youtube          : # "https://youtube.com/c/MichaelRoseDesign"
   resume           : "/images/ZAKARIA ABDULRAHIM ALSAHFI Resume.pdf"
 
+footer:
+  links:
+    - label: "upwork"
+      icon: "fab fa-fw fa-instagram"
+      url: "https://www.upwork.com/freelancers/~01ed379ac7a573ca07"
+      
 
 # Reading Files
 include:
