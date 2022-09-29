@@ -6,9 +6,6 @@ layout: archive
 
 {% for post in paginator.posts %}
   {% include archive-single.html %}
-  {%- if site.show_excerpts -%}
-      {{ post.excerpt }}
-  {%- endif -%}
 {% endfor %}
 
 {% include paginator.html %}
