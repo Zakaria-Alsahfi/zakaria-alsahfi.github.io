@@ -8,7 +8,7 @@ excerpt: "Data Science, Machine Learning, Deep Learning, Python, Healthcare"
 mathjax: "true"
 ---
 
-### Project’s Goal
+### Project Goal
 In this project, we create an algorithm to identify metastatic cancer in small image patches taken from larger digital pathology scans. The data for this competition is a slightly modified version of the PatchCamelyon (PCam) benchmark dataset. The original PCam dataset contains duplicate images due to its probabilistic sampling, however, the version presented on Kaggle does not contain duplicates.
 
 Dataset Links [Kaggle](https://www.kaggle.com/c/histopathologic-cancer-detection/data)
