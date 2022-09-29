@@ -5,15 +5,11 @@ tags: [Data Science, Machine Learning, Deep Learning, Python, PyTorch, SageMaker
 #tagline: "Sentiment Analysis Web App"
 header:
   image: "/images/perceptron/SentimentAnalysis.jpeg"
-excerpt: "Data Science, Machine Learning, Deep Learning, Python, PyTorch, SageMaker"
+excerpt: "In this project we will construct a recurrent neural network for the purpose of determining the sentiment of a movie review using the IMDB data set. We will create this model using Amazon's SageMaker service. In addition, We will deploy our model and construct a simple web app which will interact with the deployed model."
 mathjax: "true"
 ---
 
 {% include gallery caption="This is a sample gallery with **Markdown support**." %}
-
-# Project Goal
-
-In this project we will construct a recurrent neural network for the purpose of determining the sentiment of a movie review using the IMDB data set. We will create this model using Amazon's SageMaker service. In addition, We will deploy our model and construct a simple web app which will interact with the deployed model.
 
 ## General Outline
 
