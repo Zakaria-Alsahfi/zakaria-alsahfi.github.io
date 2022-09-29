@@ -7,6 +7,8 @@ header:
 excerpt: "Data Science, Machine Learning, Deep Learning, Python, Commerce, Transport"
 mathjax: "true"
 ---
+
+# Project’s Goal
 In this project, we will build a neural network and use it to predict daily bike rental ridership.
 
 
