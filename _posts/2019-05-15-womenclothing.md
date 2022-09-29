@@ -8,6 +8,7 @@ excerpt: "Data Science, Machine Learning, Text Mining, Python, E-Commerce"
 mathjax: "true"
 ---
 
+### Project’s Goal
 We are given a dataset of reviews written by customers of an online ecommerce private company. The project is to apply machine learning algorithms on the given dataset and find the models that best fits to the needs of the management. Couple of machine learning approaches have been implied to get closer to the accuracy of the prediction model.
 
 The dataset we use in this project is a Women Clothing E-Commerce Review dataset, which has pretty much all the necessary information such as Age, Title, Review text, rating, and recommended IND. The dataset file has 23486 rows of customer reviews.
