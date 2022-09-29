@@ -4,14 +4,9 @@ date: 2021-07-03
 tags: [Data Science, Machine Learning, Deep Learning, Python]
 header:
   image: "/images/perceptron/face_data.png"
-excerpt: "Data Science, Machine Learning, Deep Learning, Python"
+excerpt: "In this project, we will define and train a DCGAN on a dataset of faces. Our goal is to get a generator network to generate *new* images of faces that look as realistic as possible! The project will be broken down into a series of tasks from **loading in data to defining and training adversarial networks**. At the end of the notebook, we will be able to visualize the results of our trained Generator to see how it performs; our generated samples should look like fairly realistic faces with small amounts of noise."
 mathjax: "true"
 ---
-
-# Project Goal
-In this project, we will define and train a DCGAN on a dataset of faces. Our goal is to get a generator network to generate *new* images of faces that look as realistic as possible!
-
-The project will be broken down into a series of tasks from **loading in data to defining and training adversarial networks**. At the end of the notebook, we will be able to visualize the results of our trained Generator to see how it performs; our generated samples should look like fairly realistic faces with small amounts of noise.
 
 ### Get the Data
 We will use [CelebFaces Attributes Dataset (CelebA)](http://mmlab.ie.cuhk.edu.hk/projects/CelebA.html) to train your adversarial networks.
