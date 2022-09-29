@@ -1,5 +1,5 @@
 ---
-layout: posts
+layout: single #posts
 permalink: /portfolio/
 author_profile: true
 header:
