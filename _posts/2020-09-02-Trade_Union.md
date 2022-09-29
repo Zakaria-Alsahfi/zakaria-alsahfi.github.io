@@ -4,12 +4,9 @@ date: 2020-09-02
 tags: [data science, Machine Learning, Python, Commerce, Transport]
 header:
   image: "/images/perceptron/United Data Scientists Union.jpg"
-excerpt: "Data Science, Machine Learning, Python, Commerce, Transport"
+excerpt: "This Project deals with implementation of different models and doing preprocessing with the data in order to compare the results and performance of different models.  Weapplied statistical techniques to see which model is performing best. In this project we will create a binary classifier which will predict that either the data scientist will remaina USDU member or not."
 mathjax: "true"
 ---
-
-### Project’s Goal
-This Project deals with implementation of different models and doing preprocessing with the data in order to compare the results and performance of different models.  Weapplied statistical techniques to see which model is performing best. In this project we will create a binary classifier which will predict that either the data scientist will remaina USDU member or not.
 
 
 ## Reading data for preprocessing
