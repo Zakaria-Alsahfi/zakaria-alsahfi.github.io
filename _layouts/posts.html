@@ -12,9 +12,6 @@ layout: archive
       {% for post in year.items %}
         {% include archive-single.html type=page.entries_layout %}
       {% endfor %}
-      {% if post.content > post.excerpt.size %}
-        <p><a href="{{ post.url }}">(more...)</a></p>
-      {% endif %}
     </div>
     <a href="#page-title" class="back-to-top">{{ site.data.ui-text[site.locale].back_to_top | default: 'Back to Top' }} &uarr;</a>
   </section>
