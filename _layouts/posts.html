@@ -4,7 +4,7 @@ layout: archive
 
 {{ content }}
 
-{% assign postsByYear = site.posts | group_by_exp: 'post', 'post.date | date: "%B %e, %Y" %}
+{% assign postsByYear = site.posts | group_by_exp: 'post', 'post.date | date: "%B %e, %Y"' %}
 
 {% for year in postsByYear %}
   <section id="{{ year.name }}" class="taxonomy__section">
