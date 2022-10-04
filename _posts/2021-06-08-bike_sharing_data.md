@@ -4,7 +4,6 @@ date: 2021-06-08
 tags: [Data Science, Machine Learning, Deep Learning, Python, Commerce, Transport]
 header:
   image: "/images/perceptron/bike-sharing.jpg"
-#excerpt: "In this project, we will build a neural network and use it to predict daily bike rental ridership."
 mathjax: "true"
 ---
 In this project, we will build a neural network and use it to predict daily bike rental ridership.
