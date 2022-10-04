@@ -2,7 +2,6 @@
 title: "Sentiment Analysis Web App"
 date: 2021-07-13
 tags: [Data Science, Machine Learning, Deep Learning, Python, PyTorch, SageMaker]
-#tagline: "Sentiment Analysis Web App"
 header:
   image: "/images/perceptron/SentimentAnalysis.jpeg"
 mathjax: "true"
