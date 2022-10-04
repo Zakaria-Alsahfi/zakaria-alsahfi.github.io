@@ -6,6 +6,7 @@ header:
   image: "/images/perceptron/bike-sharing.jpg"
 mathjax: "true"
 ---
+
 In this project, we will build a neural network and use it to predict daily bike rental ridership.
 
 ## Load and prepare the data
