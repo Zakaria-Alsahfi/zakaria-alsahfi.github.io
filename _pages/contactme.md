@@ -1,7 +1,8 @@
 ---
 title: Contact
 layout: page
-permalink: /contact/
+permalink: /contactme/
+author_profile: true
 ---
 You can contact me by filling in the form below. Please note that your email address will only be used to respond to your query. It will not be stored or used in any other way.
 
