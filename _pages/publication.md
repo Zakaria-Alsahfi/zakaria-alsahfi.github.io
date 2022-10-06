@@ -1,6 +1,6 @@
 ---
 layout: archive
-title: ""
+title: "Publications"
 permalink: /publication/
 author_profile: true
 ---
@@ -11,6 +11,8 @@ author_profile: true
 
 {% include base_path %}
 
-{% for post in site.publications %}
-  {% include archive-single-tableau.html %}
+{% for post in site.publications reversed %}
+  {% include archive-single.html %}
 {% endfor %}
+
+<sup>*</sup> Equal authorship
