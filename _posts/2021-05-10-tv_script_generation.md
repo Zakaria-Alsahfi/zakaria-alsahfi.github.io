@@ -1,6 +1,6 @@
 ---
 title: "TV Script Generation"
-date: 2022-05-10
+date: 2021-05-10
 tags: [Data Science, Machine Learning, Deep Learning, Text Mining, Python]
 header:
   image: "/images/perceptron/tvscript.jpg"
