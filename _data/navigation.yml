@@ -10,5 +10,5 @@ main:
     url: /certificate/
   - title: "Contact"
     url: /Contact/
-  #- title: "Sitemap"
-  #   url: /sitemap/
+  - title: "Contact me"
+    url: /contactme/
