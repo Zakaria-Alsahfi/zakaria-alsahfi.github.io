@@ -1,2 +1,1 @@
-# sa7fiz.github.io
-https://Zakaria-Alsahfi.github.io/
+https://zakaria-alsahfi.github.io/Zakaria-Alsahfi/
