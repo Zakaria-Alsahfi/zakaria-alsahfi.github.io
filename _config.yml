@@ -219,7 +219,7 @@ collections:
     permalink: /:collection/:path/
   publications:
     output: true
-    permalink: /:collection/:path/
+    permalink: /:collection/:name/
 
 # Sass/SCSS
 sass:
