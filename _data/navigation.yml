@@ -8,7 +8,8 @@ main:
     url: /tableauviz/
   - title: "Certifications"
     url: /certificate/
+  - title: "Publications"
+    url: /Publications/
   - title: "Contact"
     url: /Contact/
-  - title: "Contact me"
-    url: /contactme/
+
