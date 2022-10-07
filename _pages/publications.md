@@ -1,5 +1,5 @@
 ---
-layout: archive
+#layout: archive
 title: " "
 permalink: /publication/
 author_profile: true
@@ -9,5 +9,5 @@ author_profile: true
 
 
 {% for post in site.publications %}
-  {% include archive-single-tableau.html %}
+  {% include archive-single.html %}
 {% endfor %}
