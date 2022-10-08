@@ -4,7 +4,6 @@ title: ''
 permalink: /publication/
 ---
 
-<h1 class="mt-4">Publications</h1>
 {% assign publications = site.publications | sort: "year" | reverse %}
 {% for pub in publications %}
 {% include archive-single.html type=entries_layout %}
