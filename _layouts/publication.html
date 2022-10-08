@@ -1,7 +1,21 @@
 ---
 layout: default
 ---
+{% if page.header.overlay_color or page.header.overlay_image or page.header.image %}
+  {% include page__hero.html %}
+{% elsif page.header.video.id and page.header.video.provider %}
+  {% include page__hero_video.html %}
+{% endif %}
 
+{% if page.url != "/" and site.breadcrumbs %}
+  {% unless paginator %}
+    {% include breadcrumbs.html %}
+  {% endunless %}
+{% endif %}
+
+<div id="main" role="main">
+  {% include sidebar.html %}
+  
 <div class="page">
   <h1 class="mt-4 publication-title">{{ page.title }}</h1>
   <div class="publication-authors">{{ page.authors }}</div>
@@ -27,4 +41,5 @@ layout: default
     <a href="{{ page.doi }}"><i class="fas fa-external-link-alt"></i> DOI</a
     >&nbsp;&nbsp; {% endif %}
   </p>
+  </div>
 </div>
