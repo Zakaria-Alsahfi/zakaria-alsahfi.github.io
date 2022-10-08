@@ -1,5 +1,5 @@
 ---
-layout: single
+layout: publication
 title: ''
 permalink: /publication/
 ---
@@ -8,6 +8,11 @@ permalink: /publication/
 {% assign publications = site.publications | sort: "year" | reverse %}
 {% for pub in publications %}
 <div class="pubitem">
+  <div class="pubteaser">
+    <a href="{{pub.url}}">
+      <img src="/images/publication-pages/{{ pub }}.jpg"/>
+  </a>
+</div>
   <div class="pubtitle">{{ pub.title }}</div>
   <div class="pubauthors">{{ pub.authors }}</div>
   <div class="pubinfo">{{ pub.publication }}, {{ pub.year}}</div>
