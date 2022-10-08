@@ -1,5 +1,5 @@
 ---
-layout: publication
+layout: single
 title: ''
 permalink: /publication/
 ---
@@ -7,4 +7,22 @@ permalink: /publication/
 {% assign publications = site.publications | sort: "year" | reverse %}
 {% for pub in publications %}
   {% include archive-single.html%}
+<div class="publication-authors">{{ pub.authors }}</div>
+<div class="publication-info">{{ pub.publication }}, {{ pub.year}}</div>
+<div class="publication-teaser">
+  <img src="/images/publication-pages/{{ pub }}.jpg"/>
+</div>
+{{ content }}
+<h2 id="downloads">Downloads</h2>
+<p>
+  <a href="/files/{{ pub }}.pdf"><i class="far fa-file-pdf"></i> PDF</a>&nbsp;&nbsp; 
+  {% if page.slides %}
+  <a href="/files/{{ pub }}_slides.pdf"><i class="far fa-file-pdf"></i> Slides</a>&nbsp;&nbsp; 
+  {% endif %}
+  <a href="/files/{{ pub }}.bib"><i class="far fa-file-alt"></i> BibTex</a>&nbsp;&nbsp; 
+  {% if page.doi %}
+  <a href="{{ pub.doi }}"><i class="fas fa-external-link-alt"></i> DOI</a>&nbsp;&nbsp; 
+  {% endif %}
+</p>
+
 {% endfor %}
