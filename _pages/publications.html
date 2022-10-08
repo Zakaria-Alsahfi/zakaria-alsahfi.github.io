@@ -8,9 +8,7 @@ permalink: /publication/
 {% for pub in publications %}
 <div class="pubitem">
   <div class="pubteaser">
-    <a href="{{pub.url}}">
-      <img src="/images/{{ pub }}.png" alt="{{pub}} publication teaser"/>
-    </a>
+    <a><img src="/images/{{ pub }}.png"/></a>
   </div>
   <div class="pubtitle">{{ pub.title }}</div>
   <div class="pubauthors">{{ pub.authors }}</div>
