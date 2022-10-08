@@ -4,27 +4,13 @@ title: ''
 permalink: /publication/
 ---
 
+<h1 class="mt-4">Publications</h1>
 {% assign publications = site.publications | sort: "year" | reverse %}
 {% for pub in publications %}
 <div class="pubitem">
-  <div class="pubteaser">
-    <a><img src="/images/{{ pub }}.png"/></a>
-  </div>
   <div class="pubtitle">{{ pub.title }}</div>
   <div class="pubauthors">{{ pub.authors }}</div>
   <div class="pubinfo">{{ pub.publication }}, {{ pub.year}}</div>
-  <div class="publinks">
-    <h2 id="files">Downloads</h2>
-    <p>
-      <a href="/files/{{ pub }}.pdf"><i class="far fa-file-pdf"></i> PDF</a>&nbsp;&nbsp; 
-      {% if page.slides %}
-      <a href="/files/{{ pub }}_slides.pdf"><i class="far fa-file-pdf"></i> Slides</a>&nbsp;&nbsp; 
-      {% endif %}
-      <a href="/files/{{ pub }}.bib"><i class="far fa-file-alt"></i> BibTex</a>&nbsp;&nbsp; 
-      {% if page.doi %}
-      <a href="{{ pub.doi }}"><i class="fas fa-external-link-alt"></i> DOI</a>&nbsp;&nbsp;
-      {% endif %}
-    </p>
-  </div>
 </div>
+{% endfor %}
 {% endfor %}
