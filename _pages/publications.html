@@ -6,5 +6,5 @@ permalink: /publication/
 
 {% assign publications = site.publications | sort: "year" | reverse %}
 {% for pub in publications %}
-{% include archive-single.html type=entries_layout %}
+  {% include archive-single.html%}
 {% endfor %}
