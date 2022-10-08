@@ -3,7 +3,7 @@ layout: single
 title: ''
 permalink: /publication/
 ---
-
+{% include base_path %}
 {% assign publications = site.publications | sort: "year" | reverse %}
 {% for pub in publications %}
 <h1 class="mt-4 publication-title">{{ page.title }}</h1>
