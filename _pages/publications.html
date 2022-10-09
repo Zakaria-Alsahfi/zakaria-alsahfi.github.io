@@ -1,32 +1,12 @@
 ---
-#layout: archive
-title: ''
+layout: archive
+title: " "
 permalink: /publication/
-layout: publication
-
+author_profile: true
 ---
 
-<h1 class="mt-4">Publications</h1>
-{% assign publications = site.publications | sort: "year" | reverse %}
-{% for pub in publications %}
-<div class="pubitem">
-  <div class="pubteaser">
-    <a href="{{pub.url}}">
-      <img src="/images/{{ pub }}.jpg" alt="{{pub}} publication teaser"/>
-    </a>
-  </div>
-  <div class="pubtitle">
-    {{ pub.title }}
-  </div>
-  <div class="pubauthors">
-    {{ pub.authors }}
-  </div>
-  <div class="pubinfo">
-    {{ pub.publication }}, {{ pub.year}}
-  </div>
-  <div class="publinks">
-    <a href="/files/{{ pub}}.pdf"><i class="far fa-file-pdf"></i> PDF</a>&nbsp;&nbsp;
-    <a href="{{pub}}"><i class="fas fa-arrow-right"></i> Project Page</a>
-  </div>
-</div>
+{% include base_path %}
+
+{% for post in site.publications %}
+  {% include archive-single.html %}
 {% endfor %}
