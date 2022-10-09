@@ -1,5 +1,5 @@
 ---
-#layout: publication
+layout: publication
 title: "Machine Learning Classifiers Help to Manage COVID-19 Distribution in China"
 collection: publications
 authors: Wei Jiaming, Mingxuan Yao, Alsahfi Zakaria, Ye Taiping, Snir Eli, Rahmani Bahareh
