@@ -10,7 +10,8 @@ layout: archive
   {% for year in postsByYear %}
     <section id="{{ year.name }}" class="taxonomy__section">
       <h2 class="archive__subtitle">{{ year.name }}</h2>
-        <h1 class="mt-4 publication-title">{{ year.title }}</h1>
+        {% for publication in year.items %}
+          <h1 class="mt-4 publication-title">{{ year.title }}</h1>
         <div class="publication-authors">
           {{ year.authors }}
         </div>
@@ -32,8 +33,6 @@ layout: archive
           <a href="{{ year.doi }}"><i class="fas fa-external-link-alt"></i> DOI</a>&nbsp;&nbsp;
           {% endif %}
         </p>
-        {% for publication in year.items %}
-          {% include archive-single.html type=entries_layout %}
         {% endfor %}
     </div>
   </section>
