@@ -6,7 +6,7 @@ layout: archive
 {% if postsByYear.size > 0 %}
 {% for year in postsByYear %}
 <section id="{{ year.name }}" class="taxonomy__section">
-  <h2 class="archive__subtitle">{{ year.name }}</h2>
+  <h2 class="archive__subtitle">{{ pub }}</h2>
   {% for pub in year.items %}
   <h1 class="mt-4 publication-title">{{ pub.title }}</h1>
   <div class="publication-authors">
