@@ -2,33 +2,27 @@
 layout: archive
 ---
 {% assign entries_layout = page.entries_layout | default: 'list' %}
-{% assign postsByYear = site.publications | where_exp: "item", "item.hidden != true" | group_by_exp: 'publication', 'publication.date | date: "%Y"' %}
-{% if postsByYear.size > 0 %}
-{% for year in postsByYear %}
+{% assign pubsByYear = site.publications | where_exp: "item", "item.hidden != true" | group_by_exp: 'publication', 'publication.date | date: "%Y"' %}
+{% if pubsByYear.size > 0 %}
+{% for year in pubsByYear %}
 <section id="{{ year.name }}" class="taxonomy__section">
   <h2 class="archive__subtitle">{{ year.name }}</h2>
   {% for pub in year.items %}
   <h1 class="mt-4 publication-title">{{ pub.title }}</h1>
-  <div class="publication-authors">
-    {{ pub.authors }}
-  </div>
-  <div class="publication-info">
-    {{ pub.publication }}, {{ pub.year}}
-  </div>
-  <div class="publication-teaser">
-    <img src="/images/publication-pages/{{ pub }}.jpg"/>
-  </div>
+  <div class="publication-authors">{{ pub.authors }}</div>
+  <div class="publication-info">{{ pub.publication }}, {{ pub.year}}</div>
+  <div class="publication-teaser"><img src="/images/publication-pages/{{ pub }}.png"/></div>
   {{ content }}
   <h2 id="downloads">Downloads</h2>
   <p>
     <a href="/files/{{ pub }}.pdf"><i class="far fa-file-pdf"></i> PDF</a>&nbsp;&nbsp;
-    {% if pub.slides %}
-    <a href="/files/{{ pub }}_slides.pdf"><i class="far fa-file-pdf"></i> Slides</a>&nbsp;&nbsp;
-    {% endif %}
+      {% if pub.slides %}
+        <a href="/files/{{ pub }}_slides.pdf"><i class="far fa-file-pdf"></i> Slides</a>&nbsp;&nbsp;
+      {% endif %}
     <a href="/files/{{ pub }}.bib"><i class="far fa-file-alt"></i> BibTex</a>&nbsp;&nbsp;
-    {% if pub.doi %}
-    <a href="{{ pub.doi }}"><i class="fas fa-external-link-alt"></i> DOI</a>&nbsp;&nbsp;
-    {% endif %}
+      {% if pub.doi %}
+        <a href="{{ pub.doi }}"><i class="fas fa-external-link-alt"></i> DOI</a>&nbsp;&nbsp;
+      {% endif %}
   </p>
   {% endfor %}
 </section>
