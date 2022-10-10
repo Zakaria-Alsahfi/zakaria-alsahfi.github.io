@@ -9,20 +9,20 @@ layout: archive
 <section id="{{ year.name }}" class="taxonomy__section">
   <h2 class="archive__subtitle">{{ year.name }}</h2>
   {% for pub in year.items %}
-  <h1 class="mt-4 publication-title">{{ pub.title }}</h1>
+  <h2 class="mt-4 publication-title">{{ pub.title }}</h2>
   <div class="publication-authors">{{ pub.authors }}</div>
   <div class="publication-info">{{ pub.publication }}, {{ pub.year}}</div>
   <div class="publication-teaser"><img src="/images/publication-pages/{{ pub.slug }}.png"/></div>
   {{ content }}
-  <h2 id="downloads">Downloads</h2>
+  <h3 id="downloads">Downloads</h3>
   <p>
-    <a href="/files/{{ pub }}.pdf">
+    <a href="/files/{{ pub.slug }}.pdf">
       <i class="far fa-file-pdf"></i> PDF</a>&nbsp;&nbsp;
       {% if pub.slides %}
-        <a href="/files/{{ pub }}_slides.pdf">
+        <a href="/files/{{ pub.slug }}_slides.pdf">
           <i class="far fa-file-pdf"></i> Slides</a>&nbsp;&nbsp;
       {% endif %}
-    <a href="/files/{{ pub }}.bib">
+    <a href="/files/{{ pub.slug }}.bib">
       <i class="far fa-file-alt"></i> BibTex</a>&nbsp;&nbsp;
       {% if pub.doi %}
         <a href="{{ pub.doi }}">
