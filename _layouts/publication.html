@@ -1,6 +1,7 @@
 ---
 layout: archive
 ---
+
 {% assign entries_layout = page.entries_layout | default: 'list' %}
 {% assign pubsByYear = site.publications | where_exp: "item", "item.hidden != true" | group_by_exp: 'publication', 'publication.date | date: "%Y"' %}
 {% if pubsByYear.size > 0 %}
@@ -15,13 +16,17 @@ layout: archive
   {{ content }}
   <h2 id="downloads">Downloads</h2>
   <p>
-    <a href="/files/{{ pub }}.pdf"><i class="far fa-file-pdf"></i> PDF</a>&nbsp;&nbsp;
+    <a href="/files/{{ pub }}.pdf">
+      <i class="far fa-file-pdf"></i> PDF</a>&nbsp;&nbsp;
       {% if pub.slides %}
-        <a href="/files/{{ pub }}_slides.pdf"><i class="far fa-file-pdf"></i> Slides</a>&nbsp;&nbsp;
+        <a href="/files/{{ pub }}_slides.pdf">
+          <i class="far fa-file-pdf"></i> Slides</a>&nbsp;&nbsp;
       {% endif %}
-    <a href="/files/{{ pub }}.bib"><i class="far fa-file-alt"></i> BibTex</a>&nbsp;&nbsp;
+    <a href="/files/{{ pub }}.bib">
+      <i class="far fa-file-alt"></i> BibTex</a>&nbsp;&nbsp;
       {% if pub.doi %}
-        <a href="{{ pub.doi }}"><i class="fas fa-external-link-alt"></i> DOI</a>&nbsp;&nbsp;
+        <a href="{{ pub.doi }}">
+          <i class="fas fa-external-link-alt"></i> DOI</a>&nbsp;&nbsp;
       {% endif %}
   </p>
   {% endfor %}
