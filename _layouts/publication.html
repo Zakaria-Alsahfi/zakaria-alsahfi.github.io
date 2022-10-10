@@ -10,12 +10,13 @@ layout: archive
   <h3 class="archive__subtitle">{{ year.name }}</h3>
   {% for pub in year.items %}
 <div class="page">
-  <h6 class="mt-4 publication-title">{{ pub.title }}</h6>
+  <h3 class="mt-4 publication-title">{{ pub.title }}</h3>
   <div class="publication-authors">{{ pub.authors }}</div>
   <div class="publication-info">{{ pub.publication }}, {{ pub.year}}</div>
   <div class="publication-teaser"><img src="/images/publication-pages/{{ pub.slug }}.png"/></div>
-  {{ content }}
-  <h6 id="downloads">Downloads</h6>
+  <br>
+{{ content }}
+  <h4 id="downloads">Downloads</h4>
   <p>
     <a href="/files/{{ pub.slug }}.pdf">
       <i class="far fa-file-pdf"></i> PDF</a>&nbsp;&nbsp;
