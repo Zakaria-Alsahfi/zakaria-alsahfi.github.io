@@ -9,7 +9,6 @@ layout: archive
 <section id="{{ year.name }}" class="taxonomy__section">
   <h3 class="archive__subtitle">{{ year.name }}</h3>
   {% for pub in year.items %}
-<div class="page">
   <h3 class="pubtitle">{{ pub.title }}</h3>
   <div class="pubauthors">{{ pub.authors }}</div>
   <div class="pubinfo">{{ pub.publication }}, {{ pub.year}}</div>
@@ -32,7 +31,6 @@ alt="project teaser"/></div>
           <i class="fas fa-external-link-alt"></i> DOI</a>&nbsp;&nbsp;
       {% endif %}
   </p>
-</div>
   {% endfor %}
 </section>
 {% endfor %}
