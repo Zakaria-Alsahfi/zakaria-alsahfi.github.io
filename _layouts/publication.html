@@ -2,7 +2,7 @@
 layout: archive
 ---
 
-{% assign pubsByYear = site.publications | sort: "year" | reverse %}
+{% assign pubsByYear = site.publications | where_exp: "item", "item.hidden != true" | group_by_exp: 'publication', 'publication.date | date: "%Y"' %}
 {% if pubsByYear.size > 0 %}
 {% for year in pubsByYear %}
 <section id="{{ year.name }}" class="taxonomy__section">
