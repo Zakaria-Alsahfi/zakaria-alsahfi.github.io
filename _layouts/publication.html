@@ -2,13 +2,13 @@
 layout: archive
 ---
 
-{% assign entries_layout = page.entries_layout | default: 'list' %}
-{% assign pubsByYear = site.publications | where_exp: "item", "item.hidden != true" | group_by_exp: 'publication', 'publication.date | date: "%Y"' %}
+{% assign pubsByYear = site.publications | group_by_exp: 'publication', 'publication.date | date: "%Y"' %}
 {% if pubsByYear.size > 0 %}
 {% for year in pubsByYear %}
 <section id="{{ year.name }}" class="taxonomy__section">
   <h3 class="archive__subtitle">{{ year.name }}</h3>
   {% for pub in year.items %}
+  <div class="pubitem">
   <h3 class="pubtitle">{{ pub.title }}</h3>
   <div class="pubauthors">{{ pub.authors }}</div>
   <div class="pubinfo">{{ pub.publication }}, {{ pub.year}}</div>
@@ -31,6 +31,7 @@ alt="project teaser"/></div>
           <i class="fas fa-external-link-alt"></i> DOI</a>&nbsp;&nbsp;
       {% endif %}
   </p>
+  </div>
   {% endfor %}
 </section>
 {% endfor %}
