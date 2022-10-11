@@ -5,7 +5,8 @@ layout: default
 {% assign pubsByYear = site.publications | where_exp: "item", "item.hidden != true" | group_by_exp: 'publication', 'publication.date | date: "%Y"' %}
 {% if pubsByYear.size > 0 %}
 {% for year in pubsByYear %}
-<section id="{{ year.name }}" class="taxonomy__section">
+
+<section id="Container" class="container-non-responsive">
   <h3 class="archive__subtitle">{{ year.name }}</h3>
   {% for pub in year.items %}
   <div class="pubitem">
