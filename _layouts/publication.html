@@ -6,7 +6,7 @@ layout: archive
 {% if pubsByYear.size > 0 %}
 {% for year in pubsByYear %}
 
-<section id="{{ year.name }}" class="taxonomy__section">
+
   <h3 class="archive__subtitle">{{ year.name }}</h3>
   {% for pub in year.items %}
   <div class="pubitem">
@@ -37,6 +37,5 @@ layout: archive
       </div>
     </div>
   {% endfor %}
-</section>
 {% endfor %}
 {% endif %}
