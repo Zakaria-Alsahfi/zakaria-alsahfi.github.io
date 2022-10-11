@@ -9,19 +9,17 @@ layout: archive
 
   <h3 class="archive__subtitle">{{ year.name }}</h3>
   {% for pub in year.items %}
-  <div class="pubitem">
-    <div class='container2'>
-    <img src="/images/publication-pages/{{ pub.slug }}_small.png" class='iconDetails' />
-    <div class="pubteaser"> <h3 class="pubtitle"> {{ pub.title }}</h3>
+<div class='container2'>
+  <img src="/images/publication-pages/{{ pub.slug }}_small.png" class='iconDetails' />
+  <div class="pubteaser"> <h3 class="pubtitle"> {{ pub.title }}</h3>
     <div class="pubauthors">{{ pub.authors }}</div>
     <div class="pubinfo">{{ pub.publication }}, {{ pub.year}}</div>
     {{ content }}
-    
     <h3 id="downloads">Downloads</h3>
-      <div class="text">
-        <p>
-          <a href="/files/{{ pub.slug }}.pdf">
-            <i class="far fa-file-pdf"></i> PDF</a>&nbsp;&nbsp;
+    <div class="text">
+      <p>
+        <a href="/files/{{ pub.slug }}.pdf">
+          <i class="far fa-file-pdf"></i> PDF</a>&nbsp;&nbsp;
           {% if pub.slides %}
           <a href="/files/{{ pub.slug }}_slides.pdf">
             <i class="far fa-file-pdf"></i> Slides</a>&nbsp;&nbsp;
@@ -35,7 +33,6 @@ layout: archive
         </p>
       </div>
       </div>
-    </div>
   {% endfor %}
 {% endfor %}
 {% endif %}
