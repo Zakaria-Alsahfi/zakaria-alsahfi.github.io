@@ -11,12 +11,12 @@
   line-height: 1em;
 }
 .pubtitle {
-  margin-bottom: .5em;
-  line-height: 1.2em;
+  margin-bottom: .2em;
+  line-height: 1em;
   font-weight: bold;
 }
 .pubauthors, .pubinfo {
-  font-size: 75%;
+  font-size: 50%;
   margin-bottom: .75em;
 }
 .pubteaser {
@@ -28,31 +28,12 @@
   
 }
 .pubteaser img {
-  width: 100px;
-  border: 1px solid black;
+  float:center;
+  height:200px;
+  width:200px;
+  border: none;
+  margin:0 2%;
 }
 .publinks {
-  font-size: 75%;
-}
-.iconDetails {
-    margin:0 2%;
-    float:left;
-    height:40px;
-    width:40px;
-}
-.container2 {
-    width:100%;
-    height:auto;
-    padding:1%;
-}
-.text {
-    float:left;
-}
-.text h4, .text p {
-    width:100%;
-    float:left;
-    font-size:0.6em;
-}
-.text p span {
-    color:#666;
+  font-size: 50%;
 }
