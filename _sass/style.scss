@@ -16,7 +16,7 @@
   font-weight: bold;
 }
 .pubauthors, .pubinfo {
-  font-size: 100%;
+  font-size: 70%;
   margin-bottom: .30em;
 }
 .pubteaser {
@@ -28,24 +28,9 @@
   
 }
 .pubteaser img {
-  width: 400px;
-  margin: 2em;
-  border: none;
+  width: 100px;
+  border: 1px solid black;
 }
 .publinks {
   font-size: 10%;
-}
-.publication-authors {
-  margin: 0.3rem 0;
-  font-size: 20%;
-}
-.publication-info {
-  margin: 0.3rem 0;
-  font-size: 20%;
-}
-.publication-teaser {
-  margin: 2em;
-}
-.publication-teaser img {
-  border: none;
 }
