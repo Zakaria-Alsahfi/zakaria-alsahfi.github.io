@@ -10,50 +10,42 @@
   margin: 2em 0;
   line-height: 1em;
 }
-
 .pubtitle {
-  margin-bottom: .3em;
+  margin-bottom: .5em;
   line-height: 1.2em;
   font-weight: bold;
 }
-
 .pubauthors, .pubinfo {
-  font-size: 10%;
-  margin-bottom: .60em;
+  font-size: 100%;
+  margin-bottom: .30em;
 }
-
 .pubteaser {
   clear: both;
 }
-
 .pubteaser a {
   float: left;
   margin-right: 2em;
+  
 }
-
 .pubteaser img {
-  width: 100px;
-  border: 1px solid black;
+  width: 400px;
+  margin: 2em;
+  border: none;
 }
-
 .publinks {
   font-size: 10%;
 }
-
 .publication-authors {
   margin: 0.3rem 0;
-  font-size: 10%;
+  font-size: 20%;
 }
-
 .publication-info {
   margin: 0.3rem 0;
   font-size: 20%;
 }
-
 .publication-teaser {
   margin: 2em;
 }
-
 .publication-teaser img {
   border: none;
 }
