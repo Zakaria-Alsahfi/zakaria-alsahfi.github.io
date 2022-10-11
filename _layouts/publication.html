@@ -2,23 +2,21 @@
 layout: archive
 ---
 
-{% assign pubsByYear = site.publications | group_by_exp: 'publication', 'publication.date | date: "%Y"' %}
+{% assign pubsByYear = site.publications | sort: "year" | reverse %}
 {% if pubsByYear.size > 0 %}
 {% for year in pubsByYear %}
 <section id="{{ year.name }}" class="taxonomy__section">
   <h3 class="archive__subtitle">{{ year.name }}</h3>
   {% for pub in year.items %}
   <div class="pubitem">
-  <h3 class="pubtitle">{{ pub.title }}</h3>
+  <h3 class="pubtitle">
+    <a href="{{pub.url}}">
+      {{ pub.title }}</h3>
+    </a>
   <div class="pubauthors">{{ pub.authors }}</div>
   <div class="pubinfo">{{ pub.publication }}, {{ pub.year}}</div>
   <div class="pubteaser">
-    <a href="{{pub.url}}">
-      <img
-           src="/images/publication-pages/{{ pub.slug }}_small.png"
-           alt="{{pub.slug}} publication teaser"/>
-    </a>
-    </div>
+    <img src="/images/publication-pages/{{ pub.slug }}_small.png"/></div>
     
 {{ content }}
     
