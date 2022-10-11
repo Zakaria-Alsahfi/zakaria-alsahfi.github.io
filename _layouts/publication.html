@@ -9,29 +9,28 @@ layout: archive
   <h3 class="archive__subtitle">{{ year.name }}</h3>
   {% for pub in year.items %}
   <div class="pubitem">
-  <h3 class="pubtitle">{{ pub.title }}</h3>
-  <div class="pubauthors">{{ pub.authors }}</div>
-  <div class="pubinfo">{{ pub.publication }}, {{ pub.year}}</div>
-  <div class="pubteaser">
-    <img src="/images/publication-pages/{{ pub.slug }}_small.png"/></div>
+    <div class="pubteaser">
+      <img src="/images/publication-pages/{{ pub.slug }}_small.png"/></div>
+    <h3 class="pubtitle">{{ pub.title }}</h3>
+    <div class="pubauthors">{{ pub.authors }}</div>
+    <div class="pubinfo">{{ pub.publication }}, {{ pub.year}}</div>
+    {{ content }}
     
-{{ content }}
-    
-  <h3 id="downloads">Downloads</h3>
-  <p>
-    <a href="/files/{{ pub.slug }}.pdf">
-      <i class="far fa-file-pdf"></i> PDF</a>&nbsp;&nbsp;
+    <h3 id="downloads">Downloads</h3>
+    <p>
+      <a href="/files/{{ pub.slug }}.pdf">
+        <i class="far fa-file-pdf"></i> PDF</a>&nbsp;&nbsp;
       {% if pub.slides %}
-        <a href="/files/{{ pub.slug }}_slides.pdf">
-          <i class="far fa-file-pdf"></i> Slides</a>&nbsp;&nbsp;
+      <a href="/files/{{ pub.slug }}_slides.pdf">
+        <i class="far fa-file-pdf"></i> Slides</a>&nbsp;&nbsp;
       {% endif %}
-    <a href="/files/{{ pub.slug }}.bib">
-      <i class="far fa-file-alt"></i> BibTex</a>&nbsp;&nbsp;
+      <a href="/files/{{ pub.slug }}.bib">
+        <i class="far fa-file-alt"></i> BibTex</a>&nbsp;&nbsp;
       {% if pub.doi %}
-        <a href="{{ pub.doi }}">
-          <i class="fas fa-external-link-alt"></i> DOI</a>&nbsp;&nbsp;
+      <a href="{{ pub.doi }}">
+        <i class="fas fa-external-link-alt"></i> DOI</a>&nbsp;&nbsp;
       {% endif %}
-  </p>
+    </p>
   </div>
   {% endfor %}
 </section>
