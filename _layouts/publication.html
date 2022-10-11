@@ -12,10 +12,16 @@ layout: archive
   <h3 class="pubtitle">{{ pub.title }}</h3>
   <div class="pubauthors">{{ pub.authors }}</div>
   <div class="pubinfo">{{ pub.publication }}, {{ pub.year}}</div>
-  <div class="pubteaser"><img src="/images/publication-pages/{{ pub.slug }}.png" 
-alt="project teaser"/></div>
-  <br>
+  <div class="pubteaser">
+    <a href="{{pub.url}}">
+      <img
+           src="/images/publication-pages/{{ pub.slug }}_small.jpg"
+           alt="{{pub.slug}} publication teaser"/>
+    </a>
+    </div>
+    
 {{ content }}
+    
   <h3 id="downloads">Downloads</h3>
   <p>
     <a href="/files/{{ pub.slug }}.pdf">
