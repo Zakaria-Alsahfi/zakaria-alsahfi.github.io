@@ -6,13 +6,13 @@ layout: archive
 {% if pubsByYear.size > 0 %}
 {% for year in pubsByYear %}
 
-<section id="Container" class="container-non-responsive">
+<section id="{{ year.name }}" class="taxonomy__section">
   <h3 class="archive__subtitle">{{ year.name }}</h3>
   {% for pub in year.items %}
   <div class="pubitem">
-    <div class="pubteaser">
-      <img src="/images/publication-pages/{{ pub.slug }}_small.png"/></div>
-    <h3 class="pubtitle">{{ pub.title }}</h3>
+    <div class='container2'>
+    <img src="/images/publication-pages/{{ pub.slug }}_small.png" class='iconDetails' />
+    <div class="pubteaser"> <h3 class="pubtitle"> {{ pub.title }}</h3>
     <div class="pubauthors">{{ pub.authors }}</div>
     <div class="pubinfo">{{ pub.publication }}, {{ pub.year}}</div>
     {{ content }}
@@ -32,7 +32,8 @@ layout: archive
         <i class="fas fa-external-link-alt"></i> DOI</a>&nbsp;&nbsp;
       {% endif %}
     </p>
-  </div>
+      </div>
+    </div>
   {% endfor %}
 </section>
 {% endfor %}
