@@ -10,7 +10,7 @@ layout: archive
   <div class="entries-{{ entries_layout }}">
     {% for pub in year.items %}
     <div class="pubitem">
-      <div class="pubteaser"> <h3 class="pubtitle"> {{ pub.title }}</h3>
+      <div class="pubtitle"> {{ pub.title }}</div>
         <div class="pubauthors">{{ pub.authors }}</div>
         <div class="pubinfo">{{ pub.publication }}, {{ pub.year}}</div>
         <div class="pubteaser"><img src="/images/publication-pages/{{ pub.slug }}.png"/></div>
