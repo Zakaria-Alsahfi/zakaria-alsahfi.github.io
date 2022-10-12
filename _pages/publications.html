@@ -1,0 +1,33 @@
+---
+layout: publication1
+permalink: /publication/
+author_profile: true
+---
+
+
+<h1 class="mt-4">Publications</h1>
+{% assign publications = site.publications | sort: "year" | reverse %}
+{% for pub in publications %}
+<div class="pubitem">
+  <div class="pubteaser"><img src="/images/publication-pages/{{ pub.slug }}_small.png"/></div>
+  <div class="pubtitle"> {{ pub.title }}</div>
+  <div class="pubauthors">{{ pub.authors }}</div>
+  <div class="pubinfo">{{ pub.publication }}, {{ pub.year}}</div>
+  
+  {{ content }}
+  
+  <h4 id="downloads">Downloads</h4>
+  <div class="publinks">
+    <p>
+      <a href="/files/{{ pub.slug }}.pdf"><i class="far fa-file-pdf"></i> PDF</a>&nbsp;&nbsp;
+      {% if pub.slides %}
+      <a href="/files/{{ pub.slug }}_slides.pdf"><i class="far fa-file-pdf"></i> Slides</a>&nbsp;&nbsp;
+      {% endif %}
+      <a href="/files/{{ pub.slug }}.bib"><i class="far fa-file-alt"></i> BibTex</a>&nbsp;&nbsp;
+      {% if pub.doi %}
+      <a href="{{ pub.doi }}"><i class="fas fa-external-link-alt"></i> DOI</a>&nbsp;&nbsp;
+      {% endif %}
+    </p>
+  </div>
+</div>
+{% endfor %}
