@@ -320,3 +320,40 @@
     font-size: 1em;
   }
 }
+
+
+/*
+   Publication
+   ========================================================================== */
+.pubitem {
+  margin: 2em 0;
+  line-height: 0.5em;
+}
+.pubtitle {
+  font-size: 100%;
+  margin-bottom: 0.5em;
+  line-height: 0.5em;
+  font-weight: bold;
+}
+.pubauthors, .pubinfo {
+  font-size: 60%;
+  margin-bottom: 0.5em;
+}
+.pubteaser {
+  clear: both;
+}
+.pubteaser a {
+  float: left;
+  margin-right: 2em;
+  
+}
+.pubteaser img {
+  float: center;
+  height: 200px;
+  width: 200px;
+  border: none;
+  margin: 2% 2% 2% 4%;
+}
+.publinks {
+  font-size: 70%;
+}
