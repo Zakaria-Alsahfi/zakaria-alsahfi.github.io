@@ -1,5 +1,5 @@
 ---
-layout: single
+layout: archive
 ---
 
 {% assign pubsByYear = site.publications | where_exp: "item", "item.hidden != true" | group_by_exp: 'publication', 'publication.date | date: "%Y"' %}
@@ -7,14 +7,13 @@ layout: single
 {% for year in pubsByYear %}
 <h2 class="archive__subtitle">{{ year.name }}</h2>
 {% for pub in year.items %}
-<div class="pubitem">
-  <div class="pubtitle"> {{ pub.title }}</div>
-  <div class="pubauthors">{{ pub.authors }}</div>
-  <div class="pubinfo">{{ pub.publication }}, {{ pub.year}}</div>
-  <div class="pubteaser"><img src="/images/publication-pages/{{ pub.slug }}.png"/></div>
+<div class="page">
+  <div class="mt-4 publication-title"> {{ pub.title }}</div>
+  <div class="publication-authors">{{ pub.authors }}</div>
+  <div class="publication-info">{{ pub.publication }}, {{ pub.year}}</div>
+  <div class="publication-teaser"><img src="/images/publication-pages/{{ pub.slug }}.png"/></div>
   {{ content }}
-  <div class="publinks">
-    <h2 id="downloads">Downloads</h2>
+  <h2 id="downloads">Downloads</h2>
     <p>
       <a href="/files/{{ pub.slug }}.pdf"><i class="far fa-file-pdf"></i> PDF</a>&nbsp;&nbsp;
       {% if pub.slides %}
