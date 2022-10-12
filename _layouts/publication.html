@@ -7,13 +7,16 @@ layout: archive
 {% for year in pubsByYear %}
 <h2 class="archive__subtitle">{{ year.name }}</h2>
 {% for pub in year.items %}
-
-  <div class="mt-4 publication-title"> {{ pub.title }}</div>
-  <div class="publication-authors">{{ pub.authors }}</div>
-  <div class="publication-info">{{ pub.publication }}, {{ pub.year}}</div>
-  <div class="publication-teaser"><img src="/images/publication-pages/{{ pub.slug }}.png"/></div>
+<div class="pubitem">
+  <div class="pubteaser"><img src="/images/publication-pages/{{ pub.slug }}_small.png"/></div>
+  <div class="pubtitle"> {{ pub.title }}</div>
+  <div class="pubauthors">{{ pub.authors }}</div>
+  <div class="pubinfo">{{ pub.publication }}, {{ pub.year}}</div>
+  
   {{ content }}
+  
   <h2 id="downloads">Downloads</h2>
+  <div class="publinks">
     <p>
       <a href="/files/{{ pub.slug }}.pdf"><i class="far fa-file-pdf"></i> PDF</a>&nbsp;&nbsp;
       {% if pub.slides %}
@@ -24,6 +27,8 @@ layout: archive
       <a href="{{ pub.doi }}"><i class="fas fa-external-link-alt"></i> DOI</a>&nbsp;&nbsp;
       {% endif %}
     </p>
+  </div>
+</div>
   {% endfor %}
   {% endfor %}
   {% endif %}
