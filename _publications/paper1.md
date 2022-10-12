@@ -2,7 +2,7 @@
 title: "Machine Learning Classifiers Help to Manage COVID-19 Distribution in China"
 authors: "Wei Jiaming, Mingxuan Yao, Alsahfi Zakaria, Ye Taiping, Snir Eli and Rahmani Bahareh"
 publication: "Scientific Report (impact factor: 4.996), Springer Nature"
-year: "2022"
+year: "2019"
 doi: "http://dx.doi.org/10.21203/rs.3.rs-1954642/v1"
 slides: true
 ---
