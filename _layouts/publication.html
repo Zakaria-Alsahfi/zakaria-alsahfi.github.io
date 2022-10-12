@@ -1,5 +1,5 @@
 ---
-layout: archive
+layout: single
 ---
 
 {% assign pubsByYear = site.publications | where_exp: "item", "item.hidden != true" | group_by_exp: 'publication', 'publication.date | date: "%Y"' %}
