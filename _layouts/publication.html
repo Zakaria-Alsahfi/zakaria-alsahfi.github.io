@@ -7,7 +7,7 @@ layout: archive
 {% for year in pubsByYear %}
 <h2 class="archive__subtitle">{{ year.name }}</h2>
 {% for pub in year.items %}
-<div class="page">
+
   <div class="mt-4 publication-title"> {{ pub.title }}</div>
   <div class="publication-authors">{{ pub.authors }}</div>
   <div class="publication-info">{{ pub.publication }}, {{ pub.year}}</div>
@@ -24,7 +24,6 @@ layout: archive
       <a href="{{ pub.doi }}"><i class="fas fa-external-link-alt"></i> DOI</a>&nbsp;&nbsp;
       {% endif %}
     </p>
-  </div>
   {% endfor %}
   {% endfor %}
   {% endif %}
