@@ -57,7 +57,9 @@ search_full_content      : #true # true, false (default)
 download                 : #true
 
 # SEO Related
-google_site_verification : d3b87d81c531b9a2
+google_search_console:
+  verification_file_code: d3b87d81c531b9a2
+google_site_verification : 
 bing_site_verification   :
 yandex_site_verification :
 naver_site_verification  :
