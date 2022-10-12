@@ -6,35 +6,35 @@
 
 /* add additional CSS rules below */
 
-.pubitem {
+pubitem {
   margin: 2em 0;
   line-height: 0.5em;
 }
-.pubtitle {
+pubtitle {
   font-size: 100%;
   margin-bottom: 0.5em;
   line-height: 0.5em;
   font-weight: bold;
 }
-.pubauthors, .pubinfo {
+pubauthors, pubinfo {
   font-size: 60%;
   margin-bottom: 0.5em;
 }
-.pubteaser {
+pubteaser {
   clear: both;
 }
-.pubteaser a {
+pubteaser a {
   float: left;
   margin-right: 2em;
   
 }
-.pubteaser img {
+pubteaser img {
   float: center;
   height: 200px;
   width: 200px;
   border: none;
   margin: 2% 2% 2% 4%;
 }
-.publinks {
+publinks {
   font-size: 70%;
 }
