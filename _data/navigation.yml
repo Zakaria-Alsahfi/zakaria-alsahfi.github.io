@@ -4,6 +4,8 @@ main:
     url: /about/
   - title: "Portfolio"
     url: /portfolio/
+  - title: "Power Bi"
+    url: /powerbi/
   - title: "Tableau"
     url: /tableau/
   - title: "Certifications"
