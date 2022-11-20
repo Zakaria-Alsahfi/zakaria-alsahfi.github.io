@@ -327,4 +327,12 @@ defaults:
       author_profile: true
       share: true
       comment: true
-      
+  #_powerbi
+  - scope:
+      path: "_powerbi"
+      type: powerbi
+    values:
+      layout: single
+      author_profile: true
+      share: true
+      comment: true
