@@ -7,11 +7,5 @@ tags: [Data Science,  Data Visualization, Power bi, Dashboard ]
 
 
 <!-- this is the embed code provided by Google -->
-<iframe 
-title="High_Level_Business_Requirement" 
-width="600" 
-height="373.5" 
-src="https://app.powerbi.com/view?r=eyJrIjoiYjUyZGQ5NWEtNTE4My00ZmEzLWIyNWEtZTVmN2NkOTgzZjYzIiwidCI6IjZiY2E4MzUxLTAxZDMtNDI1Mi04NWVhLWJkYThmOGQyMzViZCIsImMiOjl9" 
-frameborder="1" 
-allowFullScreen="true">
+<iframe width="600" height="373.5" src="https://app.powerbi.com/view?r=eyJrIjoiYjUyZGQ5NWEtNTE4My00ZmEzLWIyNWEtZTVmN2NkOTgzZjYzIiwidCI6IjZiY2E4MzUxLTAxZDMtNDI1Mi04NWVhLWJkYThmOGQyMzViZCIsImMiOjl9" frameborder="1" allowFullScreen="true">
 </iframe>
