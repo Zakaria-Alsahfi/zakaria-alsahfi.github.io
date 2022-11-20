@@ -1,6 +1,7 @@
 ---
 title: "High Level Business Requirement"
 date: 2022-10-19
+collection: powerbi
 excerpt_separator: <!--more-->
 tags: [Data Science,  Data Visualization, Power bi, Dashboard ]
 ---
