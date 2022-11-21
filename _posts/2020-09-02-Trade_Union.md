@@ -1,6 +1,7 @@
 ---
 title: "Determining Trade Union Status"
 date: 2020-09-02
+excerpt_separator: <!--more-->
 tags: [data science, Machine Learning, Python, Commerce, Transport]
 header:
   image: "/images/perceptron/United Data Scientists Union.jpg"
@@ -8,6 +9,7 @@ mathjax: "true"
 ---
 
 This Project deals with implementation of different models and doing preprocessing with the data in order to compare the results and performance of different models.  Weapplied statistical techniques to see which model is performing best. In this project we will create a binary classifier which will predict that either the data scientist will remaina USDU member or not.
+<!--more-->
 
 
 ## Reading data for preprocessing
