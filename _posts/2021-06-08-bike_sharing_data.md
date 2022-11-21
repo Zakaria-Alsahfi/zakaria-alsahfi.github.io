@@ -1,6 +1,7 @@
 ---
 title: "Predicting Bike Sharing"
 date: 2021-06-08
+excerpt_separator: <!--more-->
 tags: [Data Science, Machine Learning, Deep Learning, Python, Commerce, Transport]
 header:
   image: "/images/perceptron/bike-sharing.jpg"
@@ -8,6 +9,7 @@ mathjax: "true"
 ---
 
 In this project, we will build a neural network and use it to predict daily bike rental ridership.
+<!--more-->
 
 ## Load and prepare the data
 
