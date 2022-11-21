@@ -1,0 +1,13 @@
+<div class="recent-articles">
+    {% assign maxposts = 5 %}
+    <ul class="post-list text-muted list-unstyled">
+        {% for post in site.powerbi limit: maxposts %}
+            <li>
+                <p>
+                    <a class="article-link" href="">
+                    {{ post.title | escape }}</a>
+                </p>
+            </li>
+        {% endfor %}
+    </ul>
+</div>
