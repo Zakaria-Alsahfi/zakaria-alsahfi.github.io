@@ -1,0 +1,33 @@
+---
+title: Jekyll and HTML Widgets
+output:
+  md_document:
+    variant: gfm
+    preserve_yaml: TRUE
+knit: (function(inputFile, encoding) {
+  rmarkdown::render(inputFile, encoding = encoding, output_dir = "../_posts") })
+date: 2020-09-19
+permalink: /posts/2020/09/jekyll-html
+excerpt_separator: <!--more-->
+toc: true
+header: 
+  og_image: "posts/jekyll-html/map.png"
+tags:
+  - jekyll
+  - rmarkdown
+  - data
+  - visualization
+---
+
+# The finished product
+
+Here’s what the final map looks like. If you didn’t know the extra
+effort it took, it would blend seamlessly into the page. Theoretically
+this *should* work for any HTML widget, like those produced by the
+`plotly` R package. If you haven’t checked `plotly` out, you really
+should. It can turn `ggplot2` plots into interactive widgets with a
+single line of code\!
+
+<iframe src="/files/html/posts/predoc_map.html" height="600px" width="100%" style="border:none;">
+
+</iframe>
