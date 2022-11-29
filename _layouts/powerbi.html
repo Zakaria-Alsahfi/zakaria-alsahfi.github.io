@@ -1,6 +1,12 @@
+---
+layout: single
+---
 {{ content }}
 
+{% assign presentations = site.powerbi %} 
 {% if site.powerbi %}
 <h3>Slide Deck</h3>
 <iframe src="{{site.powerbi}}" width="610px" height="367px" frameborder="0"></iframe>
 {% endif %}
+{% for presentation in presentations -%}
+
