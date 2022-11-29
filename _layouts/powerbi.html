@@ -2,13 +2,11 @@
 layout: archive
 ---
 
-
-{{ content }}
-
 {% assign power = site.powerbi %}
 {% for p in power %}
-<h3> p.name  </h3>
-{% if p.powerBiUrl %}
-<iframe src="{{p.powerBiUrl}}" width="610px" height="367px" frameborder="0"></iframe>
-{% endif %}
+  <h3> {{ p.name}}  </h3>
+  {% if p.powerBiUrl %}
+      {{ content }}
+      <iframe src="{{p.powerBiUrl}}" width="680px" height="380px" frameborder="0"></iframe>
+  {% endif %}
 {% endfor %}
