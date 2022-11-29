@@ -4,7 +4,7 @@ layout: single
 {{ content }}
 
 {% assign power = site.powerbi %}
-{% for p in powerbi %}
+{% for p in power %}
 <h3> p.title </h3>
         <iframe src="{{p.powerBiUrl}}" width="610px" height="367px" frameborder="0"></iframe>
 {% endfor %}
