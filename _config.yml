@@ -222,7 +222,7 @@ collections:
   publications:
     output: true
     permalink: /:collection/:path/
-  powerbis:
+  powerbi:
     output: true
     permalink: /:collection/:path/
 
@@ -334,10 +334,10 @@ defaults:
       comment: true
   #_powerbi
   - scope:
-      path: "_power"
-      type: powerbis
+      path: "_powerbi"
+      type: powerbi
     values:
-      layout: powerbi
+      layout: power
       classes : wide
       author_profile: true
       share: true
