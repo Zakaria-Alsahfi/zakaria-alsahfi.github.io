@@ -222,6 +222,9 @@ collections:
   publications:
     output: true
     permalink: /:collection/:path/
+  presentations:
+    output: true
+    permalink: /:collection/:name
 
 # Sass/SCSS
 sass:
@@ -334,7 +337,8 @@ defaults:
       path: "_powerbi"
       type: powerbi
     values:
-      layout: single
+      layout: powerbi
+      classes : wide
       author_profile: true
       share: true
       comment: true
