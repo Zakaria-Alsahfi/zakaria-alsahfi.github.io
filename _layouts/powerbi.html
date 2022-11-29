@@ -4,8 +4,8 @@ layout: archive
 
 {% assign power = site.powerbi %}
 {% for p in power %}
-  <h3> {{ p.name}}  </h3>
   {% if p.powerBiUrl %}
+      <h3> [{{ p.name }}] </h3>
       {{ content }}
       <iframe src="{{p.powerBiUrl}}" width="680px" height="380px" frameborder="0"></iframe>
   {% endif %}
