@@ -222,7 +222,7 @@ collections:
   publications:
     output: true
     permalink: /:collection/:path/
-  presentations:
+  powerbis:
     output: true
     permalink: /:collection/:name
 
@@ -335,7 +335,7 @@ defaults:
   #_powerbi
   - scope:
       path: "_powerbi"
-      type: powerbi
+      type: powerbis
     values:
       layout: powerbi
       classes : wide
