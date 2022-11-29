@@ -7,8 +7,8 @@ layout: archive
 
 {% assign power = site.powerbi %}
 {% for p in power %}
-{% if p.powerPointUrl %}
 <h3> p.title </h3>
+{% if p.powerBiUrl %}
 <iframe src="{{p.powerBiUrl}}" width="610px" height="367px" frameborder="0"></iframe>
 {% endif %}
 {% endfor %}
