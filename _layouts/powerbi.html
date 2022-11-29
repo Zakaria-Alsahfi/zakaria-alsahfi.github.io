@@ -3,8 +3,8 @@ layout: single
 ---
 {{ content }}
 
-{% assign presentations = site.powerbi %} 
-<h3>Slide Deck</h3>
-{% for presentation in presentations %}
-<iframe src="{{presentation.powerbi}}" width="610px" height="367px" frameborder="0"></iframe>
-{% endfor %}
+{% assign powerbis = site.powerbi %}
+    {% for powerbi in powerbis %}
+        <h3> powerbi.title </h3>
+        <iframe src="{{presentation.powerBiUrl}}" width="610px" height="367px" frameborder="0"></iframe>
+    {% endfor %}
