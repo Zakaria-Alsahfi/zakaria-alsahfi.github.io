@@ -244,6 +244,7 @@ plugins:
   - jekyll-feed
   - jemoji
   - jekyll-google_search_console_verification_file
+  - jekyll-pdf-embed
 
 # mimic GitHub Pages with --safe
 whitelist:
