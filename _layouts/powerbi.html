@@ -8,7 +8,7 @@ layout: archive
   {% for year in powerByYear %}
       <div class="entries-{{ entries_layout }}">
         {% for post in year.items %}
-          {% include archive-single-tableau.html type=entries_layout %}
+          {% include archive_single_powerbi.html type=entries_layout %}
         {% endfor %}
     </div>
 {% endfor %}
