@@ -1,11 +1,3 @@
-<!-->
----
-layout: powerbi
-title: " "
-permalink: /power/
-author_profile: true
----
-<!-->
 ---
 layout: archive
 title: " "
@@ -17,3 +9,12 @@ author_profile: true
 {% for post in site.powerbi %}
   {% include archive-single-tableau.html %}
 {% endfor %}
+
+<!-->
+---
+layout: powerbi
+title: " "
+permalink: /power/
+author_profile: true
+---
+<!-->
