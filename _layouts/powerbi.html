@@ -6,10 +6,12 @@ layout: archive
 {% assign powerByYear = site.powerbi | where_exp: "item", "item.hidden != true" | group_by_exp: 'powerbi', 'powerbi.date | date: "%Y"' %}
 {% if powerByYear.size > 0 %}
   {% for year in powerByYear %}
-      <div class="entries-{{ entries_layout }}">
-        {% for post in year.items %}
-          {% include archive_single_powerbi.html type=entries_layout %}
-        {% endfor %}
-    </div>
-{% endfor %}
+      <section class="taxonomy__section">
+        <div class="entries-{{ entries_layout }}">
+          {% for post in year.items %}
+            {% include archive_single_powerbi.html type=entries_layout %}
+          {% endfor %}
+        </div>
+      </section>
+  {% endfor %}
 {% endif %}
