@@ -4,9 +4,9 @@ layout: archive
 
 {% assign power = site.powerbi %}
 {% for p in power %}
-  {% if p.powerBiUrl %}
-      <h3> {{ p.title }} </h3>
-      {{ content }}
-      <iframe src="{{p.powerBiUrl}}" width="1024px" height="612px" frameborder="0"></iframe>
-  {% endif %}
+{% if p.powerBiUrl %}
+<h3> {{ p.title }} </h3>
+<p> {{p.description}} </p>
+<iframe src="{{p.powerBiUrl}}" width="1024px" height="612px" frameborder="0"></iframe>
+{% endif %}
 {% endfor %}
