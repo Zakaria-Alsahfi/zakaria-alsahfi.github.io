@@ -5,3 +5,53 @@ excerpt: "We have the .NET Framework, .NET Standard, .NET Core, ASP.NET, ASP.NET
 collection: tableau
 tags: [Data Science,  Data Visualization, Power bi, Dashboard ]
 ---
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<style>
+
+.container{
+  padding-top: 35px;
+}
+     
+.row {
+  margin: 0px;
+}
+ 
+.tableauPlaceholder {
+  margin: auto;
+}
+   
+@media (min-width: 1200px) {
+  .col-lg-12 {
+    float: left;
+  }
+  .col-lg-12 {
+     width: 100%;
+     position: relative;
+     min-height: 1px;
+     padding-right: 0px;
+     padding-left: 0px;
+  }   
+</style>
+</head>
+  
+<body>
+  
+    <div id="Container" class="container-non-responsive">
+        <div class="row">
+            <div class="col-lg-12">
+              <iframe 
+                      title="High_Level_Business_Requirement" 
+                      width="600" 
+                      height="373.5" 
+                      src="https://app.powerbi.com/view?r=eyJrIjoiYjUyZGQ5NWEtNTE4My00ZmEzLWIyNWEtZTVmN2NkOTgzZjYzIiwidCI6IjZiY2E4MzUxLTAxZDMtNDI1Mi04NWVhLWJkYThmOGQyMzViZCIsImMiOjl9&embedImagePlaceholder=true" 
+                      frameborder="0" 
+                      allowFullScreen="true">
+              </iframe>
+          </div>
+      </div>
+  </div>
+  </body>
+</html>
