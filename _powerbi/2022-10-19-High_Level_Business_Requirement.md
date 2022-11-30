@@ -1,6 +1,6 @@
 ---
 title: "High Level Business Requirement"
-powerBiUrl: https://app.powerbi.com/view?r=eyJrIjoiYjUyZGQ5NWEtNTE4My00ZmEzLWIyNWEtZTVmN2NkOTgzZjYzIiwidCI6IjZiY2E4MzUxLTAxZDMtNDI1Mi04NWVhLWJkYThmOGQyMzViZCIsImMiOjl9&embedImagePlaceholder=true
+powerBiUrl: https://app.powerbi.com/view?r=eyJrIjoiYjUyZGQ5NWEtNTE4My00ZmEzLWIyNWEtZTVmN2NkOTgzZjYzIiwidCI6IjZiY2E4MzUxLTAxZDMtNDI1Mi04NWVhLWJkYThmOGQyMzViZCIsImMiOjl9
 
 excerpt_separator: <!--more-->
 date: 14-05-2022
