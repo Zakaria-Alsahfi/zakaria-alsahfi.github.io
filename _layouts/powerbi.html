@@ -2,6 +2,25 @@
 layout: archive
 ---
 
+{% assign entries_layout = page.entries_layout | default: 'list' %}
+{% assign powerByYear = site.powerbi | where_exp: "item", "item.hidden != true" | group_by_exp: 'powerbi', 'powerbi.date | date: "%Y"' %}
+{% if powerByYear.size > 0 %}
+  {% for year in powerByYear %}
+      <div class="entries-{{ entries_layout }}">
+        {% for post in year.items %}
+          {% include archive-single-tableau.html type=entries_layout %}
+        {% endfor %}
+    </div>
+{% endfor %}
+{% endif %}
+
+
+
+<!-->
+---
+layout: archive
+---
+
 {% assign power = site.powerbi %}
 {% for p in power %}
 {% if p.powerBiUrl %}
@@ -10,3 +29,4 @@ layout: archive
 <iframe src="{{p.powerBiUrl}}" width="1024px" height="612px" frameborder="0"></iframe>
 {% endif %}
 {% endfor %}
+<!-->
