@@ -36,6 +36,7 @@ A motivated, teamwork-oriented, and responsible Data Analyst, I have significant
 
 
 ## Education
+
 ---
 | :----------------------------- | --------------- | :----------: |
 | **Business and Data Analyst**  |                 | **Nov 2021** |
@@ -49,6 +50,7 @@ A motivated, teamwork-oriented, and responsible Data Analyst, I have significant
 
 
 ## Academic Interests
+
 ---
 | :------------------- | ------ | :-------------------- |
 | • Data Visualization |        | • Predictive Analysis |
@@ -58,6 +60,7 @@ A motivated, teamwork-oriented, and responsible Data Analyst, I have significant
 
 
 ## Technical Skills
+
 ---
 | :----------| ---------- | :---------- |
 | • Python   | • MySQL    | • R         |
