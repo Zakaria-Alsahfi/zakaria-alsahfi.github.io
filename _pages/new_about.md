@@ -36,8 +36,8 @@ A motivated, teamwork-oriented, and responsible Data Analyst, I have significant
 
 
 ## Education
-
 ---
+
 | :----------------------------- | --------------- | :----------: |
 | **Business and Data Analyst**  |                 | **Nov 2021** |
 | SDA Simplilearn                |                 |              |
@@ -50,8 +50,8 @@ A motivated, teamwork-oriented, and responsible Data Analyst, I have significant
 
 
 ## Academic Interests
-
 ---
+
 | :------------------- | ------ | :-------------------- |
 | • Data Visualization |        | • Predictive Analysis |
 | • Statical Modeling  |        | • Data Analytics      |
@@ -60,8 +60,8 @@ A motivated, teamwork-oriented, and responsible Data Analyst, I have significant
 
 
 ## Technical Skills
-
 ---
+
 | :----------| ---------- | :---------- |
 | • Python   | • MySQL    | • R         |
 | • Tableau  | • R Shiny  | • Power Bi  |
