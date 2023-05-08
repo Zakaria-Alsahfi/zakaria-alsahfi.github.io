@@ -13,16 +13,13 @@ td, th {
 ## About Me
 
 ---
-
-Motivated, teamwork-oriented and responsible Data Analyst with significant experience in increasing comperhension of reports and presentations by average professional. Highly educated and bilingual in Arabic and English.
+A motivated, teamwork-oriented, and responsible Data Analyst, I have significant experience in enhancing the comprehension of reports and presentations for professionals of all levels. With a strong educational background and fluency in both Arabic and English, I bring a diverse perspective to any project. I am committed to delivering accurate and meaningful insights through data analysis and visualization, and I am constantly seeking new ways to improve my skills and stay up-to-date with the latest industry trends.
 
 
 ## Work Experience
-
 ---
 
 #### Director Of Information Affair
-
 | :-----------------------------            | ----------:          |
 | **University of Business and Technology** |**Jul 2021 - Present**|
 
@@ -30,7 +27,6 @@ Motivated, teamwork-oriented and responsible Data Analyst with significant exper
 
 
 #### Financial Data Analyst – Freelance
-
 | :----------------------------- |----------:            |
 | **Salla E-Commerce Platform**  |**Nov 2021 - Des2021** |
 
@@ -38,7 +34,6 @@ Motivated, teamwork-oriented and responsible Data Analyst with significant exper
 
 
 ## Education
-
 ---
 
 | :----------------------------- | --------------- | :----------: |
@@ -52,20 +47,7 @@ Motivated, teamwork-oriented and responsible Data Analyst with significant exper
 | Fontbonne University – St. Louis, Missouri, USA| |              |
 
 
-## Professional Development
-
----
-
-| :----------------------------- | ------ | :------------------------ |
-| • Computer vision(20h)         |        | • CompTIA A+(20h)         |
-| • Blockchain Development(40h)  |        | • CCNA(20h)               |
-| • IT Project Management(20h)   |        | • IT Risk Management(20h) |
-| • Digital transformation(80 h) |        | • CCNP(20h)               |
-
-
-
 ## Academic Interests
-
 ---
 
 | :------------------- | ------ | :-------------------- |
@@ -76,7 +58,6 @@ Motivated, teamwork-oriented and responsible Data Analyst with significant exper
 
 
 ## Technical Skills
-
 ---
 
 | :----------| ---------- | :---------- |
