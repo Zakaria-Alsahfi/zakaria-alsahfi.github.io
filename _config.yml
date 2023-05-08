@@ -81,7 +81,7 @@ social:
 analytics:
   provider               : "google-gtag" # false (default), "google", "google-universal", "custom" ,"google-gtag"
   google:
-    tracking_id          : "G-DK9G4CR9N3" #"UA-245828385-1"
+    tracking_id          : "UA-245828385-1" #"UA-245828385-1""G-DK9G4CR9N3"
     #tag_manager          : 
     #container_id         : 
 
