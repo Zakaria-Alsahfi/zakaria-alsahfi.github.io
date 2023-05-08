@@ -78,12 +78,14 @@ social:
   links: #https://www.upwork.com/freelancers/~01ed379ac7a573ca07 # An array of links to social media profiles
 
 # Analytics
-analytics:
-  provider               : "google-gtag" # false (default), "google", "google-universal", "custom" ,"google-gtag"
-  google:
-    tracking_id          : "UA-245828385-1" #"UA-245828385-1""G-DK9G4CR9N3"
+#analytics:
+#  provider               : "google-gtag" # false (default), "google", "google-universal", "custom" ,"google-gtag"
+#  google:
+ #   tracking_id          : "UA-245828385-1" #"UA-245828385-1""G-DK9G4CR9N3"
     #tag_manager          : 
     #container_id         : 
+    
+google_analytics         : "G-DK9G4CR9N3"
 
 
 # Site Author
@@ -238,7 +240,8 @@ paginate: 5 # amount of posts to show
 paginate_path: /page:num/
 timezone: # https://en.wikipedia.org/wiki/List_of_tz_database_time_zones
 
-
+- theme: minima
++ remote_theme: jekyll/minima
 # Plugins (previously gems:)
 plugins:
   - jekyll-paginate
@@ -248,6 +251,7 @@ plugins:
   - jemoji
   - jekyll-google_search_console_verification_file
   - jekyll-pdf-embed
+  - jekyll-remote-theme
 
 # mimic GitHub Pages with --safe
 whitelist:
