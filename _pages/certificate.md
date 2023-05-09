@@ -68,3 +68,4 @@ sections:
           url: /about/
           style: btn-primary
 ---
+{% include feature_row %}
