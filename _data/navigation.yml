@@ -8,9 +8,9 @@ main:
     url: /viz/
     sublinks:
       - title: "Power Bi"
-      url: /power/
+        url: /power/
       - title: "Tableau"
-      url: /tableau/
+        url: /tableau/
   - title: "Certifications"
     url: /certificate/
   - title: "Publications"
