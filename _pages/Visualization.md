@@ -29,31 +29,3 @@ author_profile: true
     </div>
   </div>
 </div>
-
-<script>
-  $(document).ready(function(){
-    $('.tabs-left a').click(function(){
-      $(this).tab('show');
-    });
-  });
-</script>
-
-<style>
-  .tabs-left > li {
-    float: none;
-  }
-  .tabs-left > li > a {
-    min-width: 100px;
-    margin-right: -1px;
-    border-bottom: 1px solid #ddd;
-    border-right-color: transparent;
-  }
-  .tabs-left > li.active > a,
-  .tabs-left > li.active > a:hover,
-  .tabs-left > li.active > a:focus {
-    border-color: #ddd #ddd #ddd transparent;
-  }
-  .tab-content {
-    margin-left: 140px;
-  }
-</style>
