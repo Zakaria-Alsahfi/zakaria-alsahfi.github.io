@@ -1,8 +1,10 @@
 ---
 layout: archive
-title: " "
 permalink: /certificate/
-author_profile: true
+categories:
+  - Post Formats
+tags:
+  - gallery
 gallery:
 - url: /images/training/Udacity Deep Learning.jpg
 - image_path: /images/training/Udacity Deep Learning.jpg
