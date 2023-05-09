@@ -31,3 +31,12 @@ author_profile: true
     });
   });
 </script>
+
+<style>
+  .tab-pane {
+    display: none;
+  }
+  .tab-pane.active {
+    display: block;
+  }
+</style>
