@@ -8,6 +8,8 @@ main:
     url: /power/
   - title: "Tableau"
     url: /tableau/
+  - title: "VIZ"
+    url: /viz/
   - title: "Certifications"
     url: /certificate/
   - title: "Publications"
