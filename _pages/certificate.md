@@ -1,5 +1,4 @@
 ---
-layout: archive
 permalink: /certificate/
 image_sliders:
   - slider
