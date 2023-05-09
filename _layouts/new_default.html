@@ -2,7 +2,13 @@
 layout: archive
 ---
 
-  {{ content }}
-
-  <div class="entries-{{ page.entries_layout | default: 'list' }}">
-  </div>
+ <!DOCTYPE html>
+<html lang="en-us">
+    <head>
+        ...
+    </head>
+    <body>
+        {{ content }}
+        <script src="/assets/js/tabs.js"></script>
+    </body>
+</html>
