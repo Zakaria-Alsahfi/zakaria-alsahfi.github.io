@@ -41,4 +41,4 @@ feature_row:
   alt: Background Image
   title: Power BI Essential Training
 ---
-{% include feature_row id="feature_row2" type="left" %}
+{% include feature_row id="feature_row" type="left" %}
