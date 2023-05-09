@@ -4,12 +4,13 @@ main:
     url: /about/
   - title: "Portfolio"
     url: /portfolio/
-  - title: "Power Bi"
-    url: /power/
-  - title: "Tableau"
-    url: /tableau/
   - title: "VIZ"
     url: /viz/
+    sublinks:
+      - title: "Power Bi"
+      url: /power/
+      - title: "Tableau"
+      url: /tableau/
   - title: "Certifications"
     url: /certificate/
   - title: "Publications"
