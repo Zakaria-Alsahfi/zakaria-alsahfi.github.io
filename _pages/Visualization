@@ -1,3 +1,10 @@
+---
+layout: default
+title: " "
+permalink: /vis/
+author_profile: true
+---
+
 {% tabs log %}
 
 {% tab log php %}
