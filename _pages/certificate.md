@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: single
 permalink: /certificate/
 image_sliders:
   - slider2
