@@ -41,11 +41,3 @@
   settings:
     height: "'auto'"
     effect: "'fade'"
-    initialHeight:
-    maxHeight:
-    interval:
-    transitionDuration:
-    disableNav: false
-    keyboardNav:  true
-    previousNavSelector:
-    nextNavSelector:
