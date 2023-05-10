@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: splash
 permalink: /certificate/
 image_sliders:
   - slider1
