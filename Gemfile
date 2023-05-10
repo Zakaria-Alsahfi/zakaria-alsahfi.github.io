@@ -1,4 +1,5 @@
 source "https://rubygems.org"
+ruby '2.0.0'
 gem "github-pages", group: :jekyll_plugins
 gem "jekyll-include-cache", group: :jekyll_plugins
 gem "jekyll", "~> 4.2", ">= 4.2.0"
