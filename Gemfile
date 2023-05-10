@@ -8,6 +8,7 @@ gem "wdm", "~> 0.1.0" if Gem.win_platform?
 
 # If you have any plugins, put them here!
 group :jekyll_plugins do
+  gem "faraday-retry"
   gem "jekyll-github-metadata"
   gem "jekyll-paginate"
   gem "jekyll-sitemap"
