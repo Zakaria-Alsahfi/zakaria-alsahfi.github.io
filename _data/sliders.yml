@@ -28,7 +28,7 @@
   bullets: true
   captions: true
   images:
-    - src: /images/training/Udacity Deep Learning.jpg
+    - data-src: /images/training/Udacity Deep Learning.jpg
       title: Deep Learning Nanodegree Program
       alt: Deep Learning Nanodegree Program
     - data-src: /images/training/Business and Data Analys.jpg
@@ -37,36 +37,45 @@
     - data-src: /images/training/Introduction to Data Analytics.jpg
       title: Introduction to Data Analytics
       alt: Introduction to Data Analytics
-    - src: /images/training/Introduction to Business Analysis.jpg
+    - data-src: /images/training/Introduction to Business Analysis.jpg
       title: Introduction to Business Analysis
       alt: Introduction to Business Analysis
-    - src: /images/training/Business Analytics with Excel.jpg
+    - data-src: /images/training/Business Analytics with Excel.jpg
       title: Business Analytics with Excel
       alt: Business Analytics with Excel
     - data-src: /images/training/Data Science Certification Training - R  Programming.jpg
       title: Data Science Certification Training - R  Programming
       alt: Data Science Certification Training - R  Programming
-    - src: /images/training/Power BI Essential Training.jpg
+    - data-src: /images/training/Power BI Essential Training.jpg
       title: Power BI Essential Training
       alt: Power BI Essential Training
     - data-src: /images/training/Power BI.jpg
       title: Power BI
       alt: Power BI
-    - src: /images/training/Tableau Certification Training.jpg
+    - data-src: /images/training/Tableau Certification Training.jpg
       title: Tableau Certification Training
       alt: Tableau Certification Training
-    - src: /images/training/SQL Training.jpg
+    - data-src: /images/training/SQL Training.jpg
       title: SQL Training
       alt: SQL Training
-    - src: /images/training/Data Analyst Capstone.jpg
+    - data-src: /images/training/Data Analyst Capstone.jpg
       title: Data Analyst Capstone
       alt: Data Analyst Capstone
-    - src: /images/training/Business Analysis Professional (CBAP®).jpg
+    - data-src: /images/training/Business Analysis Professional (CBAP®).jpg
       title: Business Analysis Professional (CBAP®)
       alt: Business Analysis Professional (CBAP®)
   settings:
-    height: "'auto'"
     effect: "'fade'"
+    height: 400
+    initialHeight:
+    maxHeight:
+    interval:
+    transitionDuration:
+    effect:
+    disableNav:
+    keyboardNav:
+    previousNavSelector:
+    nextNavSelector:
     
     
 - selector: slider3
