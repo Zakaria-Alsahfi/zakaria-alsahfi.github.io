@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: about
 #title: "Portfolio"
 permalink: /about/
 author_profile: true
