@@ -6,7 +6,7 @@ author_profile: true
 #  - excerpt: 'Nullam suscipit et nam, tellus velit pellentesque at malesuada, enim eaque. Quis nulla, netus tempor in diam gravida tincidunt, *proin faucibus* voluptate felis id sollicitudin. Centered with `type="center"`'
 feature_row:
   - image_path: /images/training/Udacity Deep Learning.jpg
-    alt: "Deep Learning Nanodegree Program"
+    image_caption: "Deep Learning Nanodegree Program"
     title: "Deep Learning Nanodegree Program"
     #excerpt: "This is some sample content that goes here with **Markdown** formatting."
   - image_path: /images/training/Business and Data Analys.jpg
