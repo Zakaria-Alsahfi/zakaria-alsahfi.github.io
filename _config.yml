@@ -6,7 +6,7 @@
 # `jekyll serve`. If you change this file, please restart the server process.
 
 #theme: moonwalk # if you are using GitHub Pages, change it to remote_theme: abhinavs/moonwalk
-theme: moonwalk
+remote_theme: abhinavs/moonwalk
 
 theme_config:
   appearance: "dark" # can be "light", "dark" or "auto"
