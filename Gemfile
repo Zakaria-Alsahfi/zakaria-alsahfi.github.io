@@ -1,6 +1,6 @@
 source "https://rubygems.org"
 
-gem "jekyll", "3.5.1"
+gem "jekyll", "~> 4.24"
 
 gem "minima", "~> 2.0"
 
