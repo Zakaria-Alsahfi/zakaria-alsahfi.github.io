@@ -243,7 +243,11 @@ timezone: # https://en.wikipedia.org/wiki/List_of_tz_database_time_zones
 
 #theme: minimal-mistakes-jekyll
 #remote_theme: jekyll/minima
-
+darkmode:
+  enable_dark_mode: true
+  show_dark_mode_toggle_in_header: true 
+  show_dark_mode_toggle_in_bottom: false # displays the dark mode toggle switch in the footer and allows the user to manually change the mode
+  show_dark_mode_toggle_in_mobile_menu: false # displays the dark mode toggle switch in the footer and allows the user to manually change the mode
 # Plugins (previously gems:)
 plugins:
   - jekyll-paginate
