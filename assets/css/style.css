@@ -1,12 +1,16 @@
 .toggle-button {
   display: inline-block;
   position: absolute;
+  top: 10px;
+  right: 10px;
+  width: 40px;
+  height: 40px;
   padding: 8px;
   border: none;
   border-radius: 20px;
   font-size: 0; /* remove text spacing */
   cursor: pointer;
-  background-color: #ccc;
+  background-color: transparent;
   transition: background-color 0.2s ease;
 }
 .toggle-button--hidden {
