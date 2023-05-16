@@ -18,6 +18,16 @@ function toggleButton() {
 var toggleButton = document.querySelector('.toggle-button');
 toggleButton.addEventListener('click', function() {
   var html = document.querySelector('html');
+  var darkModeToggle = document.querySelector('#dark-mode-toggle');
+  var lightModeToggle = document.querySelector('#light-mode-toggle');
+
   html.classList.toggle('dark_mode');
-  toggleButton();
+
+  if (darkModeToggle.classList.contains('toggle-button--hidden')) {
+    darkModeToggle.classList.remove('toggle-button--hidden');
+    lightModeToggle.classList.add('toggle-button--hidden');
+  } else {
+    darkModeToggle.classList.add('toggle-button--hidden');
+    lightModeToggle.classList.remove('toggle-button--hidden');
+  }
 });
