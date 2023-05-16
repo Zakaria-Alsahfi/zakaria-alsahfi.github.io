@@ -1,15 +1,14 @@
 {% include base_path %}
-<link rel="stylesheet" 
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" 
-      integrity="sha512-fz4+IyKv3W+K33tD8nJ4C6RgPvte6aPnHx/2LcHm1l+1O8fE7j7/oYxhW4O8gWq0I1JpZkrv+hhcmh+6wVhJxw==" 
-      crossorigin="anonymous" 
-      referrerpolicy="no-referrer" />
+<!-- Include dark mode styles -->
+{% if page.minimal_mistakes_skin == page.minimal_mistakes_skin_dark %}
+  <link rel="stylesheet" href="{{ '/assets/css/dark-mode.css' | relative_url }}">
+{% endif %}
 
-<button id="dark-mode-toggle" class="toggle-button" onclick="toggleDarkMode()">
-  <i class="fas fa-moon"></i>
-</button>
-<button id="light-mode-toggle" class="toggle-button" onclick="toggleDarkMode()" style="display: none;">
-  <i class="fas fa-sun"></i>
+<!-- Include dark mode script -->
+<script src="{{ '/assets/js/dark-mode.js' | relative_url }}"></script>
+
+<button id="dark-mode-button" class="btn btn-sm btn-outline-secondary" title="Toggle dark mode">
+  <i id="dark-mode-icon" class="fas fa-moon"></i>
 </button>
 
 <meta charset="utf-8">
