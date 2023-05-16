@@ -356,3 +356,14 @@ input[type="submit"],
   -webkit-transition: $global-transition;
   transition: $global-transition;
 }
+
+
+
+
+
+
+// Dark mode styles
+$dark-bg-color: #222 !default;
+$dark-text-color: #fff !default;
+$dark-link-color: #09f !default;
+$dark-link-hover-color: #0cf !default;
