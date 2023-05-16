@@ -9,6 +9,9 @@
   background-color: #ccc;
   transition: background-color 0.2s ease;
 }
+.toggle-button--hidden {
+  display: none;
+}
 
 .toggle-button:hover {
   background-color: #bbb;
