@@ -26,22 +26,30 @@
   color: #fff;
 }
 
-.toggle-button[aria-pressed="true"] .toggle-button__icon {
-  transform: translateX(20px);
+.toggle-button[aria-pressed="true"] .toggle-button__icon--sun {
+  display: none;
+}
+
+.toggle-button[aria-pressed="true"] .toggle-button__icon--moon {
+  display: inline-block;
+}
+
+.toggle-button[aria-pressed="false"] .toggle-button__icon--sun {
+  display: inline-block;
+}
+
+.toggle-button[aria-pressed="false"] .toggle-button__icon--moon {
+  display: none;
 }
 
 .toggle-button__icon {
-  position: absolute;
-  top: 50%;
-  left: 8px;
-  width: 16px;
-  height: 16px;
-  margin-top: -8px;
-  background-color: #fff;
-  border-radius: 50%;
-  transition: transform 0.2s ease;
+  margin-right: 8px;
 }
 
-.toggle-button__text {
-  margin-left: 32px;
+.toggle-button__icon--sun:before {
+  content: 'wb_sunny';
+}
+
+.toggle-button__icon--moon:before {
+  content: 'brightness_2';
 }
