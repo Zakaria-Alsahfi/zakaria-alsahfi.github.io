@@ -1,0 +1,14 @@
+.skin-toggle {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 0.5rem;
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+
+.skin-toggle svg {
+  width: 1.5em;
+  height: 1.5em;
+  fill: currentColor;
+}
