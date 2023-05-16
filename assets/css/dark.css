@@ -1,0 +1,15 @@
+/* Dark mode styles */
+html.dark_mode {
+  background-color: #1a1a1a;
+  color: #fff;
+}
+
+/* Dark mode styles for links */
+html.dark_mode a {
+  color: #fff;
+}
+
+/* Dark mode styles for headings */
+html.dark_mode h1, html.dark_mode h2, html.dark_mode h3, html.dark_mode h4, html.dark_mode h5, html.dark_mode h6 {
+  color: #fff;
+}
