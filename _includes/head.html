@@ -1,10 +1,10 @@
 {% include base_path %}
 
-<button id="dark-mode-toggle" class="toggle-button toggle-button--visible" 
+<button id="dark-mode-toggle" onclick="toggleButton" class="toggle-button toggle-button--visible" 
         aria-pressed="{{ page.dark_mode | default: 'false' }}">
   <i class="material-icons toggle-button__icon">brightness_2</i>
 </button>
-<button id="light-mode-toggle" class="toggle-button toggle-button--hidden" 
+<button id="light-mode-toggle" onclick="toggleButton" class="toggle-button toggle-button--hidden" 
         aria-pressed="{{ page.dark_mode | default: 'false' }}">
   <i class="material-icons toggle-button__icon">wb_sunny</i>
 </button>
