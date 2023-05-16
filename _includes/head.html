@@ -1,7 +1,10 @@
 {% include base_path %}
 
 <meta charset="utf-8">
-
+<div class="toggle-switch">
+    <input type="checkbox" id="toggle" class="toggle-switch__checkbox">
+    <label for="toggle" class="toggle-switch__label"></label>
+  </div>
 {% include seo.html %}
 
 {% if site.google_analytics and jekyll.environment == 'production' %}
