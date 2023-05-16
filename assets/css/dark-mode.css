@@ -5,3 +5,14 @@ body.dark-mode {
 }
 
 /* Add more styles here as needed */
+
+.toggle-button {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  width: 40px;
+  height: 40px;
+  background-color: #ccc;
+  border-radius: 50%;
+  cursor: pointer;
+}
