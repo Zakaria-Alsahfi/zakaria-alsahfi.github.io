@@ -14,4 +14,8 @@ main:
     url: /publication/
   - title: "Contact"
     url: /Contact/
+  - title: "Dark Mode"
+    url: "#"
+    icon: "fa-moon"
+    skin_toggle: true
 
