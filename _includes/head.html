@@ -1,15 +1,13 @@
 {% include base_path %}
-<!-- Include dark mode styles -->
-{% if site.minimal_mistakes_skin == site.minimal_mistakes_skin_dark %}
-  <link rel="stylesheet" href="{{ '/assets/css/dark-mode.css' | relative_url }}">
+{% if site.minimal_mistakes_skin_switch %}
+  <div class="skin-switcher d-flex align-items-center">
+    <span class="skin-toggle" title="{{ site.minimal_mistakes_skin == site.minimal_mistakes_skin_dark ? 'Light Mode' : 'Dark Mode' }}" tabindex="0" role="button" aria-label="Toggle {{ site.minimal_mistakes_skin == site.minimal_mistakes_skin_dark ? 'Light Mode' : 'Dark Mode' }}" aria-pressed="{{ site.minimal_mistakes_skin == site.minimal_mistakes_skin_dark | downcase }}">
+      <svg class="icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+        <path d="M346.51 64.3c-123.71 0-224.21 100.5-224.21 224.21 0 123.71 100.5 224.21 224.21 224.21 123.71 0 224.21-100.5 224.21-224.21 0-123.71-100.5-224.21-224.21-224.21zm0 384.42c-88.31 0-160.21-71.9-160.21-160.21s71.9-160.21 160.21-160.21 160.21 71.9 160.21 160.21-71.9 160.21-160.21 160.21z"/>
+      </svg>
+    </span>
+  </div>
 {% endif %}
-
-<!-- Include dark mode script -->
-<script src="{{ '/assets/js/dark-mode.js' | relative_url }}"></script>
-
-<button id="dark-mode-button" class="btn btn-sm btn-outline-secondary" title="Toggle dark mode">
-  <i id="dark-mode-icon" class="fas fa-moon"></i>
-</button>
 
 <meta charset="utf-8">
 {% include seo.html %}
