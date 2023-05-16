@@ -23,11 +23,11 @@ toggleButton.addEventListener('click', function() {
 
   html.classList.toggle('dark_mode');
 
-  if (darkModeToggle.classList.contains('toggle-button--hidden')) {
-    darkModeToggle.classList.remove('toggle-button--hidden');
-    lightModeToggle.classList.add('toggle-button--hidden');
+  if (darkModeToggle.style.display === 'none') {
+    darkModeToggle.style.display = 'block';
+    lightModeToggle.style.display = 'none';
   } else {
-    darkModeToggle.classList.add('toggle-button--hidden');
-    lightModeToggle.classList.remove('toggle-button--hidden');
+    darkModeToggle.style.display = 'none';
+    lightModeToggle.style.display = 'block';
   }
 });
