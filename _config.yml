@@ -7,8 +7,6 @@
   
   
 #minimal_mistakes_skin    : "neon" # "air", "aqua", "contrast", "dark", "dirt", "neon", "mint", "plum", "sunrise", "auto", "solarized-dark", "solarized-light"
-minimal_mistakes_skin_switch: true
-minimal_mistakes_skin_dark: dark
 
 
 # Site Settings
@@ -244,13 +242,18 @@ paginate: 5 # amount of posts to show
 paginate_path: /page:num/
 timezone: # https://en.wikipedia.org/wiki/List_of_tz_database_time_zones
 
-#theme: minimal-mistakes-jekyll
-#remote_theme: jekyll/minima
-darkmode:
-  enable_dark_mode: true
-  show_dark_mode_toggle_in_header: true 
-  show_dark_mode_toggle_in_bottom: false # displays the dark mode toggle switch in the footer and allows the user to manually change the mode
-  show_dark_mode_toggle_in_mobile_menu: false # displays the dark mode toggle switch in the footer and allows the user to manually change the mode
+theme: minimal-mistakes-jekyll
+# Set the skin switcher button options
+skin_switcher:
+  enabled: true
+  default: "dark"
+  toggle_icon: "fas fa-adjust"
+  toggle_icon_class: "skin-switcher-toggle"
+  skins:
+    - title: "Dark"
+      class: "dark"
+    - title: "Light"
+      class: "light"
 # Plugins (previously gems:)
 plugins:
   - jekyll-paginate
