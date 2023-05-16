@@ -1,10 +1,6 @@
 {% include base_path %}
 
 <meta charset="utf-8">
-<div class="toggle-switch">
-    <input type="checkbox" id="toggle" class="toggle-switch__checkbox">
-    <label for="toggle" class="toggle-switch__label"></label>
-  </div>
 {% include seo.html %}
 
 {% if site.google_analytics and jekyll.environment == 'production' %}
@@ -17,7 +13,10 @@
 
 <!-- https://t.co/dKP3o1e -->
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
+<button id="dark-mode-toggle" class="toggle-button" aria-pressed="{{ page.dark_mode | default: 'false' }}">
+    <span class="toggle-button__icon"></span>
+    <span class="toggle-button__text">Dark Mode</span>
+  </button>
 
 <script>
   document.documentElement.className = document.documentElement.className.replace(/\bno-js\b/g, '') + ' js ';
