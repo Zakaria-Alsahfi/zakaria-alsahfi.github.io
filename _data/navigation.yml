@@ -5,12 +5,12 @@ main:
   - title: "Portfolio"
     url: /portfolio/
   - title: "Analysis"
-    url: /vis/
-    children:
-      - title: "Power Bi"
-        url: /vis/power/
-      - title: "Tableau"
-        url: /vis/tableau/
+    url: /viz/
+    #children:
+     # - title: "Power Bi"
+     #   url: /vis/power/
+     # - title: "Tableau"
+      #  url: /vis/tableau/
   - title: "Certifications"
     url: /certificate/
   - title: "Publications"
