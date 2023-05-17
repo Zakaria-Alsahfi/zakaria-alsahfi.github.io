@@ -5,3 +5,26 @@
 
 @import "minimal-mistakes/skins/{{ site.minimal_mistakes_skin | default: 'default' }}"; // skin
 @import "minimal-mistakes"; // main partials
+
+:root {
+  --text-color: #333;
+  --background-color: #fff;
+}
+
+.dark {
+  --text-color: #ccc;
+  --background-color: #222;
+}
+
+body {
+  color: var(--text-color);
+  background-color: var(--background-color);
+}
+
+.skin-toggle-indicator {
+  background-color: var(--text-color);
+}
+
+.skin-toggle-icon {
+  margin-right: 0.5em;
+}
