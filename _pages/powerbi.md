@@ -2,7 +2,7 @@
 layout: powerbi
 title: " "
 parent: viz
-permalink: /viz/powerbi/
+permalink: /viz/power/
 nav_order: 1
 author_profile: true
 ---
