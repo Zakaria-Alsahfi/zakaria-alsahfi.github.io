@@ -10,7 +10,6 @@ Welcome to the analysis section of our site! Here you'll find information and re
 
 <div class="container">
   <ul class="nav nav-pills">
-    <li class="{% if page.url == '/analysis/' %}active{% endif %}"><a href="/analysis/">Analysis</a></li>
     <li class="{% if page.url == '/analysis/power/' %}active{% endif %}"><a href="/analysis/power/">Power BI</a></li>
     <li class="{% if page.url == '/analysis/tableau/' %}active{% endif %}"><a href="/analysis/tableau/">Tableau</a></li>
   </ul>
