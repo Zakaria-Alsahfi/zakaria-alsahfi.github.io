@@ -5,12 +5,12 @@ main:
   - title: "Portfolio"
     url: /portfolio/
   - title: "Analysis"
-    url: /viz/
+    url: /analysis/
     sublinks:
       - title: "Power Bi"
-        url: /vis/power/
+        url: /analysis/power/
       - title: "Tableau"
-        url: /vis/tableau/
+        url: /analysis/tableau/
   - title: "Certifications"
     url: /certificate/
   - title: "Publications"
