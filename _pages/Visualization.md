@@ -8,73 +8,43 @@ author_profile: true
 
 Welcome to the analysis section of our site! Here you'll find information and resources related to data analysis using tools like Power BI and Tableau.
 
-<nav class="navbar">
-  <div class="container-fluid">
-    <div class="navbar-header">
-      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>                        
-      </button>
-      <a class="navbar-brand" href="#">Analysis</a>
-    </div>
-    <div class="collapse navbar-collapse" id="myNavbar">
-      <ul class="nav navbar-nav">
-        <li class="active"><a href="#">Home</a></li>
-        <li class="dropdown">
-          <a class="dropdown-toggle" data-toggle="dropdown" href="#">Power BI <span class="caret"></span></a>
-          <ul class="dropdown-menu">
-            <li><a href="/analysis/power-bi/">Overview</a></li>
-            <li><a href="#">Tutorials</a></li>
-            <li><a href="#">Resources</a></li>
-          </ul>
-        </li>
-        <li class="dropdown">
-          <a class="dropdown-toggle" data-toggle="dropdown" href="#">Tableau <span class="caret"></span></a>
-          <ul class="dropdown-menu">
-            <li><a href="/analysis/tableau/">Overview</a></li>
-            <li><a href="#">Tutorials</a></li>
-            <li><a href="#">Resources</a></li>
-          </ul>
-        </li>
-      </ul>
-    </div>
-  </div>
-</nav>
+<div class="container">
+  <ul class="nav nav-tabs">
+    <li class="active"><a href="#">Analysis</a></li>
+    <li><a href="#">Power BI</a></li>
+    <li><a href="#">Tableau</a></li>
+  </ul>
+</div>
 
 <style>
-  .navbar {
-    margin-bottom: 0;
-    border-radius: 0;
+  .nav-tabs {
+    border-bottom: none;
   }
   
-  .navbar-brand {
-    padding: 15px 10px;
+  .nav-tabs > li {
+    display: inline-block;
   }
   
-  .navbar-nav > li > a {
-    padding-top: 15px;
-    padding-bottom: 15px;
-  }
-  
-  .dropdown-menu {
-    min-width: 200px;
-  }
-  
-  .dropdown-menu > li > a {
+  .nav-tabs > li > a {
+    border: none;
+    color: #555;
+    font-weight: bold;
     padding: 10px 20px;
   }
   
-  .dropdown-menu > li > a:hover,
-  .dropdown-menu > li > a:focus {
-    background-color: #f5f5f5;
+  .nav-tabs > li.active > a,
+  .nav-tabs > li.active > a:focus {
+    border: none;
+    color: #555;
+    font-weight: bold;
+    background-color: #fff;
   }
   
-  .dropdown-menu > .active > a,
-  .dropdown-menu > .active > a:hover,
-  .dropdown-menu > .active > a:focus {
-    background-color: #337ab7;
-    color: #fff;
+  .nav-tabs > li > a:hover {
+    border: none;
+    color: #555;
+    font-weight: bold;
+    background-color: #fff;
   }
 </style>
 
