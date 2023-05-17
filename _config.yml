@@ -255,7 +255,7 @@ plugins:
   - jemoji
   - jekyll-google_search_console_verification_file
   - jekyll-pdf-embed
-  - jekyll-remote-theme
+ # - jekyll-remote-theme
 
 # mimic GitHub Pages with --safe
 whitelist:
