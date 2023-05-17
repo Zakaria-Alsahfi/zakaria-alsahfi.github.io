@@ -8,13 +8,9 @@
   
 #minimal_mistakes_skin    : "neon" # "air", "aqua", "contrast", "dark", "dirt", "neon", "mint", "plum", "sunrise", "auto", "solarized-dark", "solarized-light"
 
-theme: minimal-mistakes
-minimal_mistakes_skin: dark
-minimal_mistakes_skin_switcher_text: "Switch skin"
-minimal_mistakes_skin_switcher_mode: "button"
-minimal_mistakes_skin_switcher_toggle_title: "Toggle light/dark mode"
-minimal_mistakes_skin_switcher_position: "right"
-minimal_mistakes_skin_switcher_show_toggle_title: true
+theme: minimal-mistakes-jekyll
+minimal_mistakes_skin: default
+minimal_mistakes_skin_dark: dark
 
 # Site Settings
 locale                   : "en-US"  #"en-US" "ar-KSA"
