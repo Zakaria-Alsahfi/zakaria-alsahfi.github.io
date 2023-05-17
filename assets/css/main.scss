@@ -6,25 +6,30 @@
 @import "minimal-mistakes/skins/{{ site.minimal_mistakes_skin | default: 'default' }}"; // skin
 @import "minimal-mistakes"; // main partials
 
-:root {
-  --text-color: #333;
-  --background-color: #fff;
+.skin-switcher {
+  display: flex;
+  align-items: center;
+  margin-left: auto;
 }
 
-.dark {
-  --text-color: #ccc;
-  --background-color: #222;
+.skin-toggle {
+  display: none;
 }
 
-body {
-  color: var(--text-color);
-  background-color: var(--background-color);
-}
-
-.skin-toggle-indicator {
-  background-color: var(--text-color);
+.skin-toggle-label {
+  display: inline-flex;
+  align-items: center;
+  margin: 0 0.5em;
+  font-size: 0.9em;
+  color: #aaa;
+  cursor: pointer;
 }
 
 .skin-toggle-icon {
   margin-right: 0.5em;
+}
+
+.skin-toggle:checked + .skin-toggle-label {
+  color: #333;
+  font-weight: bold;
 }
