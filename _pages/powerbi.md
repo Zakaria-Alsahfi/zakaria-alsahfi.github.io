@@ -1,8 +1,6 @@
 ---
 layout: powerbi
 title: " "
-parent: viz
-permalink: /viz/power/
-nav_order: 1
+permalink: /analysis/power/
 author_profile: true
 ---
