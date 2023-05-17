@@ -8,9 +8,9 @@ main:
     url: /vis/
     children:
       - title: "Power Bi"
-        url: /power/
+        url: /vis/power/
       - title: "Tableau"
-        url: /tableau/
+        url: /vis/tableau/
   - title: "Certifications"
     url: /certificate/
   - title: "Publications"
