@@ -1,6 +1,6 @@
 ---
 layout: tableau
 title: " "
-nav_include: /viz/tableau/
+nav_include: viz
 author_profile: true
 ---
