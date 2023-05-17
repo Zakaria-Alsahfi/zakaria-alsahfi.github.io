@@ -1,23 +1,24 @@
-const skinToggle = document.querySelector('.skin-toggle');
-const skinToggleText = document.querySelector('.skin-toggle-text');
+const skinToggle = document.querySelectorAll('.skin-toggle');
 
 function toggleSkin() {
-  document.documentElement.classList.toggle('dark');
-  const isDark = document.documentElement.classList.contains('dark');
-  if (isDark) {
-    skinToggleText.textContent = 'Switch to light mode';
-    skinToggle.checked = true;
+  if (this.id === 'light') {
+    document.documentElement.classList.remove('dark');
+    localStorage.setItem('skinMode', 'light');
+  } else if (this.id === 'dark') {
+    document.documentElement.classList.add('dark');
     localStorage.setItem('skinMode', 'dark');
-  } else {
-    skinToggleText.textContent = 'Switch to dark mode';
-    skinToggle.checked = false;
-    localStorage.setItem('skinMode', 'default');
   }
 }
 
-skinToggle.addEventListener('change', toggleSkin);
+skinToggle.forEach(function(radio) {
+  radio.addEventListener('change', toggleSkin);
+});
 
 const savedSkinMode = localStorage.getItem('skinMode');
 if (savedSkinMode === 'dark') {
-  toggleSkin();
+  document.getElementById('dark').checked = true;
+  toggleSkin.call(document.getElementById('dark'));
+} else {
+  document.getElementById('light').checked = true;
+  toggleSkin.call(document.getElementById('light'));
 }
