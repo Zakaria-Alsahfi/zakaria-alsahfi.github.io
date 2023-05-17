@@ -13,7 +13,10 @@ minimal_mistakes_skin: "sunrise"
 minimal_mistakes_skin_dark: "neon"
 
 # Site Settings
-locale                   : "en-US"  #"en-US" "ar-KSA"
+default_locale           : "en-US"
+locales                  : 
+  - "en-US"  #"en-US" "ar-KSA"
+  - "ar-KSA"
 title                    : "Zakaria Alsahfi"
 title_separator          : "-"
 name                     : #"Zakaria Alsahfi"
