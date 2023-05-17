@@ -8,6 +8,15 @@
     <meta name="MobileOptimized" content="320">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="cleartype" content="on">
+    
+    <div class="skin-switcher">
+      <label for="skin-toggle" class="skin-toggle-label">
+        <span class="skin-toggle-text">Switch to dark mode</span>
+        <input type="checkbox" id="skin-toggle" class="skin-toggle" />
+        <span class="skin-toggle-indicator"></span>
+      </label>
+    </div>
+    
   </head>
 
   <body class="layout--{{ page.layout | default: layout.layout }}{% if page.classes or layout.classes %}{{ page.classes | default: layout.classes | join: ' ' | prepend: ' ' }}{% endif %}">
