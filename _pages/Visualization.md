@@ -10,44 +10,34 @@ Welcome to the analysis section of our site! Here you'll find information and re
 
 <div class="container">
   <ul class="nav nav-tabs">
-    <li class="{% if page.url == '/analysis/power-bi/' %}active{% endif %}"><a href="/analysis/power-bi/">Power BI</a></li>
-    <li class="{% if page.url == '/analysis/tableau/' %}active{% endif %}"><a href="/analysis/tableau/">Tableau</a></li>
+    <li class="active"><a href="#power-bi" data-toggle="tab">Power BI</a></li>
+    <li><a href="#tableau" data-toggle="tab">Tableau</a></li>
   </ul>
+
+  <div class="tab-content">
+    <div class="tab-pane fade in active" id="power">
+      <h2>Power BI</h2>
+      <p>This is the Power BI page.</p>
+    </div>
+    <div class="tab-pane fade" id="tableau">
+      <h2>Tableau</h2>
+      <p>This is the Tableau page.</p>
+    </div>
+  </div>
 </div>
-
-<style>
-.nav-tabs {
-  border-bottom: none;
-  text-align: center;
-}
-
-.nav-tabs > li {
-  display: inline-block;
-  float: none;
-}
-
-.nav-tabs > li > a {
-  border: none;
-  color: #555;
-  font-weight: bold;
-  padding: 10px 20px;
-}
-
-.nav-tabs > li.active > a,
-.nav-tabs > li.active > a:focus {
-  border: none;
-  color: #555;
-  font-weight: bold;
-  background-color: #fff;
-}
-
-.nav-tabs > li > a:hover {
-  border: none;
-  color: #555;
-  font-weight: bold;
-  background-color: #fff;
-}
-</style>
 
 <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+<script>
+$(document).ready(function(){
+  $('.nav-tabs a').click(function(){
+    var url = $(this).attr('href');
+    $.get(url, function(data) {
+      var content = $(data).find('.container .page-content').html();
+      $(url).html(content);
+    });
+    $(this).tab('show');
+    return false;
+  });
+});
+</script>
