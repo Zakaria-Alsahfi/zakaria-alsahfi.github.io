@@ -8,22 +8,8 @@ author_profile: true
 
 Welcome to the analysis section of our site! Here you'll find information and resources related to data analysis using tools like Power BI and Tableau.
 
-## Power BI
-
-Check out our Power BI page for tutorials, guides, and other resources related to using Power BI for data analysis.
-
-[View Power BI page](/analysis/power/)
-
-## Tableau
-
-Our Tableau page has everything you need to get started with Tableau, including tutorials, guides, and more.
-
-[View Tableau page](/analysis/tableau/)
-
-
-
 <div class="container">
-  <ul class="nav nav-tabs">
+  <ul class="nav nav-tabs nav-justified">
     <li class="active"><a data-toggle="tab" href="#powerbi-tab">Power BI</a></li>
     <li><a data-toggle="tab" href="#tableau-tab">Tableau</a></li>
   </ul>
@@ -40,6 +26,44 @@ Our Tableau page has everything you need to get started with Tableau, including 
   </div>
 </div>
 
+<style>
+  .nav-tabs {
+    border-bottom: none;
+  }
+  
+  .nav-tabs > li > a {
+    border: none;
+    color: #555;
+    font-weight: bold;
+  }
+  
+  .nav-tabs > li.active > a,
+  .nav-tabs > li.active > a:focus {
+    border: none;
+    color: #555;
+    font-weight: bold;
+    background-color: #fff;
+  }
+  
+  .nav-tabs > li > a:hover {
+    border: none;
+    color: #555;
+    font-weight: bold;
+    background-color: #fff;
+  }
+  
+  .tab-content {
+    border: none;
+    padding: 15px;
+  }
+  
+  .tab-pane {
+    background-color: #fff;
+    border: none;
+    border-top: none;
+    padding: 15px;
+  }
+</style>
+
 <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
-
