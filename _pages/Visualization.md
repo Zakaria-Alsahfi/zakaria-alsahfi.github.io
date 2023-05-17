@@ -9,35 +9,49 @@ author_profile: true
 Welcome to the analysis section of our site! Here you'll find information and resources related to data analysis using tools like Power BI and Tableau.
 
 <div class="container">
-  <ul class="nav nav-tabs">
-    <li class="active"><a href="#power" data-toggle="tab">Power BI</a></li>
-    <li><a href="#tableau" data-toggle="tab">Tableau</a></li>
+  <ul class="nav nav-pills">
+    <li class="{% if page.url == '/analysis/' %}active{% endif %}"><a href="/analysis/">Analysis</a></li>
+    <li class="{% if page.url == '/analysis/power/' %}active{% endif %}"><a href="/analysis/power/">Power BI</a></li>
+    <li class="{% if page.url == '/analysis/tableau/' %}active{% endif %}"><a href="/analysis/tableau/">Tableau</a></li>
   </ul>
-
-  <div class="tab-content">
-    <div class="tab-pane fade in active" id="power">
-      <h2>Power BI</h2>
-      <p>This is the Power BI page.</p>
-    </div>
-    <div class="tab-pane fade" id="tableau">
-      <h2>Tableau</h2>
-      <p>This is the Tableau page.</p>
-    </div>
-  </div>
 </div>
+
+<style>
+  .nav-pills {
+    display: inline-block;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+  }
+  
+  .nav-pills > li {
+    display: inline-block;
+  }
+  
+  .nav-pills > li > a {
+    border-radius: 0;
+    border: none;
+    color: #555;
+    font-weight: bold;
+    margin-left: -1px;
+    padding: 10px 20px;
+  }
+  
+  .nav-pills > li.active > a,
+  .nav-pills > li.active > a:focus {
+    border: none;
+    color: #555;
+    font-weight: bold;
+    background-color: #fff;
+  }
+  
+  .nav-pills > li > a:hover {
+    border: none;
+    color: #555;
+    font-weight: bold;
+    background-color: #fff;
+  }
+</style>
 
 <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
-<script>
-$(document).ready(function(){
-  $('.nav-tabs a').click(function(){
-    var url = $(this).attr('href');
-    $.get(url, function(data) {
-      var content = $(data).find('.container .page-content').html();
-      $(url).html(content);
-    });
-    $(this).tab('show');
-    return false;
-  });
-});
-</script>
