@@ -10,7 +10,7 @@ Welcome to the analysis section of our site! Here you'll find information and re
 
 <div class="container">
   <ul class="nav nav-tabs">
-    <li class="active"><a href="#power-bi" data-toggle="tab">Power BI</a></li>
+    <li class="active"><a href="#power" data-toggle="tab">Power BI</a></li>
     <li><a href="#tableau" data-toggle="tab">Tableau</a></li>
   </ul>
 
