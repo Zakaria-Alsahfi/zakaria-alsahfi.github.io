@@ -1,6 +1,6 @@
 ---
 layout: powerbi
 title: " "
-nav_include: /viz/power/
+nav_include: viz
 author_profile: true
 ---
