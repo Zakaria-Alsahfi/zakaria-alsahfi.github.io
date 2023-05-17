@@ -8,7 +8,7 @@
   
 #minimal_mistakes_skin    : "neon" # "air", "aqua", "contrast", "dark", "dirt", "neon", "mint", "plum", "sunrise", "auto", "solarized-dark", "solarized-light"
 
-theme: minimal-mistakes-jekyll
+#theme: minimal-mistakes-jekyll
 minimal_mistakes_skin: default
 minimal_mistakes_skin_dark: dark
 
@@ -255,7 +255,7 @@ plugins:
   - jemoji
   - jekyll-google_search_console_verification_file
   - jekyll-pdf-embed
- # - jekyll-remote-theme
+  - jekyll-remote-theme
 
 # mimic GitHub Pages with --safe
 whitelist:
