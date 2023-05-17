@@ -346,12 +346,12 @@ defaults:
       share: true
       comment: true
   #_powerbi
-  - scope:
-      path: "_powerbi"
-      type: powerbi
-    values:
-      layout: power
-      classes : wide
-      author_profile: true
-      share: true
-      comment: true
+ # - scope:
+ #     path: "_powerbi"
+ #     type: powerbi
+ #   values:
+ #     layout: power
+ #     classes : wide
+ #     author_profile: true
+ #     share: true
+ #     comment: true
