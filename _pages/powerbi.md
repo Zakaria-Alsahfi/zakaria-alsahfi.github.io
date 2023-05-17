@@ -1,6 +1,8 @@
 ---
 layout: powerbi
 title: " "
-nav_include: viz
+parent: viz
+permalink: /viz/powerbi/
+nav_order: 1
 author_profile: true
 ---
