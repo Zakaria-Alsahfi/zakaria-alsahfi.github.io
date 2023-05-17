@@ -1,8 +1,6 @@
 ---
 layout: tableau
 title: " "
-parent: viz
-permalink: /viz/tableau/
-nav_order: 2
+permalink: /analysis/tableau/
 author_profile: true
 ---
