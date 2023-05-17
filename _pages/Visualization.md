@@ -1,8 +1,6 @@
 ---
 layout: default
 title: " "
-permalink: /viz/
-nav_order: 3
-has_children: true
+permalink: /analysis/
 author_profile: true
 ---
