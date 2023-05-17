@@ -1,8 +1,9 @@
 ---
 #layout: newtab
 title: " "
-#permalink: /viz/
-#nav_include: viz
+permalink: /viz/
+nav_order: 3
+has_children: true
 author_profile: true
 ---
 ### First tabs
