@@ -1,5 +1,5 @@
 ---
-layout: single
+#layout: single
 title: " "
 permalink: /analysis/
 author_profile: true
@@ -11,8 +11,6 @@ Welcome to the analysis section of our site! Here you'll find information and re
 <!-- Add the following code to include the CSS and JavaScript files -->
 <link rel="stylesheet" href="{{ 'assets/css/style.css' | relative_url }}">
 <script src="{{ 'assets/js/script-tabs.js' | relative_url }}"></script>
-<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
 
 <!-- Add the navigation menu and tab content -->
 <div class="container">
