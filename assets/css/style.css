@@ -1,12 +1,16 @@
+.container {
+  display: flex;
+  justify-content: center;
+}
+
 .nav-pills {
-    display: inline-block;
-    margin: 0;
-    padding: 0;
-    text-align: center;
-  }
+  display: flex;
+  justify-content: center;
+  margin: 0;
+  padding: 0;
+}
 
 .nav-pills li {
-  display: inline-block;
   margin-right: 10px;
 }
 
@@ -20,19 +24,12 @@
 }
 
 .nav-pills > li.active > a,
-  .nav-pills > li.active > a:focus {
-    border: none;
-    color: #555;
-    font-weight: bold;
-    background-color: #fff;
-  }
-  
-  .nav-pills > li > a:hover {
-    border: none;
-    color: #555;
-    font-weight: bold;
-    background-color: #fff;
-  }
+.nav-pills > li > a:hover {
+  border: none;
+  color: #555;
+  font-weight: bold;
+  background-color: #fff;
+}
 
 .tab-content {
   display: none;
