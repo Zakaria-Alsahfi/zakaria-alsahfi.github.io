@@ -37,5 +37,20 @@ Welcome to the analysis section of our site! Here you'll find information and re
   </div>
   <div id="tableau-tab" class="tab-content">
     <!-- Tableau content goes here -->
+    {% assign entries_layout = page.entries_layout | default: 'list' %}
+    {% assign tableausByYear = site.tableau | where_exp: "item", "item.hidden != true" | group_by_exp: 'tableau', 'tableau.date | date: "%Y"' %}
+    {% if tableausByYear.size > 0 %}
+      {% for year in tableausByYear %}
+        <div class="entries-{{ entries_layout }}">
+          {% for post in year.items %}
+            {% include archive-single-tableau.html type=entries_layout %}
+          {% endfor %}
+        </div>
+      {% endfor %}
+    {% endif %}
   </div>
 </div>
+
+
+
+
