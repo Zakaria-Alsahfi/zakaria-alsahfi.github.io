@@ -19,17 +19,18 @@ Welcome to the analysis section of our site! Here you'll find information and re
 <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
 
-<div class="tabs">
-  <ul>
+<div class="container">
+  <ul class="nav nav-pills">
     <li class="active"><a href="#power-bi-tab">Power BI</a></li>
     <li><a href="#tableau-tab">Tableau</a></li>
   </ul>
   <div id="power-bi-tab" class="tab-content active">
     <!-- Power BI content goes here -->
-    ## power bi
+    ## Power bi
   </div>
   <div id="tableau-tab" class="tab-content">
     <!-- Tableau content goes here -->
+     ## Tableau
   </div>
 </div>
 
