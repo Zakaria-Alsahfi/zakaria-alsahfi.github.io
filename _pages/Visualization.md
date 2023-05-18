@@ -14,20 +14,21 @@ Welcome to the analysis section of our site! Here you'll find information and re
     <li class="{% if page.url == '/analysis/tableau/' %}active{% endif %}"><a href="/analysis/tableau/">Tableau</a></li>
   </ul>
 </div> -->
-
 <div class="container">
   <ul class="nav nav-pills">
     <li class="active"><a href="#power-bi-tab">Power BI</a></li>
     <li><a href="#tableau-tab">Tableau</a></li>
   </ul>
-  <div id="power-bi-tab" class="tab-content active">
-    <!-- Power BI content goes here -->
-     Power bi
-  </div>
-  <div id="tableau-tab" class="tab-content">
-    <!-- Tableau content goes here -->
-      Tableau
-  </div>
+</div>
+
+<div id="power-bi-tab" class="tab-content active">
+  <!-- Power BI content goes here -->
+  Power bi
+</div>
+
+<div id="tableau-tab" class="tab-content">
+  <!-- Tableau content goes here -->
+  Tableau
 </div>
 
 <script src="{{ '/js/tabs.js' | relative_url }}"></script>
