@@ -1,5 +1,5 @@
 ---
-#layout: single
+#layout: tableau #single
 title: " "
 permalink: /analysis/
 author_profile: true
