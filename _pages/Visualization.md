@@ -10,31 +10,50 @@ Welcome to the analysis section of our site! Here you'll find information and re
 
  <div class="container">
   <ul class="nav nav-pills">
-    <li class="{% if page.url == '/analysis/power/' %}active{% endif %}">
-      <a href="/analysis/power/">Power BI</a></li>
+    <li class="{% if page.url == '/analysis/power/' %}active{% endif %}"><a href="/analysis/power/">Power BI</a>
+   </li>
     
-    <li class="{% if page.url == '/analysis/tableau/' %}active{% endif %}">
-      <a href="/analysis/tableau/">Tableau</a></li>
+    <li class="{% if page.url == '/analysis/tableau/' %}active{% endif %}"><a href="/analysis/tableau/">Tableau</a>
+   </li>
+   
   </ul>
 </div> 
-<!--
-<div class="container">
-  <ul class="nav nav-pills">
-    <li class="active"><a href="#power-bi-tab">Power BI</a></li>
-    <li><a href="#tableau-tab">Tableau</a></li>
-  </ul>
-</div>
-
-
-<div id="power-bi-tab" class="tab-content active">
-  <!-- Power BI content goes here 
-  Power bi
-</div>
-
-<div id="tableau-tab" class="tab-content">
-  <!-- Tableau content goes here 
-  Tableau
-</div> -->
+<style>
+  .nav-pills {
+    display: inline-block;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+  }
+  
+  .nav-pills > li {
+    display: inline-block;
+  }
+  
+  .nav-pills > li > a {
+    border-radius: 0;
+    border: none;
+    color: #555;
+    font-weight: bold;
+    margin-left: -1px;
+    padding: 10px 20px;
+  }
+  
+  .nav-pills > li.active > a,
+  .nav-pills > li.active > a:focus {
+    border: none;
+    color: #555;
+    font-weight: bold;
+    background-color: #fff;
+  }
+  
+  .nav-pills > li > a:hover {
+    border: none;
+    color: #555;
+    font-weight: bold;
+    background-color: #fff;
+  }
+</style>
 
 <script src="{{ '/js/tabs.js' | relative_url }}"></script>
 <link rel="stylesheet" href="{{ '/css/tabs.css' | relative_url }}">
