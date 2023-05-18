@@ -40,15 +40,16 @@
 }
 
 .tabs ul {
+  display: flex;
+  flex-direction: row;
   list-style: none;
   margin: 0;
   padding: 0;
-  display: flex; /* make the list items flex items */
-  border-bottom: 1px solid #ccc; /* add a bottom border to the list */
+  border-bottom: 1px solid #ccc;
 }
 
 .tabs li {
-  flex: 1; /* make the list items grow to fill the container */
+  flex: 1;
   text-align: center;
 }
 
@@ -70,4 +71,17 @@
 
 .tab-content.active {
   display: block;
+}
+
+/* Additional styles to override conflicting styles */
+
+.tabs > ul,
+.tabs > ul > li {
+  display: flex !important;
+  flex-direction: row !important;
+}
+
+.tabs > ul > li {
+  flex-grow: 1 !important;
+  text-align: center !important;
 }
