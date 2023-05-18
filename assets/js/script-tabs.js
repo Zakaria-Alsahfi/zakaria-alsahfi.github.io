@@ -14,7 +14,7 @@ navLinks.forEach(function(navLink) {
       link.parentElement.classList.remove('active');
     });
 
-    / Add the active class to the clicked navigation link
+    // Add the active class to the clicked navigation link
     this.parentElement.classList.add('active');
 
     // Hide all the tab content
