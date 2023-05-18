@@ -35,6 +35,7 @@ Welcome to the analysis section of our site! Here you'll find information and re
   {% endif %}
     
   </div>
+  
   <div id="tableau-tab" class="tab-content">
     <!-- Tableau content goes here -->
     {% assign entries_layout = page.entries_layout | default: 'list' %}
@@ -49,8 +50,5 @@ Welcome to the analysis section of our site! Here you'll find information and re
       {% endfor %}
     {% endif %}
   </div>
+  
 </div>
-
-
-
-
