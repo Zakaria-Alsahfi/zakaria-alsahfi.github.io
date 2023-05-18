@@ -16,11 +16,11 @@ Welcome to the analysis section of our site! Here you'll find information and re
 <div class="container">
   <ul class="nav nav-pills">
    <!-- <li class="active" data-tab="power-bi-tab"><a href="#">Power BI</a></li> -->
-    <li class="active" data-tab="power-bi-tab"><a href="#">Power BI</a></li>
+    <li class="active" data-tab="tableau"><a href="#">Tableau</a></li>
     <!-- <li data-tab="tableau-tab"><a href="#">Tableau</a></li> -->
-    <li data-tab="tableau-tab"><a href="#">Tableau</a></li>
+    <li data-tab="power-bi-tab"><a href="#">Power BI</a></li>
   </ul>
-  <div id="power-bi-tab" class="tab-content active">
+  <div id="power-bi-tab" class="tab-content">
     <!-- Power BI content goes here -->
     {% assign entries_layout = page.entries_layout | default: 'list' %}
     {% assign powerByYear = site.powerbi | where_exp: "item", "item.hidden != true" | group_by_exp: 'powerbi', 'powerbi.date | date: "%Y"' %}
@@ -38,7 +38,7 @@ Welcome to the analysis section of our site! Here you'll find information and re
     
   </div>
   
-  <div id="tableau-tab" class="tab-content">
+  <div id="tableau" class="tab-content active">
     <!-- Tableau content goes here -->
     {% assign entries_layout = page.entries_layout | default: 'list' %}
     {% assign tableausByYear = site.tableau | where_exp: "item", "item.hidden != true" | group_by_exp: 'tableau', 'tableau.date | date: "%Y"' %}
