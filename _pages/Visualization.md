@@ -17,8 +17,10 @@ Welcome to the analysis section of our site! Here you'll find information and re
 <!-- Add the navigation menu and tab content -->
 <div class="container">
   <ul class="nav nav-pills">
-    <li class="active" data-tab="power-bi-tab"><a href="#">Power BI</a></li>
-    <li data-tab="tableau-tab"><a href="#">Tableau</a></li>
+   <!-- <li class="active" data-tab="power-bi-tab"><a href="#">Power BI</a></li> -->
+    <li class="active"><a href="#" data-tab="power-bi-tab">Power BI</a></li>
+    <!-- <li data-tab="tableau-tab"><a href="#">Tableau</a></li> -->
+    <li><a href="#" data-tab="tableau-tab">Tableau</a></li>
   </ul>
   <div id="power-bi-tab" class="tab-content active">
     <!-- Power BI content goes here -->
