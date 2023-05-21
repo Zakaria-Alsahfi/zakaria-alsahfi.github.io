@@ -1,3 +1,4 @@
+/*
 .nav-pills {
   margin: 0;
   padding: 0;
@@ -49,6 +50,45 @@
   #background-color: #fff;
 }
 
+.tab-content {
+  display: none; 
+}
+
+.tab-content.active {
+  display:block;
+}*/
+
+.tabs {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+  margin-bottom: 20px;
+}
+
+.tab-link {
+  text-decoration: none;
+  color: #333;
+  padding: 10px;
+  border: 0px solid #ccc;
+  border-bottom: none;
+  border-radius: 5px 5px 0 0;
+  background-color: #f1f1f1;
+}
+
+.tab-link:hover {
+  background-color: #e1e1e1;
+}
+
+.red-line {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  height: 2px;
+  background-color: red;
+  transition: all 0.3s ease-in-out;
+  #width: 20%;
+}
 .tab-content {
   display: none; /* Hide all tab content */
 }
