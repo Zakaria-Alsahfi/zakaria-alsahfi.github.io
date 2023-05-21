@@ -10,7 +10,7 @@ Welcome to the analysis section of our site! Here you'll find information and re
 
 <!-- Add the following code to include the CSS and JavaScript files -->
 <link rel="stylesheet" href="{{ 'assets/css/style.css' | relative_url }}">
-<script src="{{ 'assets/js/script-tabs.js' | relative_url }}"></script>
+
 
 <!-- Add the navigation menu and tab content -->
 <div class="container">
@@ -54,5 +54,5 @@ Welcome to the analysis section of our site! Here you'll find information and re
       {% endfor %}
     {% endif %}
   </div>
-  
 </div>
+<script src="{{ 'assets/js/script-tabs.js' | relative_url }}"></script>
