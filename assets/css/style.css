@@ -15,17 +15,24 @@
   font-weight: bold;
   padding: 10px 20px;
   position: relative;
+  text-decoration: none;
 }
 
-.nav-pills li.active a:after {
+.nav-pills li a:after {
   content: "";
   display: block;
   position: absolute;
-  left: 0;
   bottom: 0;
-  width: 100%;
+  left: 0;
+  width: 0;
   height: 2px;
-  background-color: #555;
+  background-color: red;
+  transition: width 0.3s ease 0s, left 0.3s ease 0s;
+}
+
+.nav-pills li.active a:after {
+  width: 100%;
+  left: 0;
 }
 
 .nav-pills > li.active > a {
@@ -40,13 +47,4 @@
   color: #555;
   font-weight: bold;
   background-color: #fff;
-}
-
-.tab-content {
-  opacity: 0;
-  transition: opacity 0.5s ease;
-}
-
-.tab-content.active {
-  opacity: 1;
 }
