@@ -1,6 +1,4 @@
 .nav-pills {
-  display: flex;
-  justify-content: center;
   margin: 0;
   padding: 0;
   text-align: center;
@@ -9,35 +7,28 @@
 .nav-pills li {
   display: inline-block;
   margin-right: 10px;
-  border-top-left-radius: 5px;
-  border-top-right-radius: 5px;
-}
-
-.nav-pills li:first-child {
-  border-top-left-radius: 0;
-}
-
-.nav-pills li:last-child {
-  border-top-right-radius: 0;
 }
 
 .nav-pills li a {
-  border-radius: 0;
   border: none;
   color: #333;
   font-weight: bold;
-  margin-left: -1px;
   padding: 10px 20px;
+  position: relative;
+}
+
+.nav-pills li.active a:after {
+  content: "";
+  display: block;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 2px;
+  background-color: #555;
 }
 
 .nav-pills > li.active > a,
-.nav-pills > li.active > a:focus {
-  border: none;
-  color: #555;
-  font-weight: bold;
-  background-color: #fff;
-}
-
 .nav-pills > li > a:hover {
   border: none;
   color: #555;
@@ -46,9 +37,10 @@
 }
 
 .tab-content {
-  display: none;
+  opacity: 0;
+  transition: opacity 0.5s ease;
 }
 
 .tab-content.active {
-  display: block;
+  opacity: 1;
 }
