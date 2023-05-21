@@ -9,6 +9,16 @@
 .nav-pills li {
   display: inline-block;
   margin-right: 10px;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+}
+
+.nav-pills li:first-child {
+  border-top-left-radius: 0;
+}
+
+.nav-pills li:last-child {
+  border-top-right-radius: 0;
 }
 
 .nav-pills li a {
