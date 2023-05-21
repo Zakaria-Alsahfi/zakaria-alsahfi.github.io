@@ -12,9 +12,9 @@ tabs.forEach(tab => {
     tabContent.forEach(content => content.classList.remove('active'));
 
     // Add the active class to the clicked tab and corresponding tab content
-    const tabId = e.target.closest('li').getAttribute('data-tab');
-    const activeTab = document.querySelector(`#${tabId}`);
-    e.target.closest('li').classList.add('active');
+    const tabId = tab.getAttribute('data-tab');
+    const activeTab = document.getElementById(tabId);
+    tab.classList.add('active');
     activeTab.classList.add('active');
   });
 });
