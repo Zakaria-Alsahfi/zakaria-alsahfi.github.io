@@ -50,10 +50,12 @@
 }
 
 .tab-content {
-opacity: 1;
-transition: opacity 0.5s ease;
+  display: none; /* Hide all tab content */
+  opacity: 1;
+  transition: opacity 0.5s ease;
 }
 
 .tab-content.active {
-opacity: 1;
+  opacity: 1; /* Show the active tab content */
+  transition: opacity 0.5s ease; /* Add a transition effect */
 }
