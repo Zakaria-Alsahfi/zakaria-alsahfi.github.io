@@ -8,27 +8,27 @@ layout: archive
 <section id="{{ year.name }}" class="taxonomy__section">
       <h2 class="archive__subtitle">{{ year.name }}</h2>
       <div class="entries-{{ entries_layout }}">
-        {% for pub in year.items %}
-        <div class="pubitem">
-          <div class="pubtitle"> {{ pub.title }}</div>
-          <div class="pubauthors">{{ pub.authors }}</div>
-          <div class="pubinfo">{{ pub.publication }}, {{ pub.year}}</div>
-          {{ content }}
-          <h4 id="downloads">Downloads</h4>
-          <div class="publinks">
-            <p>
-              <a href="/files/{{ pub.slug }}.pdf"><i class="far fa-file-pdf"></i> PDF</a>&nbsp;&nbsp;
-              {% if pub.slides %}
-              <a href="/files/{{ pub.slug }}_slides.pdf"><i class="far fa-file-pdf"></i> Slides</a>&nbsp;&nbsp;
-              {% endif %}
-              <a href="/files/{{ pub.slug }}.bib"><i class="far fa-file-alt"></i> BibTex</a>&nbsp;&nbsp;
-              {% if pub.doi %}
-              <a href="{{ pub.doi }}"><i class="fas fa-external-link-alt"></i> DOI</a>&nbsp;&nbsp;
-              {% endif %}
-            </p>
-          </div>
-        </div>
-  </div>
+            {% for pub in year.items %}
+            <div class="pubitem">
+                  <div class="pubtitle"> {{ pub.title }}</div>
+                  <div class="pubauthors">{{ pub.authors }}</div>
+                  <div class="pubinfo">{{ pub.publication }}, {{ pub.year}}</div>
+                  {{ content }}
+                  <h4 id="downloads">Downloads</h4>
+                  <div class="publinks">
+                        <p>
+                              <a href="/files/{{ pub.slug }}.pdf"><i class="far fa-file-pdf"></i> PDF</a>&nbsp;&nbsp;
+                              {% if pub.slides %}
+                              <a href="/files/{{ pub.slug }}_slides.pdf"><i class="far fa-file-pdf"></i> Slides</a>&nbsp;&nbsp;
+                              {% endif %}
+                              <a href="/files/{{ pub.slug }}.bib"><i class="far fa-file-alt"></i> BibTex</a>&nbsp;&nbsp;
+                              {% if pub.doi %}
+                              <a href="{{ pub.doi }}"><i class="fas fa-external-link-alt"></i> DOI</a>&nbsp;&nbsp;
+                              {% endif %}
+                        </p>
+                  </div>
+            </div>
+      </div>
 </section>
 {% endfor %}
 {% endfor %}
