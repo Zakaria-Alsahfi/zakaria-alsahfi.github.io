@@ -6,7 +6,10 @@ const tabContent = document.querySelectorAll('.tab-content');
 tabs.forEach(tab => {
   tab.addEventListener('click', e => {
     e.preventDefault();
-
+    
+    // Get the tab ID from the data attribute
+    const tabId = e.target.closest('li').dataset.tab;
+    
     // Remove the active class from all tabs and tab content
     tabs.forEach(tab => tab.classList.remove('active'));
     tabContent.forEach(content => {
@@ -15,9 +18,8 @@ tabs.forEach(tab => {
     });
 
     // Add the active class to the clicked tab and corresponding tab content
-    const tabId = tab.getAttribute('data-tab');
-    const activeTab = document.getElementById(tabId);
-    tab.classList.add('active');
+    e.target.closest('li').classList.add('active');
+    const activeTab = document.querySelector(`[data-tab="${tabId}"]`);
     activeTab.classList.add('active');
 
     // Fade in the active tab content
