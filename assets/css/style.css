@@ -48,3 +48,12 @@
   font-weight: bold;
   background-color: #fff;
 }
+
+.tab-content {
+opacity: 1;
+transition: opacity 0.5s ease;
+}
+
+.tab-content.active {
+opacity: 1;
+}
