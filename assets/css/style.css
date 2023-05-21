@@ -60,11 +60,9 @@
 
 .tabs {
   display: flex;
-  justify-content: center;
+  justify-content: center; /* center the tabs horizontally */
   align-items: center;
   position: relative;
-  margin: 0;
-  padding: 0;
   margin-bottom: 20px;
 }
 
@@ -72,14 +70,17 @@
   text-decoration: none;
   color: #333;
   padding: 10px;
-  border: 0px solid #ccc;
   border-bottom: none;
-  border-radius: 5px 5px 0 0;
-  background-color: #f1f1f1;
+  background-color: transparent;
+  margin: 0 10px; /* add some margin between the tabs */
 }
 
 .tab-link:hover {
   background-color: #e1e1e1;
+}
+
+.tab-link.active {
+  position: relative;
 }
 
 .red-line {
@@ -89,12 +90,14 @@
   height: 2px;
   background-color: red;
   transition: all 0.3s ease-in-out;
-  #width: 20%;
+  width: 0; /* start with a width of 0 */
 }
+
 .tab-content {
-  display: none; /* Hide all tab content */
+  display: none;
+  padding: 20px;
 }
 
 .tab-content.active {
-  display:block; /* Show the active tab content */
+  display: block;
 }
