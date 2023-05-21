@@ -9,12 +9,20 @@ tabs.forEach(tab => {
 
     // Remove the active class from all tabs and tab content
     tabs.forEach(tab => tab.classList.remove('active'));
-    tabContent.forEach(content => content.classList.remove('active'));
+    tabContent.forEach(content => {
+      content.classList.remove('active');
+      content.style.opacity = '0';
+    });
 
     // Add the active class to the clicked tab and corresponding tab content
     const tabId = tab.getAttribute('data-tab');
     const activeTab = document.getElementById(tabId);
     tab.classList.add('active');
     activeTab.classList.add('active');
+
+    // Fade in the active tab content
+    setTimeout(() => {
+      activeTab.style.opacity = '1';
+    }, 50);
   });
 });
