@@ -28,7 +28,13 @@
   background-color: #555;
 }
 
-.nav-pills > li.active > a,
+.nav-pills > li.active > a {
+  border: none;
+  color: #555;
+  font-weight: bold;
+  background-color: transparent;
+}
+
 .nav-pills > li > a:hover {
   border: none;
   color: #555;
