@@ -6,10 +6,10 @@ const tabContent = document.querySelectorAll('.tab-content');
 tabs.forEach(tab => {
   tab.addEventListener('click', e => {
     e.preventDefault();
-    
+
     // Get the tab ID from the data attribute
     const tabId = e.target.closest('li').dataset.tab;
-    
+
     // Remove the active class from all tabs and tab content
     tabs.forEach(tab => tab.classList.remove('active'));
     tabContent.forEach(content => {
@@ -26,5 +26,11 @@ tabs.forEach(tab => {
     setTimeout(() => {
       activeTab.style.opacity = '1';
     }, 50);
+
+    // Fade out the previous tab content
+    const previousTab = document.querySelector('.tab-content.active');
+    setTimeout(() => {
+      previousTab.style.opacity = '0';
+    }, 0);
   });
 });
