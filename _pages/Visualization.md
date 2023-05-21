@@ -14,13 +14,12 @@ Welcome to the analysis section of our site! Here you'll find information and re
 
 <!-- Add the navigation menu and tab content -->
 <div class="container">
-  <ul class="nav nav-pills">
-   <!-- <li class="active" data-tab="power-bi-tab"><a href="#">Power BI</a></li> -->
-    <li class="active" data-tab="power-bi-tab"><a href="#">Power BI</a></li>
-    <!-- <li data-tab="tableau-tab"><a href="#">Tableau</a></li> -->
-    <li data-tab="tableau-tab"><a href="#">Tableau</a></li>
-  </ul>
-  <div id="power-bi-tab" class="tab-content active">
+  <a href="#" class="tab-link active" data-tab="tab1">Power BI</a>
+  <a href="#" class="tab-link" data-tab="tab2">Tableau</a>
+  <a href="#" class="tab-link" data-tab="tab3">Excel</a>
+  <div class="red-line"></div>
+
+  <div class="tab-content active" id="tab1">
     <!-- Power BI content goes here -->
     {% assign entries_layout = page.entries_layout | default: 'list' %}
     {% assign powerByYear = site.powerbi | where_exp: "item", "item.hidden != true" | group_by_exp: 'powerbi', 'powerbi.date | date: "%Y"' %}
@@ -38,7 +37,7 @@ Welcome to the analysis section of our site! Here you'll find information and re
     
   </div>
   
-  <div id="tableau-tab" class="tab-content">
+  <div class="tab-content" id="tab2">
     <!-- Tableau content goes here -->
     {% assign entries_layout = page.entries_layout | default: 'list' %}
     {% assign tableausByYear = site.tableau | where_exp: "item", "item.hidden != true" | group_by_exp: 'tableau', 'tableau.date | date: "%Y"' %}
@@ -51,6 +50,10 @@ Welcome to the analysis section of our site! Here you'll find information and re
           </div>
       {% endfor %}
     {% endif %}
+  </div>
+  
+  <div class="tab-content" id="tab3">
+    <p>This is Excel content.</p>
   </div>
 </div>
 <script src="{{ 'assets/js/script-tabs.js' | relative_url }}"></script>
