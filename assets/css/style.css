@@ -76,14 +76,6 @@
   margin: 0 10px; /* add some margin between the tabs */
 }
 
-.tab-link:hover {
-  background-color: #e1e1e1;
-}
-
-.tab-link.active {
-  position: relative;
-}
-
 .red-line {
   position: absolute;
   bottom: 0;
@@ -92,6 +84,15 @@
   background-color: red;
   transition: all 0.3s ease-in-out;
   width: 0; /* start with a width of 0 */
+}
+
+.tab-link:hover {
+  background-color: #e1e1e1;
+}
+
+.tab-link.active .red-line{
+  position: relative;
+  width: 100%; /* set the width to 100% when the tab is active */
 }
 
 .tab-content {
