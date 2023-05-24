@@ -16,7 +16,7 @@ Welcome to the analysis section of our site! Here you'll find information and re
 <div class="container">
   <a href="#" class="tab-link active" data-tab="tab1">Power BI</a>
   <a href="#" class="tab-link" data-tab="tab2">Tableau</a>
-  <a href="#" class="tab-link" data-tab="tab3">Excel</a>
+  <!-- <a href="#" class="tab-link" data-tab="tab3">Excel</a> -->
   <div class="red-line"></div>
 
   <div class="tab-content active" id="tab1">
@@ -50,10 +50,6 @@ Welcome to the analysis section of our site! Here you'll find information and re
           </div>
       {% endfor %}
     {% endif %}
-  </div>
-  
-  <div class="tab-content" id="tab3">
-    <p>This is Excel content.</p>
   </div>
 </div>
 <script src="{{ 'assets/js/script-tabs.js' | relative_url }}"></script>
