@@ -63,8 +63,9 @@
   justify-content: center; /* center the tabs horizontally */
   align-items: center;
   position: relative;
-  margin-bottom: 20px;
-  width: 100%; /* set the width to 100% to center the tabs horizontally */
+  margin: 0 auto 20px; /* set margin to auto to center horizontally */
+  width: 100%; /* set width to 100% to fill parent container */
+  max-width: 800px; /* set a maximum width to prevent the tabs from becoming too wide */
 }
 
 .tab-link {
