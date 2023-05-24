@@ -1,6 +1,6 @@
 ---
 title: "E-Commerce Sales"
-powerBiUrl: https://app.powerbi.com/reportEmbed?reportId=4074c366-ec6b-445c-9cad-dd02db98526c&autoAuth=true&ctid=801585e2-0e6a-4322-a002-e7fc8457bab4
+powerBiUrl:https://app.powerbi.com/view?r=eyJrIjoiYzIyODJkYTItZjNlNS00YWJkLWE4OGItMzgzOGQxNzQ0NTkyIiwidCI6IjZiY2E4MzUxLTAxZDMtNDI1Mi04NWVhLWJkYThmOGQyMzViZCIsImMiOjl9&pageName=ReportSection
 date: 24-05-2023
 tags: [Data Science,  Data Visualization, Power bi, Dashboard ]
 excerpt_separator: <!--more-->
