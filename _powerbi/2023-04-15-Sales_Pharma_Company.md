@@ -1,6 +1,6 @@
 ---
 title: "Pharmaceutical Sales"
-powerBiUrl: https://app.powerbi.com/view?r=eyJrIjoiYzIyODJkYTItZjNlNS00YWJkLWE4OGItMzgzOGQxNzQ0NTkyIiwidCI6IjZiY2E4MzUxLTAxZDMtNDI1Mi04NWVhLWJkYThmOGQyMzViZCIsImMiOjl9
+powerBiUrl: https://app.powerbi.com/view?r=eyJrIjoiYjJhNmQ1NGMtYzhlNi00ZThkLWFmZjgtZTVlNWE3ZjM4NWUwIiwidCI6IjZiY2E4MzUxLTAxZDMtNDI1Mi04NWVhLWJkYThmOGQyMzViZCIsImMiOjl9
 date: 15-04-2023
 tags: [Data Science,  Data Visualization, Power bi, Dashboard ]
 excerpt_separator: <!--more-->
