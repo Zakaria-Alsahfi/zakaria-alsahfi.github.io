@@ -104,8 +104,3 @@
 .tab-content.active {
   display: block;
 }
-
-.iframe {
-	width: 200%;
-	height: 600px;
-}
