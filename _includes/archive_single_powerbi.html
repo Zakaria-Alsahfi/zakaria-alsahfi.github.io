@@ -44,7 +44,8 @@
     {% elsif post.excerpt and site.read_more == 'enabled' %}
     <p class="archive__item-excerpt" itemprop="description"><p>{{ post.excerpt | markdownify | remove: '<p>' | remove: '</p>' }}<strong><a href="{{ base_path }}{{ post.url }}" rel="permalink"> Read more</a></strong></p></p>
     {% endif %}
+<!--
     <iframe src="{{post.powerBiUrl}}" width="600px" height="373.5px" frameborder="0"></iframe>
-
+-->
   </article>
 </div>
