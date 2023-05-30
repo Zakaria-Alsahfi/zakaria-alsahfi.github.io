@@ -5,8 +5,7 @@ date: 30-05-2023
 tags: [Data Science,  Data Visualization, Power bi, Dashboard ]
 excerpt_separator: <!--more-->
 ---
+An insurance group comprises 10 property and casualty insurance, life insurance, and insurance brokerage companies. The property and casualty companies in the group operate in a 17-state region. The group consists of significant regional property and casualty insurers, represented by more than 4,000 independent agents who live and work in local communities through a six-state region. 
 
-The Analytics team of an Online E-Commerce Company wants to design a Sales dashboard to analyze the sales based on various product categories. 
-The company wants to add user control for product category, so users can select a category and can see the trend month-wise and product-wise accordingly. 
-The Analytics team also wants to create a histogram to analyze number of shipping days.
+The objective is to improve the agents’ existing knowledge used for agent segmentation in a supervised predictive framework.
 <!--more-->
