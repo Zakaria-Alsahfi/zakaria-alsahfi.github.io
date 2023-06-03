@@ -1,63 +1,3 @@
-/*
-.nav-pills {
-  margin: 0;
-  padding: 0;
-  text-align: center;
-}
-
-.nav-pills li {
-  display: inline-block;
-  margin-right: 10px;
-}
-
-.nav-pills li a {
-  border: none;
-  color: #333;
-  font-weight: bold;
-  padding: 10px 20px;
-  position: relative;
-  text-decoration: none;
-}
-
-.nav-pills li a:after {
-  content: "";
-  display: block;
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  width: 0;
-  height: 2px;
-  background-color: red;
-  transition: width 0.3s ease, left 0.3s ease;
-}
-
-.nav-pills li.active a:after {
-  width: 100%;
-  left: 0;
-}
-
-.nav-pills > li.active > a {
-  border: none;
-  color: #333;
-  font-weight: bold;
-  background-color: transparent;
-}
-
-.nav-pills > li > a:hover {
-  border: none;
-  color: #555;
-  font-weight: bold;
-  #background-color: #fff;
-}
-
-.tab-content {
-  display: none; 
-}
-
-.tab-content.active {
-  display:block;
-}*/
-
 .tabs {
   display: flex;
   justify-content: center; /* center the tabs horizontally */
@@ -70,7 +10,7 @@
 
 .tab-link {
   text-decoration: none;
-  color: #333;
+  color: white; /* set the color to white */
   padding: 10px;
   border-bottom: none;
   background-color: transparent;
