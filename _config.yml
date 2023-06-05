@@ -99,7 +99,7 @@ google_analytics         : "G-DK9G4CR9N3"
 # Site Author
 author:
   name             : "Zakaria Alsahfi"
-  avatar           : "/images/Pio-pick.WebP" # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
+  avatar           : "/images/Pio-pick.jpeg" # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
   bio              : "Data Scientist | Data analyst | Financial Data Analyst " #"Portfolio"
   location         : "Saudi Arabia"
   email            : zakaria.sahfi@gmail.com
