@@ -1,7 +1,7 @@
 ---
-title: "Analyze Zomato's Business Data"
+title: "Saudi Arabia Population 2022"
 powerBiUrl: https://app.powerbi.com/view?r=eyJrIjoiYjUyZGQ5NWEtNTE4My00ZmEzLWIyNWEtZTVmN2NkOTgzZjYzIiwidCI6IjZiY2E4MzUxLTAxZDMtNDI1Mi04NWVhLWJkYThmOGQyMzViZCIsImMiOjl9
-date: 14-05-2022
+date: 6-06-2023
 collection: tableau
 tags: [Data Science,  Data Visualization, Power bi, Dashboard ]
 excerpt_separator: <!--more-->
