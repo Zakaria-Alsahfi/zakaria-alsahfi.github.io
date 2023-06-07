@@ -1,13 +1,11 @@
 ---
 title: "Saudi Arabia Population 2022"
-powerBiUrl: https://app.powerbi.com/view?r=eyJrIjoiYjUyZGQ5NWEtNTE4My00ZmEzLWIyNWEtZTVmN2NkOTgzZjYzIiwidCI6IjZiY2E4MzUxLTAxZDMtNDI1Mi04NWVhLWJkYThmOGQyMzViZCIsImMiOjl9
+powerBiUrl: https://app.powerbi.com/view?r=eyJrIjoiOGRjNjVkMDAtYzM0NC00NWQ1LTliMzYtZGE0OWMwNjcyOTQ2IiwidCI6IjZiY2E4MzUxLTAxZDMtNDI1Mi04NWVhLWJkYThmOGQyMzViZCIsImMiOjl9
 date: 6-06-2023
 collection: tableau
 tags: [Data Science,  Data Visualization, Power bi, Dashboard ]
 excerpt_separator: <!--more-->
 ---
 
-Zomato is a restaurant search and discovery service. Operating in several countries worldwide, they provide detailed information and customer reviews of various restaurants. 
-The owners of Zomato, want to unearth the hidden anomalies in their business data. The final aim is to analyze the data in a way which helps them to accurately judge their 
-business performance.
+This dashboard provides insightful visualizations and data about the population of Saudi Arabia. Togater these visualizations and data points within the dashboard provide key insights into the size, composition and recent changes within Saudi Arabia's total population. Decision-makers can leverage these trends to inform planning around workforce needs, infrastructure development, government services and more.
 <!--more-->
