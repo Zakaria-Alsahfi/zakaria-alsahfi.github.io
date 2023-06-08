@@ -1,6 +1,6 @@
 ---
 title: "Saudi Arabia Population 2022"
-powerBiUrl: https://app.powerbi.com/view?r=eyJrIjoiOGRjNjVkMDAtYzM0NC00NWQ1LTliMzYtZGE0OWMwNjcyOTQ2IiwidCI6IjZiY2E4MzUxLTAxZDMtNDI1Mi04NWVhLWJkYThmOGQyMzViZCIsImMiOjl9
+powerBiUrl: https://app.powerbi.com/view?r=eyJrIjoiNGZkNzFkMGItMTI4NS00Y2ZmLWI0YjItNDI5YWVhZjc0YzkyIiwidCI6IjZiY2E4MzUxLTAxZDMtNDI1Mi04NWVhLWJkYThmOGQyMzViZCIsImMiOjl9
 date: 6-06-2023
 collection: tableau
 tags: [Data Science,  Data Visualization, Power bi, Dashboard ]
