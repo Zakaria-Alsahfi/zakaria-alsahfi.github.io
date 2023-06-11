@@ -8,8 +8,19 @@ header:
 mathjax: "true"
 ---
 
-We are given a dataset of reviews written by customers of an online ecommerce private company. The project is to apply machine learning algorithms on the given dataset and find the models that best fits to the needs of the management. Couple of machine learning approaches have been implied to get closer to the accuracy of the prediction model.The dataset we use in this project is a Women Clothing E-Commerce Review dataset, which has pretty much all the necessary information such as Age, Title, Review text, rating, and recommended IND. The dataset file has 23486 rows of customer reviews. The first part of the project is to build a machine learning model. The model should be able to forecast whether a product is recommended or not by using the Review text. Since the purpose is to forecast the recommendation, we will use several methods to achieve this goal. The approaches would be the usage of Word Embedding and Bag of Words model, including several technical implications such as Binary, Count, TF-IDF, and Frequency Analysis.
+Customer reviews provide valuable insight into product quality and opportunities for improvement. This dataset of women's clothing reviews aims to help the e-commerce company develop a machine learning model that can automatically determine from customer feedback whether a product is recommended or not.
 <!--more-->
+With over 23,000 reviews, manually analyzing this volume of feedback is time-consuming and subjective. An automated classification model offers a scalable and consistent approach. However, given the unstructured nature of review text, several techniques must be combined to extract meaningful information for prediction.
+
+We will implement both a bag-of-words model and word embeddings to transform the text into numerical feature vectors. Frequency analysis will identify the most important and least important words for recommendation. Vectorization using TF-IDF and binarization will convert words into vector representations.
+
+Multiple machine learning algorithms will be tested to find the highest accuracy model for determining product recommendation. Metrics like precision, recall, and F1 score will also be considered in model selection.
+
+The chosen model will provide the company insight into which review aspects most correlate with positive or negative recommendations. With a trained model, new reviews can be automatically classified to inform inventory and merchandising decisions for improved customer satisfaction.
+
+The techniques demonstrated here for analyzing customer reviews can be generalized to other industries reliant on customer feedback to optimize products and drive business value.
+
+
 ## Model 1
 ### Bag Of Words
 
