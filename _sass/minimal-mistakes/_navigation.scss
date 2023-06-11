@@ -19,7 +19,7 @@
   animation-delay         : 0.3s;
 
   @include breakpoint($medium) {
-    padding-left:  $left-minimum_margin; // hier!!!  1em; wenn ein Logo oben mit eingeblendet werden soll, dann muss hier von +1em addiert werden.
+    padding-left:  1em; //$left-minimum_margin hier!!!  1em; wenn ein Logo oben mit eingeblendet werden soll, dann muss hier von +1em addiert werden.
   }
 
   @include breakpoint($x-large) {
