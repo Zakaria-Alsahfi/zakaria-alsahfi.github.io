@@ -1,6 +1,6 @@
 ---
 title: "Student statistics in Saudi universities"
-powerBiUrl: https://app.powerbi.com/reportEmbed?reportId=336db27b-08da-4568-b1e5-99f49b5ca8b0&autoAuth=true&ctid=801585e2-0e6a-4322-a002-e7fc8457bab4
+powerBiUrl: https://app.powerbi.com/view?r=eyJrIjoiY2JiNjYxOTYtNzg1Ni00MmQ4LTk1MmQtMWRhMDhkOTMyMTE0IiwidCI6IjZiY2E4MzUxLTAxZDMtNDI1Mi04NWVhLWJkYThmOGQyMzViZCIsImMiOjl9
 date: 25-11-2022
 tags: [Data Science,  Data Visualization, Power bi, Dashboard ]
 excerpt_separator: <!--more-->
