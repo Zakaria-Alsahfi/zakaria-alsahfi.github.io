@@ -6,8 +6,8 @@ layout: archive
 {% assign powerByYear = site.powerbi | where_exp: "item", "item.hidden != true" | group_by_exp: 'powerbi', 'powerbi.date | date: "%Y"' %}
 {% if powerByYear.size > 0 %}
   {% for year in powerByYear %}
-      <h2 class="archive__subtitle">{{ year.name }}</h2>
       <section class="taxonomy__section">
+        <h2 class="archive__subtitle">{{ year.name }}</h2>
         <div class="entries-{{ entries_layout }}">
           {% for post in year.items %}
             {% include archive_single_powerbi.html type=entries_layout %}
