@@ -1,6 +1,6 @@
 ---
 layout: powerbi
 title: " "
-permalink: /analysis/power/
+permalink: /power/
 author_profile: true
 ---
