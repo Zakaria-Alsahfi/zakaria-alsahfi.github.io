@@ -4,13 +4,10 @@ main:
     url: /about/
   - title: "Portfolio"
     url: /portfolio/
-  - title: "Analysis"
-    url: /analysis/
-    sublinks:
-      - title: "Power Bi"
-        url: /analysis/power/
-      - title: "Tableau"
-        url: /analysis/tableau/
+  - title: "Power Bi"
+    url: /power/
+  - title: "Tableau"
+    url: /tableau/
   - title: "Certifications"
     url: /certificate/
   - title: "Publications"
