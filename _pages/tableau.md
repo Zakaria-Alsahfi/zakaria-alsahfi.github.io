@@ -1,6 +1,6 @@
 ---
 layout: tableau
 title: " "
-permalink: /analysis/tableau/
+permalink: /tableau/
 author_profile: true
 ---
