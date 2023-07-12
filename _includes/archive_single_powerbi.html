@@ -27,15 +27,6 @@
     {% endif %}
 
     <h2 class="archive__item-title" itemprop="headline">
-      {% if post.link %}
-      <a href="{{ post.link }}">{{ title }}</a> 
-      <a href="{{ base_path }}{{ post.url }}"rel="permalink">
-        <i class="fa fa-link" aria-hidden="true" title="permalink"></i>
-        <span class="sr-only">Permalink</span>
-      </a>
-      {% else %}
-        <a href="{{ base_path }}{{ post.url }}" rel="permalink">{{ title }}</a>
-      {% endif %}
     </h2>
     {% if post.collection == 'teaching' %}
     <p> {{ post.type }}, <i>{{ post.venue }}</i>, {{ post.date | default: "1900-01-01" | date: "%Y" }} </p>
@@ -62,7 +53,7 @@
     {% endif %}
     <iframe src="{{post.powerBiUrl}}" 
             width = 100%
-            height = 500% 
+            height = 300
             frameborder = "0">
     </iframe> 
   </article>
