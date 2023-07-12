@@ -10,7 +10,7 @@ layout: archive
         <h2 class="archive__subtitle">{{ year.name }}</h2>
         <div class="entries-{{ entries_layout }}">
           {% for post in year.items %}
-            {% include archive-single-tableau.html type=entries_layout %}
+            {% include archive_single_powerbi.html type=entries_layout %}
           {% endfor %}
         </div>
       </section>
