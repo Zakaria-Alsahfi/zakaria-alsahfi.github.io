@@ -29,8 +29,10 @@
     <h2 class="archive__item-title" itemprop="headline">
       {% if post.link %}
         <a>{{ title }}</a> <a><i class="fa fa-link" aria-hidden="true" title="permalink"></i><span class="sr-only">Permalink</span></a>
+        <p>Published in <i>{{ post.venue }}</i>, {{ post.date | default: "1900-01-01" | date: "%Y" }} </p>
       {% else %}
         <a>{{ title }}</a>
+        <p>Published in <i>{{ post.venue }}</i>, {{ post.date | default: "1900-01-01" | date: "%Y" }} </p>
       {% endif %}
     </h2>
       
