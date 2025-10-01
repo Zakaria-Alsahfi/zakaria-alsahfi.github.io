@@ -1,9 +1,9 @@
 ---
-layout: welcome
-title: "About"
-permalink: /about/
----
-
+layout: about
+#title: "Portfolio"
+permalink: /aboutme/
+author_profile: true
+--
 
 <!--author-->
 
